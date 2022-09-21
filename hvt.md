@@ -2,16 +2,22 @@
 
 _Elektromobilita, pohony, vývoj v Českých zemích až do součastnosti._
 
+## O co jde
+
+Na cvičení jsme určitým způsobem rozhodli, že se budeme asi zajímat obecně o elektromobilitu. Tento obor má mnoho odvětví a možností, které sledovat. Níže prezentuji určité části, které by mohlý býti zajímavé. Prosím, pokud budete mít další nápady, můžeme je zahrnout do výběru.
+
+**Bylo by vhodné**, abychom měli do **soboty 24.09.2022 do 23:00** rozhodnuto, z jakých témat budeme vybírat a nejlépe určeny hlavní zpracovatele u oněch vybraných témat.
+
 ## Části elektromobility, na které je možné se zaměřit
 
-- Tramvaje
-- Elektroautomobil
-- Trolejbusy
-- Metro
-- Lanovka
-- Vlaky
-- Elektrické pohony v lodích
-- LEV (Light Electric Vehicles) – koloběžky, kola, OneWheel, BoostedBoard
+- Tramvaje,
+- Elektroautomobil,
+- Trolejbusy,
+- Metro,
+- Lanovka,
+- Vlaky,
+- Elektrické pohony v lodích,
+- LEV (Light Electric Vehicles) – koloběžky, kola, OneWheel, BoostedBoard.
 
 Nejspíše by bylo vhodné, abychom měli 3–6 odvětví, ve kterých budeme záležitosti popisovat a zkoumat.
 Můžeme na tom dělat moná i ve dvojicích, je nás 8, takže by byla celkově 4 hlavní témata a pak by se třeba udělali nějaké menší.
