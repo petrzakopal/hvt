@@ -15,7 +15,7 @@ Na cvičení jsme určitým způsobem rozhodli, že se budeme asi zajímat obecn
 - Trolejbusy,
 - Metro,
 - Lanovka,
-- Vlaky,
+- Vlaky (_o vlaky měl zájem Jiří Marek_),
 - Elektrické pohony v lodích,
 - LEV (Light Electric Vehicles) – koloběžky, kola, OneWheel, BoostedBoard.
 
