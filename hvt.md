@@ -22,6 +22,13 @@ Na cvičení jsme určitým způsobem rozhodli, že se budeme asi zajímat obecn
 Nejspíše by bylo vhodné, abychom měli 3–6 odvětví, ve kterých budeme záležitosti popisovat a zkoumat.
 Můžeme na tom dělat moná i ve dvojicích, je nás 8, takže by byla celkově 4 hlavní témata a pak by se třeba udělali nějaké menší.
 
+## Prvotní rozdělení kapitol dle 24.09.2022
+
+- MHD/Trolejbusy => Sochulák&Jabali
+- Vlaky/Trakce => Janoušek&Marek
+- LEV => Suchý&Šlajcher
+- Elektromobily => Kučera&Zakopal
+
 ## Návrh možných kapitol jednotlivých sekcí
 
 ### Vývoj
