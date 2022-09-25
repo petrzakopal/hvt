@@ -125,7 +125,7 @@ const Navbar = () => {
 								className="cursor-pointer flex flex-row items-center hover:dark:text-zinc-900 hover:text-zinc-900 hover:bg-zinc-200 hover:dark:bg-zinc-50  rounded-lg px-4 py-0.5 transition-all font-bold text-xl justify-start justify-items-start"
 								aria-label="Example.com"
 							>
-								<img src="/assets/logo/logo.svg" className="w-12 h-12" />
+								<img src="/assets/logo/logo.svg" className="w-10 h-10 mr-2" />
 								<span>ElektroMobilita</span>
 							</a>
 						</Link>

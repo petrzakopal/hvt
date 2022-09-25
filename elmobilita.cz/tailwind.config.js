@@ -14,8 +14,8 @@ module.exports = {
 				xxs: "0.65rem",
 			},
 			colors: {
-				"primary-accent": "#70E000", // primary accent – pale vermilion
-				"secondary-accent": "#0466c8", // secondary accent – sunburst yellow
+				"primary-accent": "#70E000", // primary accent
+				"secondary-accent": "#3cb0cd", // secondary accent
 				"gray-accent": "rgba(223, 223, 223, <alpha-value>)",
 			},
 			width: {
