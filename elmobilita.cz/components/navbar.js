@@ -122,7 +122,7 @@ const Navbar = () => {
 					</Link> */}
 						<Link href="/">
 							<a
-								className="cursor-pointer flex flex-row items-center hover:dark:text-zinc-900 hover:text-zinc-900 hover:bg-zinc-200 hover:dark:bg-zinc-50  rounded-lg px-4 py-0.5 transition-all font-bold text-xl justify-start justify-items-start"
+								className="cursor-pointer flex flex-row items-center rounded-lg px-4 py-0.5 transition-all font-bold text-xl justify-start justify-items-start"
 								aria-label="Example.com"
 							>
 								<img src="/assets/logo/logo.svg" className="w-10 h-10 mr-2" />
