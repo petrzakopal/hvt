@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https:/elmobilita.cz
+Host: https://elmobilita.cz
 
 # Sitemaps
-Sitemap: https:/elmobilita.cz/sitemap.xml
+Sitemap: https://elmobilita.cz/sitemap.xml
