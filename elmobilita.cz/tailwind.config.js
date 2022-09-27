@@ -35,11 +35,27 @@ module.exports = {
 
 			animation: {
 				wave: "wave 2s cubic-bezier(0.8, -0.01, 0.2, 1) infinite",
+				breathe: "breathe 2s cubic-bezier(0.35, 0.09, 0.53, 1.04) infinite",
+				"bounce-10": "bounce-10 5s infinite;",
 			},
 			keyframes: {
 				wave: {
 					"0%, 100%": { transform: "rotate(15deg)" },
 					"50%": { transform: "rotate(0deg)" },
+				},
+				breathe: {
+					"0%, 100%": { opacity: "75%" },
+					"50%": { opacity: "50%" },
+				},
+				"bounce-10": {
+					"0%,100%": {
+						transform:
+							"translateY(-15%);animation-timing-function: cubic-bezier(0.74, 0, 0.22, 1.04);",
+					},
+					"50%": {
+						transform:
+							"translateY(0);animation-timing-function: cubic-bezier(0.74, 0, 0.22, 1.04);",
+					},
 				},
 			},
 		},

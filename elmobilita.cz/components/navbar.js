@@ -7,7 +7,14 @@ import MobileMenuCollapseGroup from "./mobilemenucollapsegroup";
 import { useRouter } from "next/router";
 import DesktopMenuCollapseGroup from "./desktopmenucollapsegroup";
 import Link from "next/link";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import {
+	Bars2Icon,
+	Bars3Icon,
+	BoltIcon,
+	UserGroupIcon,
+	WifiIcon,
+	XMarkIcon,
+} from "@heroicons/react/24/outline";
 /**
  * @version 0.1.1
  * Documentation for component Navbar
@@ -136,29 +143,32 @@ const Navbar = () => {
 							{/** home link then delete and content paste to index.js */}
 
 							<DesktopMenuCollapseGroup
-								groupName={"Collapseable"}
+								groupName={"Výběr témat"}
 								id={"1"}
 								linkData={{
-									"Link 1": [
-										"Foo bar.",
-										<Bars3Icon className={"w-8 h-8 pr-2"} />,
-										"/",
+									Vlaky: [
+										"Kolejová trakce.",
+										<Bars2Icon className={"w-8 h-8 pr-2"} />,
+										"/vlak",
 									],
-									"Link 2": [
-										"Foo bar.",
-										<Bars3Icon className={"w-8 h-8 pr-2"} />,
-										"/",
+									Trolejbusy: [
+										"Homadná doprava.",
+										<UserGroupIcon className={"w-8 h-8 pr-2"} />,
+										"/trolejbus",
 									],
-									"Link 3": [
-										"Foo bar.",
-										<Bars3Icon className={"w-8 h-8 pr-2"} />,
-										"/",
+									Elektroautomobily: [
+										"Řešení budoucnosti",
+										<BoltIcon className={"w-8 h-8 pr-2"} />,
+										"/elektromobil",
+									],
+									LEV: [
+										"Lehká elektrická vozidla",
+										<WifiIcon className={"w-8 h-8 pr-2"} />,
+										"/lev",
 									],
 								}}
 							/>
-							<ActiveLink linkAdress={"/"} linkName="Link 1" />
-							<ActiveLink linkAdress={"/"} linkName="Link 2" />
-							<ActiveLink linkAdress={"/"} linkName="Link 3" />
+							<ActiveLink linkAdress={"/autori"} linkName="Autoři" />
 						</div>
 					</div>
 					<div className="nav-third w-9 h-9">
@@ -231,21 +241,26 @@ const Navbar = () => {
 							>
 								<ul className="">
 									{/* Paste menu items here */}
-									<ActiveMobileLink linkAdress={"/"} linkName={"Example.com"} />
+									<ActiveMobileLink
+										linkAdress={"/"}
+										linkName={"elmobilita.cz"}
+									/>
 
 									<MobileMenuCollapseGroup
 										id="1"
-										groupName="Collapseable"
+										groupName="Výběr témat"
 										linkData={{
-											"Link 1": "/",
-											"Link 2": "/",
-											"Link 3": "/",
+											Vlaky: "/vlak",
+											Trolejbusy: "/trolejbus",
+											Elektroautomobil: "/elektromobil",
+											LEV: "/lev",
 										}}
 									/>
 
-									<ActiveMobileLink linkAdress={"/"} linkName={"Link 1"} />
-									<ActiveMobileLink linkAdress={"/"} linkName={"Link 2"} />
-									<ActiveMobileLink linkAdress={"/"} linkName={"Link 3"} />
+									<ActiveMobileLink
+										linkAdress={"/autori"}
+										linkName={"Autoři"}
+									/>
 								</ul>
 							</div>
 						</>
@@ -274,22 +289,24 @@ const Navbar = () => {
 									<ul className="">
 										<ActiveMobileLink
 											linkAdress={"/"}
-											linkName={"Example.com"}
+											linkName={"elmobilita.cz"}
 										/>
 
 										<MobileMenuCollapseGroup
 											id="1"
-											groupName="Collapseable"
+											groupName="Výběr témat"
 											linkData={{
-												"Link 1": "/",
-												"Link 2": "/",
-												"Link 3": "/",
+												Vlaky: "/vlak",
+												Trolejbusy: "/trolejbus",
+												Elektroautomobil: "/elektromobil",
+												LEV: "/lev",
 											}}
 										/>
 
-										<ActiveMobileLink linkAdress={"/"} linkName={"Link 1"} />
-										<ActiveMobileLink linkAdress={"/"} linkName={"Link 2"} />
-										<ActiveMobileLink linkAdress={"/"} linkName={"Link 3"} />
+										<ActiveMobileLink
+											linkAdress={"/autori"}
+											linkName={"Autoři"}
+										/>
 									</ul>
 								</div>
 							</>
