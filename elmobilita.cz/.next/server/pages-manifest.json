@@ -1,7 +1,12 @@
 {
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/zdroje": "pages/zdroje.js",
-  "/": "pages/index.js"
+  "/api/external/newsletter-subscribe": "pages/api/external/newsletter-subscribe.js",
+  "/api/revalidate": "pages/api/revalidate.js",
+  "/_app": "pages/_app.js",
+  "/api/external/slack-notification": "pages/api/external/slack-notification.js",
+  "/_error": "pages/_error.js",
+  "/cs/404": "pages/cs/404.html",
+  "/cs/500": "pages/cs/500.html",
+  "/cs/zdroje": "pages/cs/zdroje.html",
+  "/cs": "pages/cs.html"
 }
