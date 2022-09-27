@@ -37,7 +37,7 @@ function Index() {
 					Dobrý den,
 				</span>
 				<span className={`text-left ${FourthHeadingProperties} flex flex-row`}>
-					vyberte téma elektromobility, o kterou máte zájem{" "}
+					vyberte téma elektromobility, o které máte zájem{" "}
 					<span className="text-3xl animate-bounce-10">👇🏻</span>
 				</span>
 			</div>
