@@ -90,7 +90,7 @@ export const TextLink = ({ linkUrl, linkText, target, rel }) => {
 	return (
 		<Link href={linkUrl}>
 			<a
-				className={`text-left w-fit text-primary-accent after:inline-flex after:top-[0.11em] after:relative  hover:text-primary-accent after:transition-colors after:easy-in-out transition-colors easy-in-out after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:ml-1  after:bg-primary-accent after:hover:bg-primary-accent  after:[mask-size: cover;]`}
+				className={`text-left w-fit text-primary-accent after:inline-flex after:top-[0.11em] after:relative  hover:text-primary-accent after:transition-colors after:easy-in-out transition-colors easy-in-out after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:ml-1 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;]`}
 				target={target}
 				rel={rel}
 			>
