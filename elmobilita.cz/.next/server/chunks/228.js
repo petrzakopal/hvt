@@ -525,7 +525,7 @@ const ParallaxRouteUpdate = ()=>{
                             }),
                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("meta", {
                                 name: "theme-color",
-                                content: `${theme == "dark" ? "#001219" : "white"}`,
+                                content: `${theme == "dark" ? "#70E000" : "#fafafa"}`,
                                 id: "theme-color"
                             })
                         ]
