@@ -93,7 +93,7 @@ const GroupSection = ({ linkUrl, linkName, imageUrl }) => {
 				<a>
 					<div className="group flex flex-col w-80 h-80 relative rounded-lg items-center justify-center bg-black">
 						<h2
-							className={`z-[4] opacity-100 relative lg:text-4xl text-3xl text-zinc-50 dark:text-zinc-50 font-bold text-left group-hover:flex hidden transition-all ease-in-out duration-1000`}
+							className={`z-[4] opacity-100 relative lg:text-4xl text-3xl text-zinc-50 dark:text-zinc-50 font-bold text-left group-hover:md:flex md:hidden transition-all ease-in-out duration-1000`}
 						>
 							{linkName}
 						</h2>
@@ -103,7 +103,7 @@ const GroupSection = ({ linkUrl, linkName, imageUrl }) => {
 								layout={"fill"}
 								objectFit={"cover"}
 								className={
-									"rounded-lg group-hover:animate-breathe transition-all ease-in-out"
+									"rounded-lg group-hover:md:animate-breathe opacity-50 md:opacity-100 transition-all ease-in-out"
 								}
 								alt={""}
 								priority
