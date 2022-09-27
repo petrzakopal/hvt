@@ -1275,8 +1275,8 @@ function PageMetaData({ data  }) {
     const { systemTheme , theme , setTheme  } = (0,next_themes__WEBPACK_IMPORTED_MODULE_1__.useTheme)();
     const { 0: mounted , 1: setMounted  } = (0,react__WEBPACK_IMPORTED_MODULE_3__.useState)(false);
     const themeColor = {
-        light: "white",
-        dark: "#001219"
+        light: "#18181b",
+        dark: "#fafafa"
     };
     function metaiosBarChange(input) {
         let metaTheme = document.getElementsByName("theme-color");
