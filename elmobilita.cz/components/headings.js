@@ -15,13 +15,13 @@ export const FirstHeading = (textClass, text) => {
 };
 
 export const SecondHeadingProperties =
-	"lg:text-4xl text-3xl text-black font-semibold text-left";
+	"lg:text-4xl text-3xl text-zinc-900 dark:text-zinc-50 font-bold text-left";
 
 export const ThirdHeadingProperties =
-	"lg:text-4xl text-3xl text-black font-semibold text-left";
+	"lg:text-4xl text-3xl text-zinc-900 dark:text-zinc-50 font-bold text-left";
 
 export const FourthHeadingProperties =
-	"lg:text-2xl text-2xl text-black font-semibold text-left";
+	"lg:text-2xl text-2xl text-zinc-900 dark:text-zinc-50 font-bold text-left";
 
 export const FirstHeadingProperties =
-	"lg:text-6xl text-4xl text-black font-bold text-left";
+	"lg:text-6xl text-4xl text-zinc-900 dark:text-zinc-50 font-bold text-left";

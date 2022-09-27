@@ -1,18 +1,29 @@
 import { DefaultLayout } from "../components/layout";
 import { TextLink } from "../components/links";
+import Image from "next/image";
+import {
+	FirstHeadingProperties,
+	FourthHeadingProperties,
+	SecondHeadingProperties,
+} from "../components/headings";
+import Link from "next/link";
+import { SpaceY } from "../components/utilities/utilities";
 
 const metaData = {
-	meta_title: "Example Title", // meta_title
-	meta_description: "Example description.", // meta_description
-	canonical_url: "https://example.com", // canonical url
+	meta_title: "elmobilita – Historie elektromobility", // meta_title
+	meta_description:
+		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // meta_description
+	canonical_url: "https://elmobilita.cz", // canonical url
 	og_type: "website", //og:type
-	og_url: "https://example.com", //og_url
-	og_image: "https://example.com/assets/images/seo/og-image.png", // og_image
-	og_title: "Example Title", // og_title
-	og_description: "Example description.", // og_description
-	twitterImage: "https://example.com/assets/images/seo/og-image.png", // twitte:image
-	twitterDescription: "Example description.", // twitter:description
-	twitterTitle: "Example Title", // twitter:title
+	og_url: "https://elmobilita.cz", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "elmobilita – Historie elektromobility", // og_title
+	og_description:
+		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // twitter:description
+	twitterTitle: "elmobilita – Historie elektromobility", // twitter:title
 };
 
 const schema = {};
@@ -20,101 +31,45 @@ const schema = {};
 function Index() {
 	return (
 		<>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non
-				consectetur augue. Donec vitae tincidunt odio. Morbi lacinia malesuada
-				erat, a viverra purus dignissim et. Mauris dapibus metus augue, vel
-				sagittis mauris feugiat a. Nam congue sapien in mattis auctor. Nulla
-				tincidunt tempor odio. Integer at arcu tellus. Vestibulum vulputate erat
-				nec enim gravida, vitae vestibulum dolor pretium. Vestibulum varius
-				ullamcorper vestibulum. Donec vulputate, tellus facilisis pharetra
-				tincidunt, turpis ante ornare sapien, sit amet sollicitudin mauris nunc
-				et quam. Integer et lobortis risus, id imperdiet tortor. Suspendisse
-				eget finibus elit. Morbi egestas congue enim, in laoreet est tempus
-				congue. Nullam sem lorem, sagittis ut consectetur vitae, pretium id
-				dolor. Aenean sodales interdum hendrerit. Proin ut euismod urna. Mauris
-				sit amet hendrerit ex. Sed nec justo purus. Nunc sagittis, tortor et
-				interdum suscipit, arcu est lobortis enim, ut dapibus est mauris non
-				eros. Aliquam congue ornare mauris nec iaculis. Nam consequat, ipsum sed
-				dapibus auctor, eros quam tempor purus, nec porta orci nulla eget augue.
-				Pellentesque non libero sodales, iaculis neque quis, tempus ante.
-				Vivamus congue justo vel purus faucibus, vitae dignissim ligula auctor.
-				Maecenas elit arcu, pretium a interdum rutrum, ornare gravida felis.
-				Donec sit amet risus tincidunt, feugiat ante eget, fermentum felis.
-				Nulla in arcu id augue consectetur tempor convallis vel turpis. Donec
-				mattis sed augue non semper. Morbi convallis nunc at tempus aliquam. Ut
-				et velit est. Sed id tellus a ex feugiat aliquam vel sit amet turpis.
-				Maecenas ac mattis ipsum. Nunc tortor augue, mollis eget sollicitudin
-				at, suscipit non elit. Nunc eget dui lacinia, accumsan augue ac,
-				hendrerit quam. Nulla nunc lorem, interdum sed semper vehicula,
-				fringilla nec massa. Donec dictum libero diam. Vestibulum laoreet tortor
-				augue. Praesent eu nisl dignissim, faucibus leo at, viverra massa. Donec
-				a condimentum justo. Mauris volutpat turpis vel iaculis suscipit. Proin
-				felis tortor, semper ut sapien id, pellentesque posuere mi. In id varius
-				metus. Pellentesque quis posuere arcu. Sed tempus euismod ullamcorper.
-				Fusce fermentum urna at tincidunt dapibus. Morbi lectus tellus, ultrices
-				eget ligula eu, consectetur posuere libero. Etiam arcu tellus, elementum
-				ac finibus sit amet, viverra eu dui. Sed sem arcu, pharetra a venenatis
-				eu, lacinia sed dui. Donec dui arcu, varius nec volutpat in, vestibulum
-				a augue. Fusce euismod facilisis nibh. Phasellus at tincidunt risus.
-				Donec ante quam, porta ac mattis sit amet, vulputate malesuada libero.
-				In in euismod sem, a eleifend lectus. Donec gravida ex sit amet congue
-				dictum. Cras dapibus augue nisl. Morbi gravida sollicitudin nunc, auctor
-				laoreet leo rhoncus vitae. Nulla vel mi ut nibh vehicula condimentum.
-				Suspendisse sed venenatis ante, vitae dignissim nunc. Phasellus congue
-				condimentum turpis in mattis. Aenean sollicitudin pretium vulputate.
-				Vivamus facilisis lorem nec lectus dapibus viverra. Morbi ultricies nunc
-				justo, ac mattis velit condimentum ac. Integer at libero sit amet magna
-				scelerisque consequat in sagittis mi.
+			<SpaceY mt={"mt-10"} />
+			<div className="w-full text-left flex flex-col">
+				<span className={`text-left text-zinc-600 dark:text-zinc-200`}>
+					Dobrý den,
+				</span>
+				<span className={`text-left ${FourthHeadingProperties} flex flex-row`}>
+					vyberte téma elektromobility, o kterou máte zájem{" "}
+					<span className="text-3xl animate-bounce-10">👇🏻</span>
+				</span>
+			</div>
+
+			<SpaceY mt={"mt-10"} />
+			<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-5 items-center justify-center justify-items-center">
+				<GroupSection
+					linkName={"Vlaky"}
+					linkUrl={"/vlak"}
+					imageUrl={"/assets/images/kategorie/vlaky.webp"}
+				/>
+				<GroupSection
+					linkName={"Autobusy"}
+					linkUrl={"/autobus"}
+					imageUrl={"/assets/images/kategorie/autobusy.webp"}
+				/>
+				<GroupSection
+					linkName={"Elektromobily"}
+					linkUrl={"/elektromobil"}
+					imageUrl={"/assets/images/kategorie/elektromobily.webp"}
+				/>
+				<GroupSection
+					linkName={"LEV"}
+					linkUrl={"/lev"}
+					imageUrl={"/assets/images/kategorie/lev.webp"}
+				/>
+			</div>
+			<SpaceY mt={"mt-10"} />
+			<p className="italic text-sm text-zinc-600 dark:text-zinc-600">
+				Omluvte prosím sníženou kvalitu webových stránek. Stránky jsou ve
+				výstavbě v rámci semestrální práce předmětu B0M16HVT.{" "}
 			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non
-				consectetur augue. Donec vitae tincidunt odio. Morbi lacinia malesuada
-				erat, a viverra purus dignissim et. Mauris dapibus metus augue, vel
-				sagittis mauris feugiat a. Nam congue sapien in mattis auctor. Nulla
-				tincidunt tempor odio. Integer at arcu tellus. Vestibulum vulputate erat
-				nec enim gravida, vitae vestibulum dolor pretium. Vestibulum varius
-				ullamcorper vestibulum. Donec vulputate, tellus facilisis pharetra
-				tincidunt, turpis ante ornare sapien, sit amet sollicitudin mauris nunc
-				et quam. Integer et lobortis risus, id imperdiet tortor. Suspendisse
-				eget finibus elit. Morbi egestas congue enim, in laoreet est tempus
-				congue. Nullam sem lorem, sagittis ut consectetur vitae, pretium id
-				dolor. Aenean sodales interdum hendrerit. Proin ut euismod urna. Mauris
-				sit amet hendrerit ex. Sed nec justo purus. Nunc sagittis, tortor et
-				interdum suscipit, arcu est lobortis enim, ut dapibus est mauris non
-				eros. Aliquam congue ornare mauris nec iaculis. Nam consequat, ipsum sed
-				dapibus auctor, eros quam tempor purus, nec porta orci nulla eget augue.
-				Pellentesque non libero sodales, iaculis neque quis, tempus ante.
-				Vivamus congue justo vel purus faucibus, vitae dignissim ligula auctor.
-				Maecenas elit arcu, pretium a interdum rutrum, ornare gravida felis.
-				Donec sit amet risus tincidunt, feugiat ante eget, fermentum felis.
-				Nulla in arcu id augue consectetur tempor convallis vel turpis. Donec
-				mattis sed augue non semper. Morbi convallis nunc at tempus aliquam. Ut
-				et velit est. Sed id tellus a ex feugiat aliquam vel sit amet turpis.
-				Maecenas ac mattis ipsum. Nunc tortor augue, mollis eget sollicitudin
-				at, suscipit non elit. Nunc eget dui lacinia, accumsan augue ac,
-				hendrerit quam. Nulla nunc lorem, interdum sed semper vehicula,
-				fringilla nec massa. Donec dictum libero diam. Vestibulum laoreet tortor
-				augue. Praesent eu nisl dignissim, faucibus leo at, viverra massa. Donec
-				a condimentum justo. Mauris volutpat turpis vel iaculis suscipit. Proin
-				felis tortor, semper ut sapien id, pellentesque posuere mi. In id varius
-				metus. Pellentesque quis posuere arcu. Sed tempus euismod ullamcorper.
-				Fusce fermentum urna at tincidunt dapibus. Morbi lectus tellus, ultrices
-				eget ligula eu, consectetur posuere libero. Etiam arcu tellus, elementum
-				ac finibus sit amet, viverra eu dui. Sed sem arcu, pharetra a venenatis
-				eu, lacinia sed dui. Donec dui arcu, varius nec volutpat in, vestibulum
-				a augue. Fusce euismod facilisis nibh. Phasellus at tincidunt risus.
-				Donec ante quam, porta ac mattis sit amet, vulputate malesuada libero.
-				In in euismod sem, a eleifend lectus. Donec gravida ex sit amet congue
-				dictum. Cras dapibus augue nisl. Morbi gravida sollicitudin nunc, auctor
-				laoreet leo rhoncus vitae. Nulla vel mi ut nibh vehicula condimentum.
-				Suspendisse sed venenatis ante, vitae dignissim nunc. Phasellus congue
-				condimentum turpis in mattis. Aenean sollicitudin pretium vulputate.
-				Vivamus facilisis lorem nec lectus dapibus viverra. Morbi ultricies nunc
-				justo, ac mattis velit condimentum ac. Integer at libero sit amet magna
-				scelerisque consequat in sagittis mi.
-			</p>
-			<TextLink linkText={"test"} linkUrl={"/"} />
 		</>
 	);
 }
@@ -127,6 +82,36 @@ Index.getLayout = function getLayout(page) {
 			<DefaultLayout metaData={metaData} schema={schema}>
 				{page}
 			</DefaultLayout>
+		</>
+	);
+};
+
+const GroupSection = ({ linkUrl, linkName, imageUrl }) => {
+	return (
+		<>
+			<Link href={linkUrl}>
+				<a>
+					<div className="group flex flex-col w-80 h-80 relative rounded-lg items-center justify-center bg-black">
+						<h2
+							className={`z-[4] opacity-100 relative lg:text-4xl text-3xl text-zinc-50 dark:text-zinc-50 font-bold text-left group-hover:flex hidden transition-all ease-in-out duration-1000`}
+						>
+							{linkName}
+						</h2>
+						<picture className="peer bg-black transition-all ease-in-out z-[1]">
+							<Image
+								src={imageUrl}
+								layout={"fill"}
+								objectFit={"cover"}
+								className={
+									"rounded-lg group-hover:animate-breathe transition-all ease-in-out"
+								}
+								alt={""}
+								priority
+							/>
+						</picture>
+					</div>
+				</a>
+			</Link>
 		</>
 	);
 };
