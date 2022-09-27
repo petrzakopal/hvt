@@ -1417,8 +1417,8 @@ function PageMetaData({ data  }) {
         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_script__WEBPACK_IMPORTED_MODULE_1___default()), {
             id: "umami",
             strategy: "beforeInteractive",
-            src: "/",
-            "data-website-id": ""
+            src: "https://zakopal-analytics.vercel.app/umami.js",
+            "data-website-id": "0a8ccab4-4f92-4b5f-81dc-54fa915d3b08"
         })
     });
 };
