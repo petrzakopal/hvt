@@ -78,7 +78,7 @@ export const DefaultLayout = ({ children, metaData, schema }) => {
 						{/* This meta tag should be changing iOS top bar color to desired dark/light mode color */}
 						<meta
 							name="theme-color"
-							content={`${theme == "dark" ? "#70E000" : "#fafafa"}`}
+							content={`${theme == "dark" ? "#18181b" : "#fafafa"}`}
 							id="theme-color"
 						/>
 						{/* theme-color metadata is changed in renderThemeChanger component */}
