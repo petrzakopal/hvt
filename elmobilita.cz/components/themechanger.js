@@ -14,8 +14,8 @@ function ThemeChanger() {
 	const [mounted, setMounted] = useState(false);
 
 	const themeColor = {
-		light: "white",
-		dark: "#001219",
+		light: "#18181b",
+		dark: "#fafafa",
 	};
 
 	function metaiosBarChange(input) {

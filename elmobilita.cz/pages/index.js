@@ -36,7 +36,9 @@ function Index() {
 				<span className={`text-left text-zinc-600 dark:text-zinc-200`}>
 					Dobrý den,
 				</span>
-				<span className={`text-left ${FourthHeadingProperties} flex flex-row`}>
+				<span
+					className={`text-left ${FourthHeadingProperties} flex md:flex-row flex-col`}
+				>
 					vyberte téma elektromobility o které máte zájem{" "}
 					<span className="text-3xl animate-bounce-10">👇🏻</span>
 				</span>
