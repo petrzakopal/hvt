@@ -7,6 +7,6 @@
   "/api/revalidate": "pages/api/revalidate.js",
   "/cs/404": "pages/cs/404.html",
   "/cs/500": "pages/cs/500.html",
-  "/cs/zdroje": "pages/cs/zdroje.html",
-  "/cs": "pages/cs.html"
+  "/cs": "pages/cs.html",
+  "/cs/zdroje": "pages/cs/zdroje.html"
 }
