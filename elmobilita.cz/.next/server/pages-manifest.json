@@ -1,9 +1,9 @@
 {
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/_app": "pages/_app.js",
   "/api/external/newsletter-subscribe": "pages/api/external/newsletter-subscribe.js",
   "/api/external/slack-notification": "pages/api/external/slack-notification.js",
+  "/_error": "pages/_error.js",
   "/api/revalidate": "pages/api/revalidate.js",
   "/cs/404": "pages/cs/404.html",
   "/cs/500": "pages/cs/500.html",
