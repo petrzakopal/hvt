@@ -1,0 +1,70 @@
+import { DefaultLayout } from "../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import { Post } from "../components/post";
+
+export const metaData = {
+	meta_title: "elmobilita – Historie elektromobility", // meta_title
+	meta_description:
+		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // meta_description
+	canonical_url: "https://elmobilita.cz", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "elmobilita – Historie elektromobility", // og_title
+	og_description:
+		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // twitter:description
+	twitterTitle: "elmobilita – Historie elektromobility", // twitter:title
+};
+
+# First heading
+
+## Second heading
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulvinar dapibus nulla, vel eleifend lacus lacinia ac. Sed ac metus erat. Quisque venenatis a tellus sit amet congue. Aliquam pellentesque gravida velit, in molestie justo condimentum a. Donec bibendum orci nec tempor elementum. Nam dapibus lacinia velit nec euismod. Ut finibus massa id diam ultricies, vel dapibus dolor consequat. Aliquam bibendum velit nisi, in tempor nibh hendrerit a. Donec blandit mi vel dolor aliquet, vitae mollis erat pulvinar. Nullam id viverra lectus. Nullam nunc est, consequat a fringilla at, blandit nec quam. Donec condimentum dui a odio fermentum, nec aliquam arcu lacinia. Phasellus non nulla at nunc convallis tempus. Etiam nisi elit, commodo at nunc et, dignissim pellentesque erat. Proin non maximus dolor.
+
+Morbi id imperdiet augue. Nullam sit amet ligula hendrerit, cursus risus a, accumsan tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent in auctor lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse imperdiet dui vitae mauris placerat maximus. Phasellus auctor vel ante in ullamcorper. Morbi at orci id leo pulvinar tincidunt eget in neque.
+
+### Third heading
+
+Unordered list
+
+- první věc
+- druhá věc
+- třetí věc
+
+Ordered list
+
+1. twitterDescription
+2. testik
+3. testuji
+
+#### Fourth heading
+
+Test obrázku
+
+![test](/assets/images/kategorie/autobusy.webp)
+
+<figcaption>Test of caption</figcaption>
+
+## Second again
+
+```javascript
+// example of a code
+
+const test = "petr";
+```
+
+## Test linku
+
+[testík](https://petrzakopal.cz)
+
+export default ({ children }) => (
+	<MDXProvider>
+		<DefaultLayout metaData={metaData}>
+			<Post>{children}</Post>
+		</DefaultLayout>
+	</MDXProvider>
+);

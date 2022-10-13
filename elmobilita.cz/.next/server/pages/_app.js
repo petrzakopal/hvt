@@ -19,6 +19,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
 function MyApp({ Component , pageProps  }) {
     if (Component.getLayout) {
         return Component.getLayout(/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {

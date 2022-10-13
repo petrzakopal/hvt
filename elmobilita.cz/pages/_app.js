@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import "../styles/post.css";
+import "../styles/holi-theme.css";
 
 import { ThemeProvider } from "next-themes";
 

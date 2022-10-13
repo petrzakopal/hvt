@@ -1,6 +1,6 @@
 "use strict";
-exports.id = 228;
-exports.ids = [228];
+exports.id = 469;
+exports.ids = [469];
 exports.modules = {
 
 /***/ 3898:
@@ -369,11 +369,6 @@ _navbar__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (a
         children: [
             process.env.ANALYTICS == "true" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_umami__WEBPACK_IMPORTED_MODULE_3__/* .UmamiTracking */ .Y, {}) : "",
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_tweemojihandler__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {}),
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_script__WEBPACK_IMPORTED_MODULE_4___default()), {
-                id: "list.js",
-                strategy: "beforeInteractive",
-                src: "/js/list.min.js"
-            }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_navbar__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {})
         ]
     });
@@ -382,48 +377,6 @@ _navbar__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (a
 
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });
-
-/***/ }),
-
-/***/ 4482:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "KG": () => (/* binding */ FourthHeadingProperties)
-/* harmony export */ });
-/* unused harmony exports SecondHeading, ThirdHeading, FourthHeading, FirstHeading, SecondHeadingProperties, ThirdHeadingProperties, FirstHeadingProperties */
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-
-const SecondHeading = (textClass, text)=>{
-    return /*#__PURE__*/ _jsx("h2", {
-        className: `${SecondHeadingProperties} ${textClass}`,
-        children: text
-    });
-};
-const ThirdHeading = (textClass, text)=>{
-    return /*#__PURE__*/ _jsx("h3", {
-        className: `${ThirdHeadingProperties} ${textClass}`,
-        children: text
-    });
-};
-const FourthHeading = (textClass, text)=>{
-    return /*#__PURE__*/ _jsx("h4", {
-        className: `${FourthHeadingProperties} ${textClass}`,
-        children: text
-    });
-};
-const FirstHeading = (textClass, text)=>{
-    return /*#__PURE__*/ _jsx("h1", {
-        className: `${FirstHeadingProperties} ${textClass}`,
-        children: text
-    });
-};
-const SecondHeadingProperties = "lg:text-4xl text-3xl text-zinc-900 dark:text-zinc-50 font-bold text-left";
-const ThirdHeadingProperties = "lg:text-4xl text-3xl text-zinc-900 dark:text-zinc-50 font-bold text-left";
-const FourthHeadingProperties = "lg:text-2xl text-2xl text-zinc-900 dark:text-zinc-50 font-bold text-left";
-const FirstHeadingProperties = "lg:text-6xl text-4xl text-zinc-900 dark:text-zinc-50 font-bold text-left";
-
 
 /***/ }),
 
