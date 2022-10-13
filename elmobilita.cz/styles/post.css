@@ -1,0 +1,78 @@
+@tailwind components;
+
+@layer components {
+	/** FOR POSTS **/
+	.post {
+		@apply text-zinc-900 dark:text-zinc-50 text-left;
+	}
+
+	.post h1 {
+		@apply lg:text-6xl text-4xl text-zinc-900 dark:text-zinc-50 font-bold text-left mb-4;
+	}
+
+	.post h2 {
+		@apply lg:text-4xl text-3xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-8 mb-4;
+	}
+
+	.post h3 {
+		@apply lg:text-4xl text-3xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-6 mb-2;
+	}
+
+	.post h4 {
+		@apply lg:text-2xl text-2xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-4 mb-1;
+	}
+
+	.post p {
+		@apply my-5 text-base text-zinc-900 dark:text-zinc-50 text-left w-full;
+	}
+
+	.post ul {
+		@apply my-5 pl-7 list-disc;
+	}
+
+	.post ol {
+		@apply my-5 pl-7 list-decimal;
+	}
+
+	.post li {
+		@apply pl-1.5 my-2;
+	}
+
+	.post img {
+		@apply mx-auto rounded-xl max-w-[calc(100%+6vw)] ml-[-3vw];
+	}
+
+	.post img + em {
+		/* example of usage in MD
+		
+		![test](/assets/images/kategorie/autobusy.webp)
+		_caption_
+
+*/
+		@apply text-sm text-zinc-600 dark:text-zinc-600 py-4 text-center w-full;
+	}
+
+	.post figcaption {
+		@apply text-sm text-zinc-600 dark:text-zinc-600 pb-4 -mt-4 text-center w-full;
+	}
+
+	.post pre {
+		@apply rounded-lg;
+	}
+
+	.post a {
+		@apply w-fit text-primary-accent items-center transition-colors hover:underline;
+	}
+
+	.post a:after {
+		@apply transition-colors relative h-4 w-4 ml-1 bg-primary-accent inline-flex top-[0.11em];
+		content: "";
+		mask-repeat: no-repeat;
+		mask: url("/assets/images/misc/external-link.svg");
+	}
+
+	/* on a:after dark:hover:text-secondary-accent hover:text-secondary-accent */
+	/* .post a:hover:after {
+		@apply bg-secondary-accent dark:bg-secondary-accent;
+	} */
+}
