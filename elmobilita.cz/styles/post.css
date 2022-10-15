@@ -52,8 +52,9 @@
 		@apply text-sm text-zinc-600 dark:text-zinc-600 py-4 text-center w-full;
 	}
 
-	.post figcaption {
-		@apply text-sm text-zinc-600 dark:text-zinc-600 pb-4 -mt-4 text-center w-full;
+	.post figcaption,
+	.post figcaption p {
+		@apply text-sm text-zinc-600 dark:text-zinc-400 pb-4 -mt-4 text-center italic w-full;
 	}
 
 	.post pre {
