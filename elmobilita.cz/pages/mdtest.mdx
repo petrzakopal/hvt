@@ -2,6 +2,7 @@ import { DefaultLayout } from "../components/layout";
 import { MDXProvider } from "@mdx-js/react";
 import { Post } from "../components/post";
 import { Fact } from "../components/fact";
+import { H2, H3, H4, H5, H6 } from "../components/linkHeadings";
 
 export const metaData = {
 	meta_title: "elmobilita – Historie elektromobility", // meta_title
@@ -72,9 +73,17 @@ const test = "petr";
 </Fact>
 
 export default ({ children }) => (
-	<MDXProvider>
-		<DefaultLayout metaData={metaData}>
+	<DefaultLayout metaData={metaData}>
+		<MDXProvider
+			components={{
+				h2: H2,
+				h3: H3,
+				h4: H4,
+				h6: H5,
+				h5: H6,
+			}}
+		>
 			<Post>{children}</Post>
-		</DefaultLayout>
-	</MDXProvider>
+		</MDXProvider>
+	</DefaultLayout>
 );

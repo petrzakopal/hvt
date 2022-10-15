@@ -14,3 +14,13 @@ export const Post = ({ children }) => {
 		</>
 	);
 };
+
+export const Citation = ({ children, href }) => {
+	return (
+		<>
+			<a href={href} className="citation">
+				<span className="">{children}</span>
+			</a>
+		</>
+	);
+};
