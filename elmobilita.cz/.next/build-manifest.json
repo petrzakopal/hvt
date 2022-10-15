@@ -30,6 +30,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/trolejbus/historicky-vyvoj-trolejbusove-dopravy.js"
     ],
+    "/trolejbus/kapitoly": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/trolejbus/kapitoly.js"
+    ],
     "/trolejbus/zdroje": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

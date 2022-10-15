@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/trolejbus/zdroje": "pages/trolejbus/zdroje.js",
   "/trolejbus/historicky-vyvoj-trolejbusove-dopravy": "pages/trolejbus/historicky-vyvoj-trolejbusove-dopravy.js",
-  "/trolejbus/zdroje": "pages/trolejbus/zdroje.js"
+  "/trolejbus/kapitoly": "pages/trolejbus/kapitoly.js"
 }
