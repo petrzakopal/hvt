@@ -38,10 +38,10 @@ export const VideoImageLink = ({
 }) => {
 	return (
 		<div className="relative video-image-link flex flex-col items-center justify-center mx-auto rounded-xl ml-[-3vw] w-[calc(100%+6vw] h-80 group cursor-pointer my-5">
-			<PlayIcon className="absolute w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
 			{/* {children} */}
 			<Link href={linkUrl}>
 				<a rel={rel} target={target}>
+					<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
 					<picture className="rounded-xl z-[1]">
 						<Image
 							src={imageUrl}
@@ -218,6 +218,111 @@ export const ListNavigationItem = ({ href, text }) => {
 					<a className="internal">{text}</a>
 				</Link>
 			</li>
+		</>
+	);
+};
+
+export const TrolejbusyVideoGallery = () => {
+	return (
+		<>
+			<div className="relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4">
+				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+					{/* {children} */}
+					<Link href={"https://www.youtube.com/watch?v=73x5TA9vCbU"}>
+						<a rel={"external"} target={"_blank"} className="internal">
+							<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+							<picture className="rounded-xl z-[1]">
+								<Image
+									src={
+										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp"
+									}
+									layout={"fill"}
+									objectFit={"cover"}
+									className={
+										"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out"
+									}
+									alt={"Trolejbusy v České a Slovenské republice 1/4"}
+								/>
+							</picture>
+						</a>
+					</Link>
+					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5">
+						1. část
+					</span>
+				</div>
+				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+					{/* {children} */}
+					<Link href={"https://www.youtube.com/watch?v=y574VfBqUMM"}>
+						<a rel={"external"} target={"_blank"} className="internal">
+							<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+							<picture className="rounded-xl z-[1]">
+								<Image
+									src={
+										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp"
+									}
+									layout={"fill"}
+									objectFit={"cover"}
+									className={
+										"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out"
+									}
+									alt={"Trolejbusy v České a Slovenské republice 1/4"}
+								/>
+							</picture>
+						</a>
+					</Link>
+					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5">
+						2. část
+					</span>
+				</div>
+				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+					{/* {children} */}
+					<Link href={"https://www.youtube.com/watch?v=gqM-kkwqOQI"}>
+						<a rel={"external"} target={"_blank"} className="internal">
+							<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+							<picture className="rounded-xl z-[1]">
+								<Image
+									src={
+										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp"
+									}
+									layout={"fill"}
+									objectFit={"cover"}
+									className={
+										"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out"
+									}
+									alt={"Trolejbusy v České a Slovenské republice 1/4"}
+								/>
+							</picture>
+						</a>
+					</Link>
+					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5">
+						3. část
+					</span>
+				</div>
+				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+					{/* {children} */}
+					<Link href={"https://www.youtube.com/watch?v=61DuiVpZlrI"}>
+						<a rel={"external"} target={"_blank"} className="internal">
+							<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+							<picture className="rounded-xl z-[1]">
+								<Image
+									src={
+										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp"
+									}
+									layout={"fill"}
+									objectFit={"cover"}
+									className={
+										"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out"
+									}
+									alt={"Trolejbusy v České a Slovenské republice 1/4"}
+								/>
+							</picture>
+						</a>
+					</Link>
+					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5">
+						4. část
+					</span>
+				</div>
+			</div>
 		</>
 	);
 };
