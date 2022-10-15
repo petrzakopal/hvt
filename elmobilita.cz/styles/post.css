@@ -71,6 +71,9 @@
 		mask: url("/assets/images/misc/external-link.svg");
 	}
 
+	.post .fact-wrapper p {
+		@apply m-0;
+	}
 	/* on a:after dark:hover:text-secondary-accent hover:text-secondary-accent */
 	/* .post a:hover:after {
 		@apply bg-secondary-accent dark:bg-secondary-accent;
