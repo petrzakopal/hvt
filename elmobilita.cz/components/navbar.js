@@ -149,22 +149,22 @@ const Navbar = () => {
 									Vlaky: [
 										"Kolejová trakce.",
 										<Bars2Icon className={"w-8 h-8 pr-2"} />,
-										"/vlak",
+										"/vlak/kapitoly",
 									],
 									Trolejbusy: [
 										"Homadná doprava.",
 										<UserGroupIcon className={"w-8 h-8 pr-2"} />,
-										"/trolejbus",
+										"/trolejbus/kapiotoly",
 									],
 									Elektroautomobily: [
 										"Řešení budoucnosti",
 										<BoltIcon className={"w-8 h-8 pr-2"} />,
-										"/elektromobil",
+										"/elektromobil/kapitoly",
 									],
 									LEV: [
 										"Lehká elektrická vozidla",
 										<WifiIcon className={"w-8 h-8 pr-2"} />,
-										"/lev",
+										"/lev/kapitoly",
 									],
 								}}
 							/>
@@ -250,10 +250,10 @@ const Navbar = () => {
 										id="1"
 										groupName="Výběr témat"
 										linkData={{
-											Vlaky: "/vlak",
-											Trolejbusy: "/trolejbus",
-											Elektroautomobil: "/elektromobil",
-											LEV: "/lev",
+											Vlaky: "/vlak/kapitoly",
+											Trolejbusy: "/trolejbus/kapitoly",
+											Elektroautomobil: "/elektromobil/kapitoly",
+											LEV: "/lev/kapitoly",
 										}}
 									/>
 
@@ -296,10 +296,10 @@ const Navbar = () => {
 											id="1"
 											groupName="Výběr témat"
 											linkData={{
-												Vlaky: "/vlak",
-												Trolejbusy: "/trolejbus",
-												Elektroautomobil: "/elektromobil",
-												LEV: "/lev",
+												Vlaky: "/vlak/kapitoly",
+												Trolejbusy: "/trolejbus/kapitoly",
+												Elektroautomobil: "/elektromobil/kapitoly",
+												LEV: "/lev/kapitoly",
 											}}
 										/>
 

@@ -15,19 +15,19 @@
 	}
 
 	.post h3 {
-		@apply lg:text-4xl text-3xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-6 mb-2;
+		@apply lg:text-4xl text-2xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-6 mb-2;
 	}
 
 	.post h4 {
-		@apply lg:text-2xl text-2xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-4 mb-1;
+		@apply lg:text-2xl text-xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-4 mb-1;
 	}
 
 	.post h5 {
-		@apply lg:text-xl text-2xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-4 mb-1;
+		@apply lg:text-xl text-lg text-zinc-900 dark:text-zinc-50 font-bold text-left mt-4 mb-1;
 	}
 
 	.post h6 {
-		@apply lg:text-lg text-2xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-4 mb-1;
+		@apply lg:text-lg text-lg text-zinc-900 dark:text-zinc-50 font-bold text-left mt-4 mb-1;
 	}
 
 	.post p {
@@ -88,6 +88,7 @@
 		@apply bg-secondary-accent dark:bg-secondary-accent;
 	} */
 
+	/* POST CITATION  */
 	.post .anchor-link {
 		@apply hidden;
 	}
@@ -95,7 +96,21 @@
 		@apply hidden;
 	}
 
+	/* POST VIDEO IMAGE LINK */
 	.post .video-image-link a:after {
+		@apply hidden;
+	}
+
+	/* POST BUTTONS */
+	.post button a:after {
+		@apply hidden;
+	}
+
+	.post button a:hover {
+		@apply no-underline;
+	}
+
+	.post .internal:after {
 		@apply hidden;
 	}
 }

@@ -58,7 +58,7 @@ function Index() {
 				/>
 				<GroupSection
 					linkName={"Elektromobily"}
-					linkUrl={"/elektromobil"}
+					linkUrl={"/elektromobil/kapitoly"}
 					imageUrl={"/assets/images/kategorie/elektromobily.webp"}
 				/>
 				<GroupSection

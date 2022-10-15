@@ -1,8 +1,12 @@
 function getAnchor(text) {
-	return text
-		.toLowerCase()
-		.replace(/[^a-z0-9 ]/g, "")
-		.replace(/[ ]/g, "-");
+	return (
+		text
+			.toLowerCase()
+			.normalize("NFD")
+			// .replace(/[\u0300-\u036f]/g, "") // same as following but in ascii probably
+			.replace(/[^a-z0-9 ]/g, "")
+			.replace(/[ ]/g, "-")
+	);
 }
 
 export const H2 = ({ children }) => {
