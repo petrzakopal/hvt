@@ -1,7 +1,13 @@
 import { DefaultLayout } from "../../components/layout";
 import { MDXProvider } from "@mdx-js/react";
-import { Post, Citation, VideoImageLink } from "../../components/post";
-import { Fact } from "../../components/fact";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+} from "../../components/post";
+
 import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
 import Image from "next/image";
 
@@ -22,7 +28,7 @@ export const metaData = {
 	twitterTitle: "elmobilita – Historie elektromobility", // twitter:title
 };
 
-# Elektromobily
+# Úvod do historie elektromobilů
 
 ## Boj elektromobilů a ostatních typů automobilů
 
@@ -121,13 +127,54 @@ Na videu je možné pozorovat startování automobilu se spalovacím motorem pom
 
 ## Problematické časy pro elektromobily
 
-Od roku 1920 do 1970 a dále byly pro EV problematické. Má na to vliv recese v USA, druhá světová válka apod. Tyto události přinesli rozvoj automobilů se spalovacími motory, prodloužili jejich dojezdové vzdálenosti, vylepšili bezpečnost, snížila se cena spalovacích pohonných hmot apod.. EV nebyly schopné se s tímto rozvojem udržet a proto pro širokou veřejnost upadli v zapomění. [1]
+Od roku 1920 do 1970 a dále byly pro EV problematické. Má na to vliv recese v USA, druhá světová válka apod. Tyto události přinesli rozvoj automobilů se spalovacími motory, prodloužili jejich dojezdové vzdálenosti, vylepšili bezpečnost, snížila se cena spalovacích pohonných hmot apod.. EV nebyly schopné se s tímto rozvojem udržet a proto pro širokou veřejnost upadli v zapomění.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
 
-O EV začal být ovšem zájem v době, kdy si široká veřejnost začala uvědomovat klimatické dopady spalovacích motorů a neúměrného využívání fosilních paliv. To se začalo dít po polovině 20. století a více se začalo propagovat na počátku 21. století. [1]
-V USA začal být zájem o environmentální dopady osobní dopravy v roce 1963, odstartovaný Clean Air Act of 1963.
+## Podpora elektromobilů v historii
 
+O EV začal být ovšem zájem v době, kdy si široká veřejnost začala uvědomovat klimatické dopady spalovacích motorů a neúměrného využívání fosilních paliv. To se začalo dít po polovině 20. století a více se začalo propagovat na počátku 21. století.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+V USA začal být zájem o environmentální dopady osobní dopravy v roce 1963, odstartovaný aktem „Clean Air Act of 1963“.
+
+### Environmentální přístup 🌱
+
+Došlo ke změně přístupu k elektromobilitě a oproti nařizování, zakazování a zhoršování pozice těchto vozidel došlo k jejich podpoře ze státních rozpočtů. „Závod“ o baterii s nejmenší hmotností, s nejvyšší účinností, s nejvyšší kapacitou a nejnižší cenou jasně započal. Došlo k zavedení Emisních povolonek a různých systémů spravující tuto komoditu. Došlo k zavedení principu „carbon offset“, kdy v případě, že subjekty produkují CO2, které bylo určeno jako skleníkový plyn, produkující nevhodnou klimatickou změnu, mohou přispět jiným způsobem k jeho snižování. Finančně mohou podpořit výzkum, výstavbu nových zdrojů elektrické energie pracující na bázi nefosilních a obnovitelných zdrojů a paliv.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+## Výhody elektromobilů
+
+Rapidní rozvoj technologií, elektroniky a řídící techniky v dnešní době způsobil, že EV nabízejí oproti automobilům se spalovacím motorem mnoho výhod.
+
+{/* prettier-ignore */}
+Některé z výhod elektromobilů:
+
+- přímé emise produkované při jízdě,
+- méně pohyblivých částí,
+- většinou bez nutnosti uživatelem řízené převodovky,
+- nižší požadavky na údržbu,
+  - bez výměny oleje,
+  - bez výměny některých filtrů (palivový, olejový),
+  - bez výměny některých zařízení spojených s olejovým chlazením, spalovacími motory,
+- možnost zachovávání a generování elektrické energie zpět do baterií
+- a další.
+
+{/* prettier-ignore */}
+<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1,&nbsp;upraveno]</Citation>&nbsp;
+
+## Reakce konvenčních automobilů na environmentální politiku
+
+Ovšem v reakci na nové environmentální přístupy nepokulhávají ani spalovací motory, které rychle reagují na požadavky a využívají nová složení paliv nebo vylepšené spalovací procesy, elektronická řízení apod., které opět snižují vlivy na životní prostředí.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1,&nbsp;upraveno]</Citation>
+
+Značný potenciál byl vidět v hybridních elektromobilech, převážně pak v konceptu vodíkových palivových článků. Obecně jsou tyto technologie propagované a ve výzkumném hledisku značně zajímavé, plné možných vylepšení. Dokonce jsou prodávány stavebnice, pomocí které je možné automobily přetransformovat na jiné hybridní technologie.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1,&nbsp;upraveno]</Citation>
+
+<PostFooterNavigation
+	hrefPrevious="/elektromobil/kapitoly"
+	hrefNext="/elektromobil/detailni-historie-elektroautomobilu"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="true"
+	nextEnabled="true"
+/>
 {/* --------------------- DANGER ZONE --------------------- */}
-export default ({ children }) => (
+export default ({children}) => (
 
 <DefaultLayout metaData={metaData}>
 	<MDXProvider
