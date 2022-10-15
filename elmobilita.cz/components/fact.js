@@ -1,8 +1,21 @@
 import { DocumentDuplicateIcon } from "@heroicons/react/24/outline";
 
-export const Fact = ({ children, color, header }) => {
+export const Fact = ({
+	children,
+	color,
+	header,
+	description,
+	copyToClipboard,
+}) => {
 	let FactDesign;
 	let ToolTipDesign;
+	let ClipBoardContent;
+
+	if (copyToClipboard == "content") {
+		ClipBoardContent = children.props.children;
+	} else {
+		ClipBoardContent = copyToClipboard;
+	}
 
 	switch (color) {
 		case "primary":
@@ -23,9 +36,10 @@ export const Fact = ({ children, color, header }) => {
 				className={`relative fact-wrapper grid grid-cols-1 gap-y-2 w-full text-zinc-900 dark:text-zinc-50 rounded-lg px-4 py-2 ${FactDesign}`}
 			>
 				<div
-					className="absolute right-4 top-2 p-2 -m-2 cursor-pointer peer"
+					className="absolute right-4 top-2 cursor-pointer peer"
 					onClick={() => {
-						navigator.clipboard.writeText("Copy this text to clipboard");
+						navigator.clipboard.writeText(ClipBoardContent);
+						console.log(ClipBoardContent);
 					}}
 				>
 					<DocumentDuplicateIcon className={"w-5 h-5"} />
@@ -43,7 +57,20 @@ export const Fact = ({ children, color, header }) => {
 					<rect x="12" y="-10" width="8" height="8" transform="rotate(45)" />
 				</svg>
 
-				<div className="fact-header text-2xl font-bold">{header}</div>
+				<div className="fact-header flex flex-col">
+					<span className="text-2xl font-bold">{header}</span>
+
+					{description ? (
+						<>
+							<div className="text-sm italic text-zinc-200 dark:text-zinc-200">
+								{description}
+							</div>
+						</>
+					) : (
+						""
+					)}
+				</div>
+
 				<div className="fact-text">{children}</div>
 			</div>
 		</>
