@@ -81,12 +81,12 @@ export const Fact = ({
 
 	switch (color) {
 		case "primary":
-			FactDesign = "bg-primary-accent/30 border-2 border-primary-accent";
+			FactDesign = "bg-primary-accent/20 border-2 border-primary-accent";
 			ToolTipDesign = "border-[1px] border-zinc-50";
 			break;
 
 		case "secondary":
-			FactDesign = "bg-secondary-accent/30 border-2 border-secondary-accent";
+			FactDesign = "bg-secondary-accent/20 border-2 border-secondary-accent";
 			ToolTipDesign = "border-2 border-secondary-accent";
 
 			break;
@@ -167,7 +167,7 @@ export const PostFooterNavigation = ({
 						<button className="text-left">
 							<Link href={hrefPrevious}>
 								<a className="cursor-pointer">
-									<span className="bg-primary-accent/30 border-2 border-primary-accent px-4 py-2 rounded-lg text-zinc-900 dark:text-zinc-50">
+									<span className="bg-primary-accent/20 border-2 border-primary-accent px-4 py-2 rounded-lg text-zinc-900 dark:text-zinc-50">
 										{previous}
 									</span>
 								</a>
@@ -185,7 +185,7 @@ export const PostFooterNavigation = ({
 						<button className="text-right">
 							<Link href={hrefNext}>
 								<a className="cursor-pointer">
-									<span className="bg-primary-accent/30 border-2 border-primary-accent px-4 py-2 rounded-lg text-zinc-900 dark:text-zinc-50">
+									<span className="bg-primary-accent/20 border-2 border-primary-accent px-4 py-2 rounded-lg text-zinc-900 dark:text-zinc-50">
 										{next}
 									</span>
 								</a>

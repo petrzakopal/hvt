@@ -154,7 +154,7 @@ const Navbar = () => {
 									Trolejbusy: [
 										"Homadná doprava.",
 										<UserGroupIcon className={"w-8 h-8 pr-2"} />,
-										"/trolejbus/kapiotoly",
+										"/trolejbus/kapitoly",
 									],
 									Elektroautomobily: [
 										"Řešení budoucnosti",

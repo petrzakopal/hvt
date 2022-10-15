@@ -1,0 +1,166 @@
+import { DefaultLayout } from "../../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+} from "../../components/post";
+
+import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
+import Image from "next/image";
+import Link from "next/link";
+
+export const metaData = {
+	meta_title: "elmobilita – Historie elektromobility", // meta_title
+	meta_description:
+		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // meta_description
+	canonical_url: "https://elmobilita.cz", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "elmobilita – Historie elektromobility", // og_title
+	og_description:
+		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // twitter:description
+	twitterTitle: "elmobilita – Historie elektromobility", // twitter:title
+};
+
+# Historický vývoj trolejbusové dopravy
+
+Trolejbusy se jako většina technických objektů vyvíjela s postupem času. Jejich počátky sahají až do 19. století a v některých městech a zemích se využívají dodnes.
+
+V mnoha městech byl jejich provoz ukončen a v některých v rámci snižování projektů snižování tvorby emisí od automobilové dopravy jsou opět trolejbusové linky zaváděny.
+
+<Fact header="Zajímavost" color="primary" description="Praha">
+	Praha oslavila 50. výročí ukončení provozu trolejbusů v Praze. Tiskovou právu
+	k této události je možné si přečíst na <Link href="https://www.dpp.cz/spolecnost/pro-media/tiskove-zpravy/detail/278_1897-dpp-k-50-vyroci-ukonceni-provozu-trolejbusu-v-praze-zprovozni-novou-trolejbusovou-trat-letnany-cakovice"><a target="_blank" rel="external">dpp.cz</a></Link>
+
+</Fact>
+
+## První trolejbus
+
+Vůbec prvnímu trolejbusu na světě se říkalo Das Electromote. Tento trolejbus se poprvé rozjel roku 1882 na předměstí Berlína.
+
+Autorem vozidla byl Werner von Siemens, který vytvořil zkušební trať kde bylo vozidlo poháněné elektřinou která byla dodávaná ze vzdušného vedení, přenos zprostředkovával vozíček uchycený na vedení, který byl táhnut právě trolejbusem.
+
+Jednalo se o zkoušku kdy se ověřovalo, jestli toto řešení má nějakou šanci.
+
+![Das Electromote](/assets/images/trolejbus/trolejbus-rozhlas.webp)
+
+<figcaption>
+	Obr. 1 Das Electromote 1882&nbsp;
+	<Citation href="/trolejbus/zdroje#rozhlas-electromote">[1]</Citation>
+</figcaption>
+
+O výročí vzniku trolejbusu je možné si přečíst článek a poslechnout krátkou reportáž na <Link href="https://pardubice.rozhlas.cz/trolejbus-je-na-svete-135-let-6033543"><a target="_blank" rel="external">pardubice.rozhlas.cz</a></Link>
+
+## První trolejbusy v Českých zemích
+
+### 10. léta
+
+První trať v ČR vnikla v roce 1907 a zanikla roku 1916, příčinou zániku byla 1. světová válka. Tato trať vedla z Českých Velenic do rakouského Gmündu.
+
+Krátce poté vznikla trať v Českých Budějovicích, a to roku 1909, a to z důvodu zákazu použití tramvajových kolejí kvůli křížení s železniční tratí. Provoz této trati skončil roku 1914.
+
+![Trolejbusová linka v Českých Budějovicích v říjnu 1909.](/assets/images/trolejbus/cb-trolejbus.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 2 Trolejbusová linka v Českých Budějovicích v říjnu 1909.&nbsp;<Citation href="/trolejbus/zdroje#trolejbus-je-na-svete-135-let">[2]</Citation>
+</figcaption>
+
+### 20. léta
+
+Od dvacátých let začínají vznikat bezprašné vozovky a zároveň i vozidla s pneumatikami. Pro trolejbusy to znamená znatelný posun v modernizaci i v rozvoji. Trolejbusy se začínají objevovat po celém světě. Od roku 1936 začaly jezdit první trolejbusy v Praze a později během druhé světové války byl provoz zahájen i v Plzni 1941 a Zlíně 1944.
+
+![Škoda 1Tr](/assets/images/trolejbus/skoda-1tr.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 3 Škoda 1Tr byl první trolejbus vyrobený ve Škodových závodech. Zároveň se také jednalo o jeden ze tří trolejbusů, které byly určeny pro zahájení trolejbusové dopravy v Praze.&nbsp;<Citation href="/trolejbus/zdroje#skoda-1tr">[3]</Citation>&nbsp;(upraveno)
+</figcaption>
+
+**Zajímavé technické parametry trolejbusu Škoda 1 Tr:**
+
+- délka: 10,33 m,
+- šířka: 2,35 m,
+- výška: 3,07 m
+- hmotnost prázdného vozu: 10,37 t,
+- místa celkem: 73,
+  - k sezení: 29,
+  - ke stání: 44,
+- výkon motoru: 66,2 kW,
+- max. rychlost: 46 km/h.
+
+### 40. léta
+
+Opravdový trolejbusový boom přišel po 2. světové válce, kdy přetrvávalo období nedostatku pohonných hmot. V České Republice tehdy vznikly tyto nové trolejbusové provozy: Most a Litvínov (1946), České Budějovice podruhé (1948), Jihlava (1948), Hradec Králové (1949), Brno (1949), Děčín (1950) a ještě pět dalších v roce 1952 - Pardubice, Mariánské Lázně, Teplice, Ostrava a Opava.
+
+### 70. léta
+
+Jakmile se ustálila situace s pohonnými hmotami, ropa zlevnila a byl ji dostatek, nastala několikaletá pauza, doprovázená rušením několika provozů například Praha 1972, České Budějovice 1971 a mnoho dalších.
+
+V 70. a 80. letech komunisté a jejich megalomanské představy plánovali s trolejbusy vše možné. Vznikaly velké projekty kdy se měly realizovat meziměstské tratě, které měly vzniknout současně se stavbami jaderných elektráren nebo trolejbusová doprava v horách (Krkonoše). Většina projektů nakonec lehla popelem.
+
+![Poslední trolejbus v Praze Tatra T 400 číslo 9431](/assets/images/trolejbus/tatra-t-400.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 4 Poslední trolejbus v Praze Tatra T 400 číslo 9431.&nbsp;<Citation href="/trolejbus/zdroje#tatra-t-400">[4]</Citation>&nbsp;
+</figcaption>
+
+**Zajímavé technické parametry trolejbusu Tatra T 400 č. 9431:**
+
+- délka: 11 400 mm,
+- šířka: 2 500 mm,
+- výška přes sběrače: 3 110 mm,
+- pohotovostní hmotnost: 10 500 kg,
+- max. rychlost : 50 km/h,
+- místa celkem: 80,
+  - míst k sezení 26,
+  - míst k stání 54,
+- výkon motorů: 120 kW.
+
+Ve voze 9431 uspořádal Kroužek přátel městské dopravy závěrečnou trolejbusovou výstavu na konečné na Strahově v poslední den provozu trolejbusů, v neděli 15. 10. 1972. Trolejbus jezdil po městě s nápisy "Trolejbusy se loučí s Prahou, Praha se loučí s trolejbusy", a "Dnes jezdíme naposledy".
+
+Posledním pravidelným vozem, který svezl cestující z Orionky na Strahov, byl vůz 8 Tr číslo 9491. Do vozovny zatáhl 45 minut po půlnoci. Nočními ulicemi jej následoval ten úplně poslední trolejbus – Tatra T 400 číslo 9431. Do vozovny Smíchov přijel dne 16. 10. 1972 v 1:14. Tím definitivně skončila éra trolejbusů v pražských ulicích.
+
+Ve 4:08 ráno ze Strahova odjížděl první pravidelný spoj nové autobusové linky číslo 176.
+
+## Shrnutí a současnost
+
+Trolejbusy svůj vývoj měly jak na horské dráze, v některém desetiletí se hojně rozrůstaly a v dalších zas rychle upadaly. Avšak nakonec v několika městech svou přízeň zachovaly a jezdí v nich dodnes.
+
+V dnešní době se příliš neočekává žádný hromadný rozvoj nových provozů. Spíše než trolejbusy vznikají elektrobusy. Ovšem řada měst si tento druh dopravy udržuje a vozový park je stále modernizován novějšími typy.
+
+Lze očekávat, že vývoj autobusů bude inklinovat k elektrickému přenosu výkonu za použití elektromotorů přímo v kolech, což bude výhodné nejen pro konstrukci nízkopodlažních vozidel, ale přinese to také úspory pohonných hmot. Takový autobus pak kromě dalších vymožeností, jako jsou kvalitní baterie či malé gyroskopy, může být vybaven i sběrači, které bude moci použít všude tam, kde jeho trasa povede pod trolejbusovým vedením. Optické, magnetické či jiné snímače mohou takové vozidlo vést s velkou přesností po vytčené dráze podobně jako tramvaj. Moderní hybridní vozidla s popisovanými vlastnostmi jsou již ve fázi vývoje a ověřování, jejich výroba se někde již rozbíhá. Rozdíl mezi autobusem a trolejbusem tak může být v budoucnu zcela smazán.&nbsp;<Citation href="/trolejbus/zdroje#dejiny-trolejbusu-v-kostce">[5]</Citation>&nbsp;<Citation href="/trolejbus/zdroje#strucna-historie-trolejbusu">[6]</Citation>
+
+<PostFooterNavigation
+	hrefPrevious="/trolejbus/kapitoly"
+	hrefNext="/trolejbus/"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="true"
+	nextEnabled="true"
+/>
+{/* --------------------- DANGER ZONE --------------------- */}
+export default ({children}) => (
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
+);
