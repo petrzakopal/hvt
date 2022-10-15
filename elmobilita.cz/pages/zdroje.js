@@ -108,6 +108,29 @@ function Index() {
 					linkUrl={"https://getblogo.com/car-tire-history/"}
 					id="getblogo-car-tire-history"
 				/>
+				<SourceBlock
+					icon={
+						<>
+							<span
+								className={`text-left w-fit text-primary-accent after:inline-flex  after:relative  hover:text-primary-accent after:transition-colors after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;] after:top-[0.11em]`}
+							>
+								<span className="text-left justify-start">[2]</span>
+							</span>
+						</>
+					}
+					name={"Obrázek Enfield 8000"}
+					linkName={"https://commons.wikimedia.org/wiki/File:HYDE_PARK.JPG"}
+					linkUrl={"https://commons.wikimedia.org/wiki/File:HYDE_PARK.JPG"}
+					id="wikipedia-enfield"
+				/>
+
+				<SourceBlock
+					icon={<span className="text-primary-accent">[1]</span>}
+					name={"Tesla, Inc. Wikipedia The Free Encyclopedia"}
+					linkName={"https://en.wikipedia.org/wiki/Tesla,_Inc."}
+					linkUrl={"https://en.wikipedia.org/wiki/Tesla,_Inc."}
+					id="wikipedia-tesla"
+				/>
 			</SourceWrapper>
 		</>
 	);

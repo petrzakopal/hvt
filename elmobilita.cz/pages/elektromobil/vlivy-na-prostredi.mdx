@@ -6,10 +6,7 @@ import {
 	VideoImageLink,
 	PostFooterNavigation,
 	Fact,
-	ListNavigationWrapper,
-	ListNavigationItem,
 } from "../../components/post";
-import Link from "next/link";
 
 import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
 import Image from "next/image";
@@ -31,31 +28,14 @@ export const metaData = {
 	twitterTitle: "elmobilita – Historie elektromobility", // twitter:title
 };
 
-# Elektromobily
-
-## Přehled kapitol
-
-<ListNavigationWrapper>
-	<ListNavigationItem
-		href="/elektromobil/uvod-do-historie-elektromobilu"
-		text="Úvod do historie elektromobilů"
-	/>
-	<ListNavigationItem
-		href="/elektromobil/detailni-historie-elektroautomobilu"
-		text="Detailní historie elektroautomobilu"
-	/>
-	<ListNavigationItem
-		href="/elektromobil/vlivy-na-prostredi"
-		text="Vlivy na prostředí"
-	/>
-</ListNavigationWrapper>
+# Vlivy elektromobilů na prostředí
 
 <PostFooterNavigation
-	hrefPrevious="/"
-	hrefNext="/elektromobil/uvod-do-historie-elektromobilu"
+	hrefPrevious="/elektromobil/detailni-historie-elektroautomobilu"
+	hrefNext="/elektromobil/vlivy-na-prostredi"
 	next="Následující"
 	previous="Předchozí"
-	previousEnabled="false"
+	previousEnabled="true"
 	nextEnabled="true"
 />
 {/* --------------------- DANGER ZONE --------------------- */}
