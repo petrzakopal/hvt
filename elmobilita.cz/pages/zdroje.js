@@ -92,6 +92,21 @@ function Index() {
 					}
 					id="anderson-electric-and-hybrid-cars"
 				/>
+
+				<SourceBlock
+					icon={
+						<>
+							<span
+								className={`text-left w-fit text-primary-accent after:inline-flex  after:relative  hover:text-primary-accent after:transition-colors after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;] after:top-[0.11em]`}
+							>
+								<span className="text-left justify-start">[2]</span>
+							</span>
+						</>
+					}
+					name={"Obrázek Vývoje Pneumatik / Automobiloých kol"}
+					linkName={"https://getblogo.com/car-tire-history/"}
+					linkUrl={"https://getblogo.com/car-tire-history/"}
+				/>
 			</SourceWrapper>
 		</>
 	);
@@ -113,7 +128,7 @@ const SourceBlock = ({ icon, name, linkName, linkUrl, id }) => {
 	return (
 		<>
 			<div className="w-full flex flex-row" id={id}>
-				<span className="mr-2 text-zinc-600 dark:text-zinc-600 text-base">
+				<span className="w-5 mr-2 text-zinc-600 dark:text-zinc-600 text-base justify-items-start flex flex-col">
 					{icon}
 				</span>
 				<div className=" text-left w-full grid grid-cols-1">

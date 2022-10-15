@@ -28,18 +28,38 @@ export const metaData = {
 Počátky elektromobility mají kořeny už v 19. století. Na začátku stáli proti sobě tři hlavní sektory osobní automobilové dopravy: parní stroje, spalovací motory, elektro motory.
 Parní stroje byly značně problémové z hlediska doplňování chladící kapaliny. Spalovací motory byly náročnější na výrobu, jako palivo však využívali levné zdroje. Díky jejich specifikacích disponovaly nejdelším dojezdem. Elektromobily byly tiché, čisté. Ovšem byly pomalé a velmi drahé. <Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
 
+Jednotlivé sekce mezi sebou bojovali o získání větších podílů na trhu. Z důvodu ceny, dojezdu a technologie přední pozice automobilové dopravy obsadili automobily se spalovacím motorem.
+
+<Fact header="Zajímavost" color="primary" description="obecné">
+	V roce 1899 se konala „Electric Exhibition“ v Madison Square Garden, kde byly
+	prezentovány také automobily a jejich přítomnost naznačila, že tato sekce má
+	dobré základy a možnou budoucnost.{" "}
+	<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+</Fact>
+
+Počáteční elektromobily měli tvar klasického koňského povozu s přidanou baterií a možností změny směru. Kola byly do roku 1895 původní dřevěná s přídavkem gumových kol. O vývoji pneumatiky pro automobily je možné získat více informací na odkaze [getblogo.com](https://getblogo.com/car-tire-history/). Postupným vývojem pneumatik došlo ke zmírnění vibrací, které vznikali při jízdě. Došlo k vynalezení pneumatik plněných vzduchem, které jsou v podobném stylu využívány i dnes. <Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+![Pneumatic Tyres](/assets/images/elektroautomobil/tyre.webp)
+
+<figcaption>
+	Obr. 1 Vývoj pneumatiky a automobilového kola{" "}
+	<Citation href="/zdroje#getblogo-car-tire-history">[2]</Citation>
+</figcaption>
+
+{/* --------------------- DANGER ZONE --------------------- */}
 export default ({ children }) => (
-	<DefaultLayout metaData={metaData}>
-		<MDXProvider
-			components={{
-				h2: H2,
-				h3: H3,
-				h4: H4,
-				h6: H5,
-				h5: H6,
-			}}
-		>
-			<Post>{children}</Post>
-		</MDXProvider>
-	</DefaultLayout>
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
 );
