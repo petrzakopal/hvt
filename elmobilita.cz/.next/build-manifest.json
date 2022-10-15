@@ -25,10 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/mdtest": [
+    "/elektromobil": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/mdtest.js"
+      "static/chunks/pages/elektromobil.js"
+    ],
+    "/zdroje": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/zdroje.js"
     ]
   },
   "ampFirstPages": []

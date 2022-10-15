@@ -85,6 +85,7 @@ export const DefaultLayout = ({ children, metaData, schema }) => {
 					</Head>
 					<ParallaxProvider>
 						<main className="flex lg:w-inside-full w-full flex-1 flex-col items-center px-9 text-center -z-5">
+							<SpaceY mt={"mt-10"} />
 							{children}
 							<SpaceY mt={"mt-24"} />
 						</main>

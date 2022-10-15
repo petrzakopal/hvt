@@ -31,7 +31,6 @@ const schema = {};
 function Index() {
 	return (
 		<>
-			<SpaceY mt={"mt-10"} />
 			<SourceWrapper>
 				<SourceBlock
 					icon={
@@ -85,6 +84,14 @@ function Index() {
 					linkName={"http://www.fotodoprava.com/images_mhd_v2/usti558v.jpg"}
 					linkUrl={"http://www.fotodoprava.com/images_mhd_v2/usti558v.jpg"}
 				/>
+
+				<SourceBlock
+					icon={<span className="text-primary-accent">[1]</span>}
+					name={
+						"ANDERSON, Curtis D. a Judy ANDERSON. Electric and Hybrid Cars: A History. Jefferson: McFarland & Company, Incorporated Publishers, 2010. ISBN 0786433019;9780786433018;"
+					}
+					id="anderson-electric-and-hybrid-cars"
+				/>
 			</SourceWrapper>
 		</>
 	);
@@ -102,22 +109,29 @@ Index.getLayout = function getLayout(page) {
 	);
 };
 
-const SourceBlock = ({ icon, name, linkName, linkUrl }) => {
+const SourceBlock = ({ icon, name, linkName, linkUrl, id }) => {
 	return (
 		<>
-			<div className="w-full flex flex-row">
+			<div className="w-full flex flex-row" id={id}>
 				<span className="mr-2 text-zinc-600 dark:text-zinc-600 text-base">
 					{icon}
 				</span>
 				<div className=" text-left w-full grid grid-cols-1">
-					<p className="text-zinc-600 dark:text-zinc-600 text-base">{name}</p>
-					<p className="text-zinc-900 dark:text-zinc-50 italic text-lg">
-						<Link href={linkUrl}>
-							<a rel="external" target={"_blank"} className={"break-all"}>
-								{linkName}
-							</a>
-						</Link>
-					</p>
+					<p className="text-zinc-900 dark:text-zinc-50 text-base">{name}</p>
+
+					{linkUrl ? (
+						<>
+							<p className=" italic text-zinc-600 dark:text-zinc-600 dark:hover:text-zinc-50 hover:text-zinc-900 transition-colors ease-in-out text-lg">
+								<Link href={linkUrl}>
+									<a rel="external" target={"_blank"} className={"break-all"}>
+										{linkName}
+									</a>
+								</Link>
+							</p>
+						</>
+					) : (
+						""
+					)}
 				</div>
 			</div>
 		</>

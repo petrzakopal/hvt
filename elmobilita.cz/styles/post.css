@@ -78,4 +78,11 @@
 	/* .post a:hover:after {
 		@apply bg-secondary-accent dark:bg-secondary-accent;
 	} */
+
+	.post .anchor-link {
+		@apply hidden;
+	}
+	.post .citation:after {
+		@apply hidden;
+	}
 }
