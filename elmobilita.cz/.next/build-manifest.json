@@ -25,25 +25,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/elektromobil/detailni-historie-elektroautomobilu": [
+    "/trolejbus/historicky-vyvoj-trolejbusove-dopravy": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/elektromobil/detailni-historie-elektroautomobilu.js"
+      "static/chunks/pages/trolejbus/historicky-vyvoj-trolejbusove-dopravy.js"
     ],
-    "/elektromobil/kapitoly": [
+    "/trolejbus/zdroje": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/elektromobil/kapitoly.js"
-    ],
-    "/elektromobil/uvod-do-historie-elektromobilu": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/elektromobil/uvod-do-historie-elektromobilu.js"
-    ],
-    "/elektromobil/vlivy-na-prostredi": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/elektromobil/vlivy-na-prostredi.js"
+      "static/chunks/pages/trolejbus/zdroje.js"
     ]
   },
   "ampFirstPages": []

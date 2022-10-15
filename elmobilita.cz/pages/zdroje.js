@@ -7,7 +7,11 @@ import {
 	SecondHeadingProperties,
 } from "../components/headings";
 import Link from "next/link";
-import { SpaceY } from "../components/utilities/utilities";
+import {
+	SpaceY,
+	SourceBlock,
+	SourceWrapper,
+} from "../components/utilities/utilities";
 
 const metaData = {
 	meta_title: "elmobilita – Historie elektromobility", // meta_title
@@ -125,7 +129,13 @@ function Index() {
 				/>
 
 				<SourceBlock
-					icon={<span className="text-primary-accent">[1]</span>}
+					icon={
+						<span
+							className={`text-left w-fit text-primary-accent after:inline-flex  after:relative  hover:text-primary-accent after:transition-colors after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;] after:top-[0.11em]`}
+						>
+							<span className="text-left justify-start">[4]</span>
+						</span>
+					}
 					name={"Tesla, Inc. Wikipedia The Free Encyclopedia"}
 					linkName={"https://en.wikipedia.org/wiki/Tesla,_Inc."}
 					linkUrl={"https://en.wikipedia.org/wiki/Tesla,_Inc."}
@@ -144,43 +154,6 @@ Index.getLayout = function getLayout(page) {
 			<DefaultLayout metaData={metaData} schema={schema}>
 				{page}
 			</DefaultLayout>
-		</>
-	);
-};
-
-const SourceBlock = ({ icon, name, linkName, linkUrl, id }) => {
-	return (
-		<>
-			<div className="w-full flex flex-row" id={id}>
-				<span className="w-5 mr-2 text-zinc-600 dark:text-zinc-600 text-base justify-items-start flex flex-col">
-					{icon}
-				</span>
-				<div className=" text-left w-full grid grid-cols-1">
-					<p className="text-zinc-900 dark:text-zinc-50 text-base">{name}</p>
-
-					{linkUrl ? (
-						<>
-							<p className=" italic text-zinc-600 dark:text-zinc-600 dark:hover:text-zinc-50 hover:text-zinc-900 transition-colors ease-in-out text-lg">
-								<Link href={linkUrl}>
-									<a rel="external" target={"_blank"} className={"break-all"}>
-										{linkName}
-									</a>
-								</Link>
-							</p>
-						</>
-					) : (
-						""
-					)}
-				</div>
-			</div>
-		</>
-	);
-};
-
-const SourceWrapper = ({ children }) => {
-	return (
-		<>
-			<div className="grid grid-cols-1 gap-y-5">{children}</div>
 		</>
 	);
 };

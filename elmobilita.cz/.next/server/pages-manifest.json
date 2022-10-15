@@ -2,8 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/elektromobil/uvod-do-historie-elektromobilu": "pages/elektromobil/uvod-do-historie-elektromobilu.js",
-  "/elektromobil/detailni-historie-elektroautomobilu": "pages/elektromobil/detailni-historie-elektroautomobilu.js",
-  "/elektromobil/kapitoly": "pages/elektromobil/kapitoly.js",
-  "/elektromobil/vlivy-na-prostredi": "pages/elektromobil/vlivy-na-prostredi.js"
+  "/trolejbus/historicky-vyvoj-trolejbusove-dopravy": "pages/trolejbus/historicky-vyvoj-trolejbusove-dopravy.js",
+  "/trolejbus/zdroje": "pages/trolejbus/zdroje.js"
 }

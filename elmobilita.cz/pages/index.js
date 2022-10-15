@@ -52,8 +52,8 @@ function Index() {
 					imageUrl={"/assets/images/kategorie/vlaky.webp"}
 				/>
 				<GroupSection
-					linkName={"Autobusy"}
-					linkUrl={"/autobus"}
+					linkName={"Trolejbusy"}
+					linkUrl={"/trolejbus/kapitoly"}
 					imageUrl={"/assets/images/kategorie/autobusy.webp"}
 				/>
 				<GroupSection
