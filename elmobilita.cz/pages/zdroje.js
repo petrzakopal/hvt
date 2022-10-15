@@ -106,6 +106,7 @@ function Index() {
 					name={"Obrázek Vývoje Pneumatik / Automobiloých kol"}
 					linkName={"https://getblogo.com/car-tire-history/"}
 					linkUrl={"https://getblogo.com/car-tire-history/"}
+					id="getblogo-car-tire-history"
 				/>
 			</SourceWrapper>
 		</>

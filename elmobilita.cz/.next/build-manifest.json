@@ -1,34 +1,63 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/BmDZjK1-ZyGpSwx4-6Y2u/_buildManifest.js",
+    "static/BmDZjK1-ZyGpSwx4-6Y2u/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
+    "/": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/chunks/917-0c23f16b00fe1ce7.js",
+      "static/chunks/675-7b8981a5fbaa5e88.js",
+      "static/chunks/594-f2561423d2689e33.js",
+      "static/chunks/pages/index-963c4cb527514c03.js"
+    ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/css/3b1ad4789d9f9ac2.css",
+      "static/chunks/pages/_app-454013367d50d663.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/chunks/pages/_error-a4ba2246ff8fb532.js"
+    ],
+    "/elektromobil": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/chunks/917-0c23f16b00fe1ce7.js",
+      "static/chunks/42-00d38ef74bbcd37e.js",
+      "static/chunks/594-f2561423d2689e33.js",
+      "static/chunks/pages/elektromobil-49e1350b339b48a5.js"
+    ],
+    "/mdtest": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/chunks/917-0c23f16b00fe1ce7.js",
+      "static/chunks/42-00d38ef74bbcd37e.js",
+      "static/chunks/594-f2561423d2689e33.js",
+      "static/chunks/pages/mdtest-c4892b16a93b3349.js"
     ],
     "/zdroje": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/zdroje.js"
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/chunks/917-0c23f16b00fe1ce7.js",
+      "static/chunks/675-7b8981a5fbaa5e88.js",
+      "static/chunks/594-f2561423d2689e33.js",
+      "static/chunks/pages/zdroje-f3863799a5d2b77c.js"
     ]
   },
   "ampFirstPages": []

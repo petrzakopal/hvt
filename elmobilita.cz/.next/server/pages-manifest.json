@@ -1,6 +1,14 @@
 {
+  "/_document": "pages/_document.js",
+  "/api/external/newsletter-subscribe": "pages/api/external/newsletter-subscribe.js",
+  "/api/external/slack-notification": "pages/api/external/slack-notification.js",
+  "/api/revalidate": "pages/api/revalidate.js",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/zdroje": "pages/zdroje.js"
+  "/cs/404": "pages/cs/404.html",
+  "/cs/500": "pages/cs/500.html",
+  "/cs": "pages/cs.html",
+  "/cs/zdroje": "pages/cs/zdroje.html",
+  "/cs/elektromobil": "pages/cs/elektromobil.html",
+  "/cs/mdtest": "pages/cs/mdtest.html"
 }
