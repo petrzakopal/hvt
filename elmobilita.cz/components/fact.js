@@ -75,7 +75,7 @@ export const Fact = ({
 
 					{description ? (
 						<>
-							<div className="text-sm italic text-zinc-200 dark:text-zinc-200">
+							<div className="text-sm italic text-zinc-800 dark:text-zinc-200">
 								{description}
 							</div>
 						</>

@@ -77,7 +77,7 @@ const Fact = ({ children , color , header , description , copyToClipboard , enab
                         }),
                         description ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "text-sm italic text-zinc-200 dark:text-zinc-200",
+                                className: "text-sm italic text-zinc-800 dark:text-zinc-200",
                                 children: description
                             })
                         }) : ""
