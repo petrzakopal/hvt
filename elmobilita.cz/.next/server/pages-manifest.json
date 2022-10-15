@@ -1,8 +1,21 @@
 {
+  "/_document": "pages/_document.js",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/trolejbus/zdroje": "pages/trolejbus/zdroje.js",
-  "/trolejbus/historicky-vyvoj-trolejbusove-dopravy": "pages/trolejbus/historicky-vyvoj-trolejbusove-dopravy.js",
-  "/trolejbus/kapitoly": "pages/trolejbus/kapitoly.js"
+  "/api/external/newsletter-subscribe": "pages/api/external/newsletter-subscribe.js",
+  "/api/revalidate": "pages/api/revalidate.js",
+  "/api/external/slack-notification": "pages/api/external/slack-notification.js",
+  "/cs/404": "pages/cs/404.html",
+  "/cs/500": "pages/cs/500.html",
+  "/cs": "pages/cs.html",
+  "/cs/trolejbus/kapitoly": "pages/cs/trolejbus/kapitoly.html",
+  "/cs/trolejbus/historicky-vyvoj-trolejbusove-dopravy": "pages/cs/trolejbus/historicky-vyvoj-trolejbusove-dopravy.html",
+  "/cs/trolejbus/zdroje": "pages/cs/trolejbus/zdroje.html",
+  "/cs/zdroje": "pages/cs/zdroje.html",
+  "/cs/mdtest": "pages/cs/mdtest.html",
+  "/cs/elektromobil/uvod-do-historie-elektromobilu": "pages/cs/elektromobil/uvod-do-historie-elektromobilu.html",
+  "/cs/elektromobil/kapitoly": "pages/cs/elektromobil/kapitoly.html",
+  "/cs/elektromobil/detailni-historie-elektroautomobilu": "pages/cs/elektromobil/detailni-historie-elektroautomobilu.html",
+  "/cs/elektromobil/vlivy-na-prostredi": "pages/cs/elektromobil/vlivy-na-prostredi.html",
+  "/cs/elektromobil/zdroje": "pages/cs/elektromobil/zdroje.html"
 }
