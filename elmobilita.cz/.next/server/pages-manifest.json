@@ -1,16 +1,9 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
-  "/api/external/newsletter-subscribe": "pages/api/external/newsletter-subscribe.js",
-  "/api/external/slack-notification": "pages/api/external/slack-notification.js",
-  "/api/revalidate": "pages/api/revalidate.js",
   "/_error": "pages/_error.js",
-  "/cs/404": "pages/cs/404.html",
-  "/cs/500": "pages/cs/500.html",
-  "/cs/zdroje": "pages/cs/zdroje.html",
-  "/cs/elektromobil/kapitoly": "pages/cs/elektromobil/kapitoly.html",
-  "/cs": "pages/cs.html",
-  "/cs/elektromobil/detailni-historie-elektroautomobilu": "pages/cs/elektromobil/detailni-historie-elektroautomobilu.html",
-  "/cs/elektromobil/uvod-do-historie-elektromobilu": "pages/cs/elektromobil/uvod-do-historie-elektromobilu.html",
-  "/cs/mdtest": "pages/cs/mdtest.html"
+  "/_document": "pages/_document.js",
+  "/elektromobil/uvod-do-historie-elektromobilu": "pages/elektromobil/uvod-do-historie-elektromobilu.js",
+  "/elektromobil/detailni-historie-elektroautomobilu": "pages/elektromobil/detailni-historie-elektroautomobilu.js",
+  "/elektromobil/kapitoly": "pages/elektromobil/kapitoly.js",
+  "/elektromobil/vlivy-na-prostredi": "pages/elektromobil/vlivy-na-prostredi.js"
 }
