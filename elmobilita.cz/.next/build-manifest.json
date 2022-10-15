@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/KFa-1e_HdfXdZww3ky_G1/_buildManifest.js",
-    "static/KFa-1e_HdfXdZww3ky_G1/_ssgManifest.js"
+    "static/iryJbGP6wJ0S7Yd2DYuOv/_buildManifest.js",
+    "static/iryJbGP6wJ0S7Yd2DYuOv/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -16,7 +16,7 @@
       "static/chunks/main-c642e04553c6d507.js",
       "static/chunks/917-0c23f16b00fe1ce7.js",
       "static/chunks/675-7b8981a5fbaa5e88.js",
-      "static/chunks/594-f2561423d2689e33.js",
+      "static/chunks/594-204fafa38368fd20.js",
       "static/chunks/pages/index-963c4cb527514c03.js"
     ],
     "/_app": [
@@ -38,7 +38,7 @@
       "static/chunks/main-c642e04553c6d507.js",
       "static/chunks/917-0c23f16b00fe1ce7.js",
       "static/chunks/42-00d38ef74bbcd37e.js",
-      "static/chunks/594-f2561423d2689e33.js",
+      "static/chunks/594-204fafa38368fd20.js",
       "static/chunks/pages/elektromobil-becc8845e642e38b.js"
     ],
     "/mdtest": [
@@ -47,7 +47,7 @@
       "static/chunks/main-c642e04553c6d507.js",
       "static/chunks/917-0c23f16b00fe1ce7.js",
       "static/chunks/42-00d38ef74bbcd37e.js",
-      "static/chunks/594-f2561423d2689e33.js",
+      "static/chunks/594-204fafa38368fd20.js",
       "static/chunks/pages/mdtest-f0127c55314cd438.js"
     ],
     "/zdroje": [
@@ -56,7 +56,7 @@
       "static/chunks/main-c642e04553c6d507.js",
       "static/chunks/917-0c23f16b00fe1ce7.js",
       "static/chunks/675-7b8981a5fbaa5e88.js",
-      "static/chunks/594-f2561423d2689e33.js",
+      "static/chunks/594-204fafa38368fd20.js",
       "static/chunks/pages/zdroje-f3863799a5d2b77c.js"
     ]
   },

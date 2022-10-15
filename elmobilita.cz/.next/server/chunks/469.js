@@ -270,10 +270,6 @@ function Footer() {
                                     className: "footer-navigation-list mt-3 leading-8",
                                     children: [
                                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(FooterLinkList, {
-                                            linkName: "T\xe9mata →",
-                                            linkUrl: "/vyber-temat"
-                                        }),
-                                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(FooterLinkList, {
                                             linkName: "Autoři →",
                                             linkUrl: "/autori"
                                         }),

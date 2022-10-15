@@ -78,7 +78,6 @@ function Footer() {
 						{/* Footer groups - columns */}
 						<div className="footer-column">
 							<ul className="footer-navigation-list mt-3 leading-8">
-								<FooterLinkList linkName={"Témata →"} linkUrl="/vyber-temat" />
 								<FooterLinkList linkName={"Autoři →"} linkUrl="/autori" />
 								<FooterLinkList linkName={"Zdroje →"} linkUrl="/zdroje" />
 
