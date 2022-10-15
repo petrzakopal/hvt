@@ -22,6 +22,14 @@
 		@apply lg:text-2xl text-2xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-4 mb-1;
 	}
 
+	.post h5 {
+		@apply lg:text-xl text-2xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-4 mb-1;
+	}
+
+	.post h6 {
+		@apply lg:text-lg text-2xl text-zinc-900 dark:text-zinc-50 font-bold text-left mt-4 mb-1;
+	}
+
 	.post p {
 		@apply my-5 text-base text-zinc-900 dark:text-zinc-50 text-left w-full;
 	}
@@ -84,6 +92,10 @@
 		@apply hidden;
 	}
 	.post .citation:after {
+		@apply hidden;
+	}
+
+	.post .video-image-link a:after {
 		@apply hidden;
 	}
 }
