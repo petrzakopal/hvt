@@ -157,12 +157,12 @@ const Navbar = () => {
 										"/trolejbus/kapitoly",
 									],
 									Elektroautomobily: [
-										"Řešení budoucnosti",
+										"Řešení budoucnosti.",
 										<BoltIcon className={"w-8 h-8 pr-2"} />,
 										"/elektromobil/kapitoly",
 									],
 									LEV: [
-										"Lehká elektrická vozidla",
+										"Lehká elekrická vozidla.",
 										<WifiIcon className={"w-8 h-8 pr-2"} />,
 										"/lev/kapitoly",
 									],

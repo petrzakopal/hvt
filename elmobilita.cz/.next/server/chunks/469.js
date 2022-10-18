@@ -510,9 +510,10 @@ __webpack_async_result__();
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "LP": () => (/* binding */ ActiveMobileLink),
-/* harmony export */   "O$": () => (/* binding */ ActiveLink)
+/* harmony export */   "O$": () => (/* binding */ ActiveLink),
+/* harmony export */   "R5": () => (/* binding */ LinkProperties)
 /* harmony export */ });
-/* unused harmony export TextLink */
+/* unused harmony exports TextLink, TextLinkProperties */
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1664);
@@ -594,6 +595,8 @@ const ActiveLink = ({ linkAdress , linkName , rel , target  })=>{
         })
     });
 };
+const TextLinkProperties = (/* unused pure expression or super */ null && (`text-left w-fit text-primary-accent after:inline-flex after:top-[0.11em] after:relative  hover:text-primary-accent after:transition-colors after:easy-in-out transition-colors easy-in-out after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:ml-1 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;]`));
+const LinkProperties = `text-left w-fit text-primary-accent hover:text-primary-accent`;
 
 
 /***/ }),
@@ -859,14 +862,14 @@ _headlessui_react__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__
                                                     "/trolejbus/kapitoly", 
                                                 ],
                                                 Elektroautomobily: [
-                                                    "Řešen\xed budoucnosti",
+                                                    "Řešen\xed budoucnosti.",
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__.BoltIcon, {
                                                         className: "w-8 h-8 pr-2"
                                                     }),
                                                     "/elektromobil/kapitoly", 
                                                 ],
                                                 LEV: [
-                                                    "Lehk\xe1 elektrick\xe1 vozidla",
+                                                    "Lehk\xe1 elekrick\xe1 vozidla.",
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__.WifiIcon, {
                                                         className: "w-8 h-8 pr-2"
                                                     }),
@@ -1409,12 +1412,18 @@ const Schema = ({ schema  })=>{
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "KD": () => (/* binding */ SourceBlock),
 /* harmony export */   "Qt": () => (/* binding */ SourceWrapper),
-/* harmony export */   "aC": () => (/* binding */ SpaceY)
+/* harmony export */   "aC": () => (/* binding */ SpaceY),
+/* harmony export */   "m1": () => (/* binding */ PersonCard)
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1664);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _links__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7434);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5675);
+/* harmony import */ var next_image__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_image__WEBPACK_IMPORTED_MODULE_3__);
+
+
 
 
 const SpaceY = ({ mt  })=>{
@@ -1466,6 +1475,57 @@ const SourceWrapper = ({ children  })=>{
             className: "grid grid-cols-1 gap-y-5",
             children: children
         })
+    });
+};
+/**
+ * @version 0.1
+ * Documentation for component PersonCard
+ * -------------------------------------------------------------------------------
+ * name -> desired card name heading - example: "Foo Bar"
+ * position -> position of person - example: "Lorem Ipsum"
+ * gradient -> gradient of the heading - example: "bg-BlueToGreenGradient"
+ * image -> profile image of person - link or static import is acceptable - example: "/assets/images/profile_pic.webp"
+ * socialUrl -> url of a social link for persons tag - example: "https://foo.bar"
+ * socialTag -> spocial tag of a person - example: "@foo.bar"
+ */ const PersonCard = ({ name , position , image , socialUrl , socialTag  })=>{
+    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+        className: "grid gap-2 grid-cols-1 w-full justify-start justify-items-center items-center text-center",
+        children: [
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                className: "w-[177px] h-[233px] relative",
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
+                    src: image,
+                    layout: "fill",
+                    sizes: "50vw",
+                    // placeholder="blur" // only available when staticly importing file like import profilePic from "../public/assets/..."
+                    objectFit: "cover",
+                    className: "rounded-md"
+                })
+            }),
+            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                className: "grid gap-1",
+                children: [
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
+                        className: `text-center text-xl font-bold dark:text-zinc-50 text-zinc-900`,
+                        children: name
+                    }),
+                    position ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
+                            className: "text-center text-normal font-base dark:text-zinc-50 text-zinc-900",
+                            children: position
+                        })
+                    }) : "",
+                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                        href: socialUrl,
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            className: `text-normal font-semibold transition-colors easy-in-out ${_links__WEBPACK_IMPORTED_MODULE_2__/* .LinkProperties */ .R5}`,
+                            target: "_blank",
+                            children: socialTag
+                        })
+                    })
+                ]
+            })
+        ]
     });
 };
 

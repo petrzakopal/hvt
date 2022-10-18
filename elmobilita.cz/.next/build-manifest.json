@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/0YtPTG3m39FVdjqnbk10Q/_buildManifest.js",
-    "static/0YtPTG3m39FVdjqnbk10Q/_ssgManifest.js"
+    "static/94zEq1YK4d4o8npjcXs9c/_buildManifest.js",
+    "static/94zEq1YK4d4o8npjcXs9c/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -14,16 +14,15 @@
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/675-7b8981a5fbaa5e88.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/index-eac5f13ea34857fe.js"
+      "static/chunks/413-d7df3c486f898efe.js",
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/index-4403cacaebac9aa1.js"
     ],
     "/_app": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/css/90275dbf8fe8c717.css",
+      "static/css/b977eeec743d15c2.css",
       "static/chunks/pages/_app-454013367d50d663.js"
     ],
     "/_error": [
@@ -32,100 +31,134 @@
       "static/chunks/main-c642e04553c6d507.js",
       "static/chunks/pages/_error-a4ba2246ff8fb532.js"
     ],
+    "/autori": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/chunks/413-d7df3c486f898efe.js",
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/autori-94de449b3541a07f.js"
+    ],
     "/elektromobil/detailni-historie-elektroautomobilu": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/675-7b8981a5fbaa5e88.js",
+      "static/chunks/413-d7df3c486f898efe.js",
       "static/chunks/823-8fba49fe82ec7a40.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/elektromobil/detailni-historie-elektroautomobilu-0c4f1f854e07603f.js"
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/elektromobil/detailni-historie-elektroautomobilu-c460f1b1c4d1e85a.js"
     ],
     "/elektromobil/kapitoly": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/675-7b8981a5fbaa5e88.js",
+      "static/chunks/413-d7df3c486f898efe.js",
       "static/chunks/823-8fba49fe82ec7a40.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/elektromobil/kapitoly-af03b37dd973e7db.js"
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/elektromobil/kapitoly-4470a730c0952ebd.js"
     ],
     "/elektromobil/uvod-do-historie-elektromobilu": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/675-7b8981a5fbaa5e88.js",
+      "static/chunks/413-d7df3c486f898efe.js",
       "static/chunks/823-8fba49fe82ec7a40.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/elektromobil/uvod-do-historie-elektromobilu-85485ae0266ad2fb.js"
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/elektromobil/uvod-do-historie-elektromobilu-d913997b27084c8c.js"
     ],
     "/elektromobil/vlivy-na-prostredi": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/675-7b8981a5fbaa5e88.js",
+      "static/chunks/413-d7df3c486f898efe.js",
       "static/chunks/823-8fba49fe82ec7a40.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/elektromobil/vlivy-na-prostredi-8ef460aadf057af1.js"
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/elektromobil/vlivy-na-prostredi-0b8cf8482e600d0f.js"
     ],
     "/elektromobil/zdroje": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/elektromobil/zdroje-52a877af3a4718a1.js"
+      "static/chunks/413-d7df3c486f898efe.js",
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/elektromobil/zdroje-5cb39dee2f5931af.js"
+    ],
+    "/lev/kapitoly": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/chunks/413-d7df3c486f898efe.js",
+      "static/chunks/823-8fba49fe82ec7a40.js",
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/lev/kapitoly-b486e4d90ee09a4f.js"
+    ],
+    "/lev/zdroje": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/chunks/413-d7df3c486f898efe.js",
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/lev/zdroje-3da0353d9fe86322.js"
     ],
     "/mdtest": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/675-7b8981a5fbaa5e88.js",
+      "static/chunks/413-d7df3c486f898efe.js",
       "static/chunks/823-8fba49fe82ec7a40.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/mdtest-5c36f61a58a38cdf.js"
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/mdtest-67bef73ba451d26e.js"
     ],
     "/trolejbus/historicky-vyvoj-trolejbusove-dopravy": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/675-7b8981a5fbaa5e88.js",
+      "static/chunks/413-d7df3c486f898efe.js",
       "static/chunks/823-8fba49fe82ec7a40.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/trolejbus/historicky-vyvoj-trolejbusove-dopravy-09a0f1cec5f7fb2e.js"
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/trolejbus/historicky-vyvoj-trolejbusove-dopravy-a65ea635aa7a2761.js"
     ],
     "/trolejbus/kapitoly": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/675-7b8981a5fbaa5e88.js",
+      "static/chunks/413-d7df3c486f898efe.js",
       "static/chunks/823-8fba49fe82ec7a40.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/trolejbus/kapitoly-5848c156c6d45ce8.js"
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/trolejbus/kapitoly-5fc079af6808abc0.js"
     ],
     "/trolejbus/zdroje": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/trolejbus/zdroje-d9367ed9d8c03892.js"
+      "static/chunks/413-d7df3c486f898efe.js",
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/trolejbus/zdroje-95230c0ba7020eee.js"
+    ],
+    "/vlak/kapitoly": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/chunks/413-d7df3c486f898efe.js",
+      "static/chunks/823-8fba49fe82ec7a40.js",
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/vlak/kapitoly-ba7d73ba8271b032.js"
+    ],
+    "/vlak/zdroje": [
+      "static/chunks/webpack-9b312e20a4e32339.js",
+      "static/chunks/framework-a87821de553db91d.js",
+      "static/chunks/main-c642e04553c6d507.js",
+      "static/chunks/413-d7df3c486f898efe.js",
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/vlak/zdroje-e67585a065d9edd7.js"
     ],
     "/zdroje": [
       "static/chunks/webpack-9b312e20a4e32339.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c642e04553c6d507.js",
-      "static/chunks/917-0c23f16b00fe1ce7.js",
-      "static/chunks/675-7b8981a5fbaa5e88.js",
-      "static/chunks/594-0f896e6a70e47d2a.js",
-      "static/chunks/pages/zdroje-e1ba8cc021c27fa7.js"
+      "static/chunks/413-d7df3c486f898efe.js",
+      "static/chunks/594-f2975c2108b4769c.js",
+      "static/chunks/pages/zdroje-a346ce47cad87d3f.js"
     ]
   },
   "ampFirstPages": []

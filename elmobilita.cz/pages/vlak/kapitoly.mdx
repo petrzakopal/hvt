@@ -1,0 +1,66 @@
+import { DefaultLayout } from "../../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+	ListNavigationWrapper,
+	ListNavigationItem,
+} from "../../components/post";
+import Link from "next/link";
+
+import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
+import Image from "next/image";
+
+export const metaData = {
+	meta_title: "Historie vlakové dopravy v letech - elmobilita.cz", // meta_title
+	meta_description:
+		"Výběr kapitol tématu historie vlakové dopravy. Vývoj vlakové dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // meta_description
+	canonical_url: "https://elmobilita.cz/trolejbus/kapitoly", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz/trolejbus/kapitoly", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "Historie vlakové dopravy v letech - elmobilita.cz", // og_title
+	og_description:
+		"Výběr kapitol tématu historie vlakové dopravy. Vývoj vlakové dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Výběr kapitol tématu historie vlakové dopravy. Vývoj vlakové dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // twitter:description
+	twitterTitle: "Historie vlakové dopravy v letech - elmobilita.cz", // twitter:title
+};
+
+# Vlaková doprava
+
+## Přehled kapitol
+
+<ListNavigationWrapper>
+	<ListNavigationItem href="/vlak/zdroje" text="Zdroje" />
+</ListNavigationWrapper>
+
+<PostFooterNavigation
+	hrefPrevious="/"
+	hrefNext="/"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="false"
+	nextEnabled="true"
+/>
+{/* --------------------- DANGER ZONE --------------------- */}
+export default ({children}) => (
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
+);
