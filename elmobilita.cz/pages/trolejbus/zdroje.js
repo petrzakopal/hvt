@@ -6,21 +6,24 @@ import {
 	SourceWrapper,
 } from "../../components/utilities/utilities";
 
-const metaData = {
-	meta_title: "elmobilita – Historie elektromobility", // meta_title
+export const metaData = {
+	meta_title:
+		"Zdroje pro zpracování problematiky historie trolejbusů - elmobilita.cz", // meta_title
 	meta_description:
-		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // meta_description
-	canonical_url: "https://elmobilita.cz", // canonical url
+		"Z jakých zdrojů bylo čerpáno při zpracování on-line webové prezentace týkající se historie trolejbusů na elmobilita.cz.", // meta_description
+	canonical_url: "https://elmobilita.cz/trolejbus/zdroje", // canonical url
 	og_type: "website", //og:type
-	og_url: "https://elmobilita.cz", //og_url
+	og_url: "https://elmobilita.cz/trolejbus/zdroje", //og_url
 	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
-	og_title: "elmobilita – Historie elektromobility", // og_title
+	og_title:
+		"Zdroje pro zpracování problematiky historie trolejbusů - elmobilita.cz", // og_title
 	og_description:
-		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // og_description
+		"Z jakých zdrojů bylo čerpáno při zpracování on-line webové prezentace týkající se historie trolejbusů na elmobilita.cz", // og_description
 	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
 	twitterDescription:
-		"Historie elektromobility v kostce. Nejzajímavější informace na jednom místě.", // twitter:description
-	twitterTitle: "elmobilita – Historie elektromobility", // twitter:title
+		"Z jakých zdrojů bylo čerpáno při zpracování on-line webové prezentace týkající se historie trolejbusů na elmobilita.cz", // twitter:description
+	twitterTitle:
+		"Zdroje pro zpracování problematiky historie trolejbusů - elmobilita.cz", // twitter:title
 };
 
 const schema = {};

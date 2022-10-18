@@ -31,7 +31,6 @@ const schema = {};
 function Index() {
 	return (
 		<>
-			<SpaceY mt={"mt-10"} />
 			<div className="w-full text-left flex flex-col">
 				<span className={`text-left text-zinc-600 dark:text-zinc-200`}>
 					Dobrý den,
@@ -40,7 +39,7 @@ function Index() {
 					className={`text-left ${FourthHeadingProperties} flex md:flex-row flex-col`}
 				>
 					vyberte téma elektromobility o které máte zájem{" "}
-					<span className="text-3xl animate-bounce-10">👇🏻</span>
+					<span className="text-5xl animate-bounce-10 lg:mt-0 mt-5">👇🏻</span>
 				</span>
 			</div>
 
@@ -48,7 +47,7 @@ function Index() {
 			<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-5 items-center justify-center justify-items-center">
 				<GroupSection
 					linkName={"Vlaky"}
-					linkUrl={"/vlak"}
+					linkUrl={"/vlak/kapitoly"}
 					imageUrl={"/assets/images/kategorie/vlaky.webp"}
 				/>
 				<GroupSection
@@ -63,7 +62,7 @@ function Index() {
 				/>
 				<GroupSection
 					linkName={"LEV"}
-					linkUrl={"/lev"}
+					linkUrl={"/lev/kapitoly"}
 					imageUrl={"/assets/images/kategorie/lev.webp"}
 				/>
 			</div>
