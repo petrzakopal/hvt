@@ -234,7 +234,7 @@ export const TrolejbusyVideoGallery = () => {
 							<picture className="rounded-xl z-[1]">
 								<Image
 									src={
-										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp"
+										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
 									}
 									layout={"fill"}
 									objectFit={"cover"}
@@ -258,7 +258,7 @@ export const TrolejbusyVideoGallery = () => {
 							<picture className="rounded-xl z-[1]">
 								<Image
 									src={
-										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp"
+										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
 									}
 									layout={"fill"}
 									objectFit={"cover"}
@@ -282,7 +282,7 @@ export const TrolejbusyVideoGallery = () => {
 							<picture className="rounded-xl z-[1]">
 								<Image
 									src={
-										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp"
+										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
 									}
 									layout={"fill"}
 									objectFit={"cover"}
@@ -306,7 +306,7 @@ export const TrolejbusyVideoGallery = () => {
 							<picture className="rounded-xl z-[1]">
 								<Image
 									src={
-										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp"
+										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
 									}
 									layout={"fill"}
 									objectFit={"cover"}
@@ -321,6 +321,87 @@ export const TrolejbusyVideoGallery = () => {
 					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5">
 						4. část
 					</span>
+				</div>
+			</div>
+		</>
+	);
+};
+
+export const Shows = () => {
+	return (
+		<>
+			<div className="relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4">
+				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
+					{/* {children} */}
+					<Link href={"https://fullycharged.show/"}>
+						<a rel={"external"} target={"_blank"} className="internal">
+							<picture className="rounded-xl z-[1]">
+								<Image
+									src={"/assets/images/misc/fully-charged-show.svg"}
+									layout={"fill"}
+									objectFit={"contain"}
+									className={
+										"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out bg-[#f7f71c] !p-5"
+									}
+									alt={"Fully Charged Show"}
+								/>
+							</picture>
+						</a>
+					</Link>
+				</div>
+				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
+					{/* {children} */}
+					<Link href={"https://insideevs.com/"}>
+						<a rel={"external"} target={"_blank"} className="internal">
+							<picture className="rounded-xl z-[1]">
+								<Image
+									src={"/assets/images/misc/inside-ev.webp"}
+									layout={"fill"}
+									objectFit={"contain"}
+									className={
+										"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out bg-white !p-5"
+									}
+									alt={"Inside EV's"}
+								/>
+							</picture>
+						</a>
+					</Link>
+				</div>
+				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
+					{/* {children} */}
+					<Link href={"https://micromobility.io/"}>
+						<a rel={"external"} target={"_blank"} className="internal">
+							<picture className="rounded-xl z-[1]">
+								<Image
+									src={"/assets/images/misc/micromobility.webp"}
+									layout={"fill"}
+									objectFit={"cover"}
+									className={
+										"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out"
+									}
+									alt={"Micromobility"}
+								/>
+							</picture>
+						</a>
+					</Link>
+				</div>
+				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
+					{/* {children} */}
+					<Link href={"https://thedriven.io/"}>
+						<a rel={"external"} target={"_blank"} className="internal">
+							<picture className="rounded-xl z-[1]">
+								<Image
+									src={"/assets/images/misc/the-driven.webp"}
+									layout={"fill"}
+									objectFit={"contain"}
+									className={
+										"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out !p-5 bg-white"
+									}
+									alt={"The Driven Podcast"}
+								/>
+							</picture>
+						</a>
+					</Link>
 				</div>
 			</div>
 		</>

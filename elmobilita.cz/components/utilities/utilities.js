@@ -65,16 +65,20 @@ export const PersonCard = ({ name, position, image, socialUrl, socialTag }) => {
 					{name}
 				</h4>
 			</div> */}
-			<picture className="w-[177px] h-[233px] relative">
-				<Image
-					src={image}
-					layout={"fill"}
-					sizes="50vw"
-					// placeholder="blur" // only available when staticly importing file like import profilePic from "../public/assets/..."
-					objectFit="cover"
-					className="rounded-md"
-				></Image>
-			</picture>
+			<Link href={socialUrl}>
+				<a className="relative flex">
+					<picture className="w-[177px] h-[233px] relative">
+						<Image
+							src={image}
+							layout={"fill"}
+							sizes="50vw"
+							// placeholder="blur" // only available when staticly importing file like import profilePic from "../public/assets/..."
+							objectFit="cover"
+							className="rounded-md"
+						></Image>
+					</picture>
+				</a>
+			</Link>
 			<div className="grid gap-1">
 				<h4
 					className={`text-center text-xl font-bold dark:text-zinc-50 text-zinc-900`}

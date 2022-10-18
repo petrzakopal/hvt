@@ -1,68 +1,7 @@
 "use strict";
-exports.id = 912;
-exports.ids = [912];
+exports.id = 879;
+exports.ids = [879];
 exports.modules = {
-
-/***/ 6875:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "H2": () => (/* binding */ H2),
-/* harmony export */   "H3": () => (/* binding */ H3),
-/* harmony export */   "H4": () => (/* binding */ H4),
-/* harmony export */   "H5": () => (/* binding */ H5),
-/* harmony export */   "H6": () => (/* binding */ H6)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-
-function getAnchor(text) {
-    return text.toLowerCase().normalize("NFD")// .replace(/[\u0300-\u036f]/g, "") // same as following but in ascii probably
-    .replace(/[^a-z0-9 ]/g, "").replace(/[ ]/g, "-");
-}
-const H2 = ({ children  })=>{
-    const anchor = getAnchor(children);
-    const link = `#${anchor}`;
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h2", {
-        id: anchor,
-        children: children
-    });
-};
-const H3 = ({ children  })=>{
-    const anchor = getAnchor(children);
-    const link = `#${anchor}`;
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-        id: anchor,
-        children: children
-    });
-};
-const H4 = ({ children  })=>{
-    const anchor = getAnchor(children);
-    const link = `#${anchor}`;
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h4", {
-        id: anchor,
-        children: children
-    });
-};
-const H5 = ({ children  })=>{
-    const anchor = getAnchor(children);
-    const link = `#${anchor}`;
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h5", {
-        id: anchor,
-        children: children
-    });
-};
-const H6 = ({ children  })=>{
-    const anchor = getAnchor(children);
-    const link = `#${anchor}`;
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h6", {
-        id: anchor,
-        children: children
-    });
-};
-
-
-/***/ }),
 
 /***/ 2879:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
@@ -71,6 +10,7 @@ const H6 = ({ children  })=>{
 /* harmony export */   "CV": () => (/* binding */ PostFooterNavigation),
 /* harmony export */   "F_": () => (/* binding */ ListNavigationWrapper),
 /* harmony export */   "Oe": () => (/* binding */ VideoImageLink),
+/* harmony export */   "Pf": () => (/* binding */ Shows),
 /* harmony export */   "SO": () => (/* binding */ Post),
 /* harmony export */   "Tk": () => (/* binding */ Citation),
 /* harmony export */   "dm": () => (/* binding */ TrolejbusyVideoGallery),
@@ -309,7 +249,7 @@ const TrolejbusyVideoGallery = ()=>{
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
                                         className: "rounded-xl z-[1]",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
-                                            src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp",
+                                            src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp",
                                             layout: "fill",
                                             objectFit: "cover",
                                             className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out",
@@ -341,7 +281,7 @@ const TrolejbusyVideoGallery = ()=>{
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
                                         className: "rounded-xl z-[1]",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
-                                            src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp",
+                                            src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp",
                                             layout: "fill",
                                             objectFit: "cover",
                                             className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out",
@@ -373,7 +313,7 @@ const TrolejbusyVideoGallery = ()=>{
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
                                         className: "rounded-xl z-[1]",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
-                                            src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp",
+                                            src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp",
                                             layout: "fill",
                                             objectFit: "cover",
                                             className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out",
@@ -405,7 +345,7 @@ const TrolejbusyVideoGallery = ()=>{
                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
                                         className: "rounded-xl z-[1]",
                                         children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
-                                            src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice copy.webp",
+                                            src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp",
                                             layout: "fill",
                                             objectFit: "cover",
                                             className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out",
@@ -420,6 +360,99 @@ const TrolejbusyVideoGallery = ()=>{
                             children: "4. č\xe1st"
                         })
                     ]
+                })
+            ]
+        })
+    });
+};
+const Shows = ()=>{
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4",
+            children: [
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                        href: "https://fullycharged.show/",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            rel: "external",
+                            target: "_blank",
+                            className: "internal",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                                className: "rounded-xl z-[1]",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                    src: "/assets/images/misc/fully-charged-show.svg",
+                                    layout: "fill",
+                                    objectFit: "contain",
+                                    className: "rounded-lg group-hover:md:animate-breathe transition-all ease-in-out bg-[#f7f71c] !p-5",
+                                    alt: "Fully Charged Show"
+                                })
+                            })
+                        })
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                        href: "https://insideevs.com/",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            rel: "external",
+                            target: "_blank",
+                            className: "internal",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                                className: "rounded-xl z-[1]",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                    src: "/assets/images/misc/inside-ev.webp",
+                                    layout: "fill",
+                                    objectFit: "contain",
+                                    className: "rounded-lg group-hover:md:animate-breathe transition-all ease-in-out bg-white !p-5",
+                                    alt: "Inside EV's"
+                                })
+                            })
+                        })
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                        href: "https://micromobility.io/",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            rel: "external",
+                            target: "_blank",
+                            className: "internal",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                                className: "rounded-xl z-[1]",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                    src: "/assets/images/misc/micromobility.webp",
+                                    layout: "fill",
+                                    objectFit: "cover",
+                                    className: "rounded-lg group-hover:md:animate-breathe transition-all ease-in-out",
+                                    alt: "Micromobility"
+                                })
+                            })
+                        })
+                    })
+                }),
+                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
+                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                        href: "https://thedriven.io/",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            rel: "external",
+                            target: "_blank",
+                            className: "internal",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                                className: "rounded-xl z-[1]",
+                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                    src: "/assets/images/misc/the-driven.webp",
+                                    layout: "fill",
+                                    objectFit: "contain",
+                                    className: "rounded-lg group-hover:md:animate-breathe transition-all ease-in-out !p-5 bg-white",
+                                    alt: "The Driven Podcast"
+                                })
+                            })
+                        })
+                    })
                 })
             ]
         })

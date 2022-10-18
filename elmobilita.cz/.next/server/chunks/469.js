@@ -1491,15 +1491,21 @@ const SourceWrapper = ({ children  })=>{
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "grid gap-2 grid-cols-1 w-full justify-start justify-items-center items-center text-center",
         children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
-                className: "w-[177px] h-[233px] relative",
-                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
-                    src: image,
-                    layout: "fill",
-                    sizes: "50vw",
-                    // placeholder="blur" // only available when staticly importing file like import profilePic from "../public/assets/..."
-                    objectFit: "cover",
-                    className: "rounded-md"
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
+                href: socialUrl,
+                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                    className: "relative flex",
+                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                        className: "w-[177px] h-[233px] relative",
+                        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_3___default()), {
+                            src: image,
+                            layout: "fill",
+                            sizes: "50vw",
+                            // placeholder="blur" // only available when staticly importing file like import profilePic from "../public/assets/..."
+                            objectFit: "cover",
+                            className: "rounded-md"
+                        })
+                    })
                 })
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
