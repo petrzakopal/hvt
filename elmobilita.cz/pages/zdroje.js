@@ -12,6 +12,7 @@ import {
 	SourceBlock,
 	SourceWrapper,
 } from "../components/utilities/utilities";
+import { Shows } from "../components/post";
 
 const metaData = {
 	meta_title: "elmobilita – Historie elektromobility", // meta_title
@@ -35,6 +36,16 @@ const schema = {};
 function Index() {
 	return (
 		<>
+			<h2 className={`${SecondHeadingProperties} text-left w-full`}>
+				Doporučované on-line zdroje
+			</h2>
+			<SpaceY mt={"mt-10"} />
+			<Shows />
+			<SpaceY mt={"mt-14"} />
+			<h2 className={`${SecondHeadingProperties} text-left w-full`}>
+				Obecný seznam zdrojů
+			</h2>
+			<SpaceY mt={"mt-10"} />
 			<SourceWrapper>
 				<SourceBlock
 					icon={
