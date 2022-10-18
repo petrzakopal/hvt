@@ -164,7 +164,7 @@ export const PostFooterNavigation = ({
 			<div className="w-full grid grid-cols-2 mt-14">
 				{previousEnabled == "true" ? (
 					<>
-						<button className="text-left">
+						<button className="text-left h-10">
 							<Link href={hrefPrevious}>
 								<a className="cursor-pointer">
 									<span className="bg-primary-accent/20 border-2 border-primary-accent px-4 py-2 rounded-lg text-zinc-900 dark:text-zinc-50">
@@ -182,7 +182,7 @@ export const PostFooterNavigation = ({
 
 				{nextEnabled == "true" ? (
 					<>
-						<button className="text-right">
+						<button className="text-right h-10">
 							<Link href={hrefNext}>
 								<a className="cursor-pointer">
 									<span className="bg-primary-accent/20 border-2 border-primary-accent px-4 py-2 rounded-lg text-zinc-900 dark:text-zinc-50">
