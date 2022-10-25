@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/6_CnAJwFYbE5gY_TcjTRC/_buildManifest.js",
-    "static/6_CnAJwFYbE5gY_TcjTRC/_ssgManifest.js"
+    "static/M7ye6-yP5kkyVzL8QCJNq/_buildManifest.js",
+    "static/M7ye6-yP5kkyVzL8QCJNq/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -123,7 +123,7 @@
       "static/chunks/936-bdff1a776d80d4b7.js",
       "static/chunks/594-9b905595c76e6f50.js",
       "static/chunks/879-7a2394df61579456.js",
-      "static/chunks/pages/trolejbus/historicky-vyvoj-trolejbusove-dopravy-f5a6d47569d3d370.js"
+      "static/chunks/pages/trolejbus/historicky-vyvoj-trolejbusove-dopravy-acecd5cdd3d9df2d.js"
     ],
     "/trolejbus/kapitoly": [
       "static/chunks/webpack-9b312e20a4e32339.js",
