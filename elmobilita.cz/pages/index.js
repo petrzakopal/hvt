@@ -61,7 +61,7 @@ function Index() {
 					imageUrl={"/assets/images/kategorie/elektromobily.webp"}
 				/>
 				<GroupSection
-					linkName={"LEV"}
+					linkName={"Lehká Elektrická Vozidla"}
 					linkUrl={"/lev/kapitoly"}
 					imageUrl={"/assets/images/kategorie/lev.webp"}
 				/>
@@ -94,7 +94,7 @@ const GroupSection = ({ linkUrl, linkName, imageUrl }) => {
 				<a>
 					<div className="group flex flex-col w-80 h-80 relative rounded-lg items-center justify-center bg-black">
 						<h2
-							className={`z-[4] opacity-100 relative lg:text-4xl text-3xl text-zinc-50 dark:text-zinc-50 font-bold text-left flex transition-all ease-in-out duration-1000`}
+							className={`z-[4] opacity-100 relative lg:text-4xl text-3xl text-zinc-50 dark:text-zinc-50 font-bold text-center flex transition-all ease-in-out duration-1000`}
 						>
 							{linkName}
 						</h2>
