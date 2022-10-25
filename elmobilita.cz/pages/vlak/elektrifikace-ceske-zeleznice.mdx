@@ -1,0 +1,113 @@
+import { DefaultLayout } from "../../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+} from "../../components/post";
+
+import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
+import Image from "next/image";
+
+export const metaData = {
+	meta_title: "Elektrifikace české železnice - elmobilita.cz", // meta_title
+	meta_description:
+		"Vývoj železniční dopravy a její postupná elektrifikace. elmobilita.cz – historie elektromobility na jednom místě.", // meta_description
+	canonical_url: "https://elmobilita.cz/vlak/elektrifikace-ceske-zeleznice", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz/vlak/elektrifikace-ceske-zeleznice", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "Elektrifikace české železnice - elmobilita.cz", // og_title
+	og_description:
+		"Vývoj železniční dopravy a její postupná elektrifikace. elmobilita.cz – historie elektromobility na jednom místě.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Vývoj železniční dopravy a její postupná elektrifikace. elmobilita.cz – historie elektromobility na jednom místě.", // twitter:description
+	twitterTitle: "Elektrifikace české železnice - elmobilita.cz", // twitter:title
+};
+
+# Elektrifikace české železnice
+
+V roce 2015 evidovala Správa železnic (dříve Správa železniční dopravní cesty) 9 470 km kolejí, z nichž zhruba třetina z toho je elektrifikovaná. Elektrifikace je doménou především 20. století, proces ale začal již v 19. století.
+
+## Vývoj napájení železnice
+
+První pokus o elektrifikaci trakce nastaly ještě v období parních lokomotiv. Původní myšlenka však byla vcelku vzdálená od dnešní podoby, leč se k ní mnoho výrobců dnes vrací v rámci dekarbonizace. Prvním pokusem o elektrifikaci byla tzv. nezávislá trakce. Jedná se o systém, kdy je vozidlo stejně jako parní lokomotiva nezávislá na železniční dráze a disponuje vlastním zdrojem elektrické energie. Zdrojem byly galvanické články, umístěné ve vozidle.
+
+Od nezávislé trakce se však záhy upustilo a vývoj se zaměřil na trakci závislou. Prvním systémem se závislou trakcí vytvořil Werner von Siemens v roce 1879. Tady již systém shodný s dnešní podobou, lokomotiva získává elektrickou energii z trakčního vedení. Siemensovo řešení využívalo stejnosměrný proud k napájení, jednalo se tedy o stejnosměrnou trakci.
+
+Vzhledem k tomu, že ve stejné době vznikala také elektrizační soustava, která alespoň v Evropě byla převážně střídavá, existovala motivace vytvořit trakci střídavou. Nejvíc se o vznik střídavé trakce přičinil maďarské technik Kálmán Kandó. První vozidla a úseky využívající střídavou trakci vznikly již v roce 1892, velký nástup střídavé trakce přišel až o více jak půl století později s nástupem polovodičových součástek okolo roku 1950.
+
+## Typy trakce
+
+Vývoj elektrické trakce probíhal v různých zemích Evropy, a proto se dnes z historických a geopolitických důvodů setkáme s různými parametry napájecí trakce, stejně tak jako s různými kolejovými dráhami.
+
+- Stejnosměrné (DC)
+
+  - 0,75 kV
+  - 1,5 kV
+  - 3 kV
+
+- Střídavé (AC)
+  - 25 kV; 50 Hz
+  - 15 kV; 16,7 Hz (16 + 2/3 Hz)
+
+<Fact header="Poznámka" color="primary" description="">
+	Aby bylo rozdělení trakce jasné, bude posáno, co znamenají výše uvedené
+	hodnoty pro oba typy trakce.
+</Fact>
+
+V případě stejnosměrné trakce (DC) je kolejové napájecí vedení, tzv. trolej napájená z elektrických stanic, tzv. měníren stejnosměrnou elektrickou energií. Měnírny jsou rozprostřeny podél železniční dráhy a udržují danou hodnotu stejnosměrného napětí v troleji.
+
+Střídavá trakce (AC) kolejové napájecí vedení, trolej, napájí střídavou elektrickou energií. Energii pro trolej zajišťují transformační stanice, které zajišťují požadovanou hodnotu střídavého napětí v troleji. Jak je zřejmé, trolej je pouze jednofázová. Vzhledem k tomu, že máme střídavou trakci, uvádíme efektivní hodnotu napětí a napájecí frekvenci, s jakou se hodnota střídá.
+
+![Rozdělení trakce v Evropě.](/assets/images/vlak/europe-rail.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 1 Rozdělení trakce v Evropě&nbsp;<Citation href="https://commons.wikimedia.org/wiki/File:Europe_rail_electrification_en.svg">[označit odkaz]</Citation>.
+</figcaption>
+
+### Stejnosměrná (DC) trakce
+
+Stejnosměrná trakce se vyznačuje jednodušší regulací pohonu. Ve stejnosměrné trakci jsou k pohonu lokomotiv a trakčních jednotek využívány stejnosměrné motory bez potřeby usměrňovače. Regulace u stejnosměrných motorů je mnohem jednodušší z konstrukční podstaty a nevyžaduje polovodičové součástky společně s řídícím obvodem. V současné době jsou již polovodičové měniče pro regulaci střídavě napájených asynchronních a synchronních motorů tak rozšířené, že jejich použití převažuje.
+
+Mezi nevýhody stejnosměrné trakce patří velké hodnoty proudu dané transformací požadovaného výkonu v měnírnách. Vedení tak musí být dimenzováno na větší hodnoty proudu, ať už z hlediska oteplení nebo izolace. Stejnosměrné napájení vyžaduje mnohem hustší síť elektrických stanic, měníren, a jejich konstrukce je značně složitější ve srovnání s transformačními stanice v AC trakce.
+
+Zdaleka nejrozšířenější stejnosměrnou soustavou v Evropě je DC 3 kV.
+
+### Střídavá (AC) trakce
+
+Střídavá trakce dnes představuje nejrozšířenější soustavu železničního napájení v Evropě. Nejčastěji se setkáme se soustavou AC 25 kV 50 Hz. Jedná se o jednofázové napájení trakčních vozidel. V případě lokomotivy se stejnosměrným motorem je třeba energii usměrnit, u lokomotivy střífázovým asynchronním motorem naopak převést jednofázový systém na třífázový. V kontextu rozšíření řízených polovodičových součástek se dnes běžně využívá řízených polovodičových měničů, které zajišťují plynulou regulaci pohonu i v případě využití asynchronních motorů.
+
+Mezi výhody střídavé trakce patří nízké ztráty v trolejovém vedení. Z důvodu nižších hodnot proudů není třeba tak velký průřez vedení jako v případě stejnosměrné trakce. Díky nižším ztrátám mohou být vzdálenosti mezi transformačními stanicemi větší. Transformace střídavé trakce nevyžaduje usměrnění energie, a proto je provedení stanic jednodušší.
+
+Velkou nevýhodou střídavé trakce jsou zpětné účinky na třífázovou elektrizační soustavu, ze které je energie odebírána. Problém souvisí s nesymetrickým zatížením sítě a bízkým účiníkem elektrických strojů lokomotiv.
+
+<PostFooterNavigation
+	hrefPrevious="/vlak/uvod"
+	hrefNext="/vlak/detailni-elektrifikace-zeleznice-cr"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="true"
+	nextEnabled="true"
+/>
+{/* --------------------- DANGER ZONE --------------------- */}
+export default ({children}) => (
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
+);

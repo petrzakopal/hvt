@@ -15,33 +15,45 @@ import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
 import Image from "next/image";
 
 export const metaData = {
-	meta_title: "Historie vlakové dopravy v letech - elmobilita.cz", // meta_title
+	meta_title: "Historie železniční dopravy v letech - elmobilita.cz", // meta_title
 	meta_description:
-		"Výběr kapitol tématu historie vlakové dopravy. Vývoj vlakové dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // meta_description
-	canonical_url: "https://elmobilita.cz/trolejbus/kapitoly", // canonical url
+		"Výběr kapitol tématu historie železniční dopravy. Vývoj železniční dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // meta_description
+	canonical_url: "https://elmobilita.cz/vlak/kapitoly", // canonical url
 	og_type: "website", //og:type
-	og_url: "https://elmobilita.cz/trolejbus/kapitoly", //og_url
+	og_url: "https://elmobilita.cz/vlak/kapitoly", //og_url
 	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
-	og_title: "Historie vlakové dopravy v letech - elmobilita.cz", // og_title
+	og_title: "Historie železniční dopravy v letech - elmobilita.cz", // og_title
 	og_description:
-		"Výběr kapitol tématu historie vlakové dopravy. Vývoj vlakové dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // og_description
+		"Výběr kapitol tématu historie železniční dopravy. Vývoj železniční dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // og_description
 	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
 	twitterDescription:
-		"Výběr kapitol tématu historie vlakové dopravy. Vývoj vlakové dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // twitter:description
-	twitterTitle: "Historie vlakové dopravy v letech - elmobilita.cz", // twitter:title
+		"Výběr kapitol tématu historie železniční dopravy. Vývoj železniční dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // twitter:description
+	twitterTitle: "Historie železniční dopravy v letech - elmobilita.cz", // twitter:title
 };
 
-# Vlaková doprava
+# Železniční doprava
 
 ## Přehled kapitol
 
 <ListNavigationWrapper>
+	<ListNavigationItem
+		href="/vlak/uvod"
+		text="Úvod do historie železniční dopravy"
+	/>
+	<ListNavigationItem
+		href="/vlak/elektrifikace-ceske-zeleznice"
+		text="Elektrifikace české železnice"
+	/>
+	<ListNavigationItem
+		href="/vlak/detailni-elektrifikace-zeleznice-cr"
+		text="Detailní vývoj elektrifikace železnice v České republice"
+	/>
 	<ListNavigationItem href="/vlak/zdroje" text="Zdroje" />
 </ListNavigationWrapper>
 
 <PostFooterNavigation
 	hrefPrevious="/"
-	hrefNext="/"
+	hrefNext="/uvod"
 	next="Následující"
 	previous="Předchozí"
 	previousEnabled="false"
