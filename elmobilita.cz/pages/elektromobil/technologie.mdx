@@ -1,0 +1,111 @@
+import { DefaultLayout } from "../../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+} from "../../components/post";
+
+import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
+import Image from "next/image";
+
+export const metaData = {
+	meta_title:
+		"Použité technologie v elektromobilech a jejich vývoj - elmobilita.cz", // meta_title
+	meta_description:
+		"Jaké technologie jsou využívány v historických elektromobilech a jaké přetrvaly dodnes? Jaký byl vývoj vybraných použitých komponent?", // meta_description
+	canonical_url: "https://elmobilita.cz/elektromobil/technologie", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz/elektromobil/technologie", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title:
+		"Použité technologie v elektromobilech a jejich vývoj - elmobilita.cz", // og_title
+	og_description:
+		"Jaké technologie jsou využívány v historických elektromobilech a jaké přetrvaly dodnes? Jaký byl vývoj vybraných použitých komponent?", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Jaké technologie jsou využívány v historických elektromobilech a jaké přetrvaly dodnes? Jaký byl vývoj vybraných použitých komponent?", // twitter:description
+	twitterTitle:
+		"Použité technologie v elektromobilech a jejich vývoj - elmobilita.cz", // twitter:title
+};
+
+# Historie vybaných technologických částí elektromobilů
+
+První elektrická vozidla byly vyvinuty na konci 19. st ve Francii a Anglii, až poté následovali Spojené státy, přičemž v roce 1897 vznikla v New Yorku první komerční flotila elektrických vozidel taxi. V roce 1899 a 1 900 překonal prodej elektrických vozidel prodej ostatních typů vozidel. Popularita elektrických vozidel byla dána kvalitními silnicemi pouze ve měste, kde byl krátký dojezd elektrických vozidel dostačující. Značné zlepšení technologií baterií pro elektrická vozidla nestačilo k dominanci na trh, neboť samotná pořizovací cena i údržba elektrický vozidel byla větší než v případě vozidel se spalovacími motory či parními vozidly.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+<Fact header="Zajímavost" color="primary" description="elektroautomobil">
+	V roce 1912 Sci- entific American napsali: Mechanismus elektrických aut je tak
+	jednoduchý, že existují ve skutečnosti pouze dvě věci, na kterých lze provést
+	rozsáhlá vylepšení a to na baterie a elektrickém pohonu.&nbsp;
+	<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+</Fact>
+
+Elektrické vozidlo se skládalo ze dvou hlavních komponent, baterie a DC motor. V roce 1 900 přišel objev v možnosti rekuperovat energii, tj. převádět kinetickou energii vozidla na elektrickou energii pomocí elektrického stroje a ukládat ji do baterie. Tím pádem muselo být vozidlo vybaveno dále ještě ovladačí s regulátory. První pohon elektrického vozidla, který umožňoval rekuperaci vynalezl J. C. Lincoln of Cleveland, Ohio, a byl vyráběn společností Lincoln Electric Company.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+![Left Diagram of controller circuits of recharging motor. Right blade controller, 1911.](/assets/images/elektroautomobil/controller-ev.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 1 Left Diagram of controller circuits of recharging motor. Right blade controller, 1911.&nbsp;<Citation href="/elektromobil/zdroje#getblogo-car-tire-history">[označit odkaz]</Citation>.
+</figcaption>
+
+V roce 1912 přimělo mnoho lidí věřit v budoucnost elektromobilů a to na základě mnohých vylepšeních. Elektrické vozidlo se snadno ovládalo, nemělo žádný složitý převod ani spojku. Nastartování automobilu nebylo fyzicky náročné, provoz byl tichý a bez vibrací.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+V roce 1913 elektrické automobily využívali převážně olověné baterie, které umožňovali dojezd 80 mil, to odpovídalo přibližně třídennímu cestování po městě. Zároveň se začali používat nikl-železné baterie, které byly lehčí a umožňovali delší dojezd. V roce 1917 se zkoumala možnost sdílených baterií, jednou z možností bylo pořízeno vozidla bez baterie a poté následně měsíčně platit za využívání sdílených baterií.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+## Historie baterií
+
+První baterii vynalezl Alessandro Volta v roce 1800, princip olověné baterie objevil Raymond Gaston Plante v roce 1860, jednalo se o kombinaci olověných a pryžových fólií ponořených do roztoku kyseliny sýrové. V 80. letech 19. století byly olověné baterie vylepšeny využitím pasty oxidu olova pro aktivní materiál kladné elektrody. V 6é. letech minulého století byl vyvinut gelový elektrolyt olověných akumulátorů, který omezoval únik elektrolytu z baterie. Nejpouživanějšími bateriemi v automobilech byly olověné baterie a nikl-železo baterie.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+Hlavním úkolem konstruktér bylo nalezení optimální velikosti baterie, určující výkon a dojezd vozidla, s minimální hmotností baterie. Následkem snahy snížit hmotnost baterie byl v roce 1901 zkonstruováno vozidlo, které ke svému pohonu využívalo benzínový motor spolu se dvěma elektrickými motory. Energie dodávaná spalovacím motorem byla přeměněna na elektrickou energii, pomocí generátoru a následně tato elektrická energie poháněla elektrický motor pohánějící kola vozidla.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+V letech 1991 až 1996 se vyvinuli NiMH baterie z malých článků používaných ve spotřební elektronice k větším článkům možných k napájení elektrických vozidel. Zároveň NiMH baterie měli 20-40 větší kapacitu než nikl-kadmiové baterie. V posledních letech se začíná široce používat Lithium-iontové baterie.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+## Historie palivových článků
+
+První palivový článek byl sestrojen v roce 1802 anglickým chemikem, který využíval uhlíkové elektrody a jako elektrolyt kyselinu dusičnou. Přičemž palivový článek, jehož princip se dnes používá v dnešních vodíkových vozidlech , byl objeven až v roce 1839. Jedná se o palivový článek, jehož palivem je vodík a kyslík, výstupem je poté elektrická energie, teplo a voda. V roce 1894 byla zdůrazněno možná budoucnost palivových článků ke snížení emisí produkovaných vozidly se spalovacími motory, avšak v té době nebyla tato technologie dostatečně vyspělá na její použití v praxi.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+Teprve mise Apollo způsobila oživení myšlenky využití palivových článků pro automobily. V 60. až 70. letech se experimentovalo s vozidly, které využívali palivové články spolu s baterií. Přičemž palivový článek sloužil k zajištění stálé rychlosti a baterie poskytovala svižné zrychlení. Problémem palivových článku byla ale jejich cena a velikost.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+První komerční čerpací stanice byla zprovozněna v roce 2003 na Islandu, přičemž k výrobě vodíku se využívala geotermální energie. Další vodíkové stanice byly uvedeny do prozu v Dánsku v roce 2008. V té době avšak nebyli volně dostupná vozidla poháněná palivovými články, ale jednalo se o upraená vozdila či autobusy využívající palivové články.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+## Hybridní vozidla
+
+Jedním z prvních hybridních vozidel byl francouzký automobil Lohner-Porsche Electric z roku 1902, jednalo se o kombinaci elektrického a benzínového motoru. Příčina vynálezu hybridních vozidel bylo omezení závislosti na dobíjení baterie. Dalšími prvotními hybridními vozidly byly Krieger (1904) a Columbia (1902). Tato vozidla měla umístěné elektrické motory na kolech, kotva DC motoru byla součástí náboje kola.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+Hybridní vozidla přišla na trh dříve než vozidla s palivovými články. Hybridní vozidla jsou považovány za přechodnou fází, pomocí nichž lze nabídnout zákazníkovi dostupné auto, které je šetrné k životnímu prostředí, oproti automobilům využívající pouze motory na fosilní paliva. Prvním sériově vyráběným hybridním vozem využívající benzinově-elektrický pohon byla Toyota Prius uvedena na trh v Japonsku v roce 1997.&nbsp;<Citation href="/zdroje#anderson-electric-and-hybrid-cars">[1]</Citation>
+
+![Lohner-Porsche Coupe, 1902](/assets/images/elektroautomobil/lohner-porsche.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 1 Lohner-Porsche Coupe, 1902&nbsp;<Citation href="/elektromobil/zdroje#getblogo-car-tire-history">[označit odkaz]</Citation>.
+</figcaption>
+
+<PostFooterNavigation
+	hrefPrevious="/elektromobil/vlivy-na-prostredi"
+	hrefNext="/elektromobil/zdroje"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="true"
+	nextEnabled="true"
+/>
+{/* --------------------- DANGER ZONE --------------------- */}
+export default ({children}) => (
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
+);
