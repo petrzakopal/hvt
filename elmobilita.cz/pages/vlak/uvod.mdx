@@ -1,0 +1,65 @@
+import { DefaultLayout } from "../../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+} from "../../components/post";
+
+import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
+import Image from "next/image";
+
+export const metaData = {
+	meta_title: "Úvod do historie železniční dopravy - elmobilita.cz", // meta_title
+	meta_description:
+		"Vývoj železniční dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // meta_description
+	canonical_url: "https://elmobilita.cz/vlak/uvod", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz/vlak/uvod", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "Úvod do historie železniční dopravy - elmobilita.cz", // og_title
+	og_description:
+		"Vývoj železniční dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Vývoj železniční dopravy v letech. elmobilita.cz – historie elektromobility na jednom místě.", // twitter:description
+	twitterTitle: "Úvod do historie železniční dopravy - elmobilita.cz", // twitter:title
+};
+
+# Úvod do historie železniční dopravy
+
+Železniční doprava má dlouholetou tradici. Když zanedbáme úplně první koňěspřežné dráhy jako například tu mezi Linzem a Českými Budějovicemi, železnice odstartovala svoji dráhu na začátku 19. století v Anglii. V roce 1804 spatřil svět první parovůz, který táhl pět vozů se sedmdesáti cestujícími. Pro zajímavost se tehdejší první vlak, jak dnes běžně kolejové soupravy označujeme, pohyboval rychlostí 5 km/h. Dnešní elektrifikované železnice dosahují rychlostí až 60x vyšších.
+
+Snahy o pohodlnější, efektivnější a v případě osobní dopravy především rychlejší přepravu dovedli železnici k etapě elektrifikace. Díky elektrifikaci má dnes železniční doprava, především v Evropě, výsadní postavení v přepravě osob a dokáže konkurovat ostatním dopravním prostředkům jak na krátkých vzdálenostech, tak i vzdálenostech dlouhých.
+
+## Co je to železniční doprava
+
+Železniční doprava je kolejová doprava po železniční dráze. Železniční dráha, či lépe železnice, je kolejový dopravní systém pro přepravu osob a nákladu. Vyznačuje se nízkou spotřebou energie na počtu přepravovaných osob či tun nákladu na kilometr. Železnice mám mnoho využití. Železniční dráhu ale najdeme u tramvají, důlních zařízení nebo také u zábavních atrakcí. Zde se však zaměříme na železniční dopravu jako dopravní prostředek na příměstské, meziměstké a mezistátní úrovni. Běžně ji rozdělujeme na nákladní a osobní dopravu.
+
+<PostFooterNavigation
+	hrefPrevious="/vlak/kapitoly"
+	hrefNext="/vlak/elektrifikace-ceske-zeleznice"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="true"
+	nextEnabled="true"
+/>
+{/* --------------------- DANGER ZONE --------------------- */}
+export default ({children}) => (
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
+);

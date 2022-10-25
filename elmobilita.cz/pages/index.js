@@ -46,7 +46,7 @@ function Index() {
 			<SpaceY mt={"mt-10"} />
 			<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-5 items-center justify-center justify-items-center">
 				<GroupSection
-					linkName={"Vlaky"}
+					linkName={"Železniční doprava"}
 					linkUrl={"/vlak/kapitoly"}
 					imageUrl={"/assets/images/kategorie/vlaky.webp"}
 				/>
