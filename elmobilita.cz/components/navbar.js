@@ -101,221 +101,219 @@ const Navbar = () => {
 		window.scrollTo(0, lastScrollMem);
 		// console.log("Last scroll mem is " + lastScrollMem);
 	}
-	return (
-		<>
-			{bannerEnabled ? (
-				<div className="banner w-full h-[var(--banner-height)] justify-center items-center relative dark:bg-gray-800 bg-gray-400 text-black dark:text-white font-semibold text-sm flex z-[99999]">
-					<p>Navbar info.</p>
-				</div>
-			) : (
-				""
-			)}
+	return <>
+        {bannerEnabled ? (
+            <div className="banner w-full h-[var(--banner-height)] justify-center items-center relative dark:bg-gray-800 bg-gray-400 text-black dark:text-white font-semibold text-sm flex z-[99999]">
+                <p>Navbar info.</p>
+            </div>
+        ) : (
+            ""
+        )}
 
-			<div
-				className="sticky flex flex-row items-center w-full px-8 lg:h-20 sm:h-full top-0 lg:dark:bg-zinc-900/80 dark:bg-zinc-900/100 bg-zinc-50 lg:bg-zinc-50/80 lg:backdrop-blur lg:backdrop-saturate-150 z-[99999]"
-				id="header-wrapper"
-			>
-				<nav className="flex items-center justify-between w-full lg:w-inside-full mx-auto dark:text-zinc-50 text-zinc-900 py-8">
-					<div className="nav-first hidden lg:flex flex-row items-center ">
-						{/** Second part of desktop header site navigation*/}
-						{/* <Link href="/">
-						<a
-							className={`dark:text-white text-black cursor-pointer ${
-								currentRoute === "/" ? "activeLink" : "notActiveLink"
-							}`}
-						>
-							Logo Placeholder
-						</a>
-					</Link> */}
-						<Link href="/">
-							<a
-								className="cursor-pointer flex flex-row items-center rounded-lg px-4 py-0.5 transition-all font-bold text-xl justify-start justify-items-start"
-								aria-label="Example.com"
-							>
-								<img src="/assets/logo/logo.svg" className="w-10 h-10 mr-2" />
-								<span>ElektroMobilita</span>
-							</a>
-						</Link>
-					</div>
-					<div className="nav-second hidden lg:block">
-						<div className="flex flex-row">
-							{/** Second part of desktop header site navigation*/}
-							{/** home link then delete and content paste to index.js */}
+        <div
+            className="sticky flex flex-row items-center w-full px-8 lg:h-20 sm:h-full top-0 lg:dark:bg-zinc-900/80 dark:bg-zinc-900/100 bg-zinc-50 lg:bg-zinc-50/80 lg:backdrop-blur lg:backdrop-saturate-150 z-[99999]"
+            id="header-wrapper"
+        >
+            <nav className="flex items-center justify-between w-full lg:w-inside-full mx-auto dark:text-zinc-50 text-zinc-900 py-8">
+                <div className="nav-first hidden lg:flex flex-row items-center ">
+                    {/** Second part of desktop header site navigation*/}
+                    {/* <Link href="/">
+                    <a
+                        className={`dark:text-white text-black cursor-pointer ${
+                            currentRoute === "/" ? "activeLink" : "notActiveLink"
+                        }`}
+                    >
+                        Logo Placeholder
+                    </a>
+                </Link> */}
+                    <Link
+                        href="/"
+                        className="cursor-pointer flex flex-row items-center rounded-lg px-4 py-0.5 transition-all font-bold text-xl justify-start justify-items-start"
+                        aria-label="Example.com">
 
-							<DesktopMenuCollapseGroup
-								groupName={"Výběr témat"}
-								id={"1"}
-								linkData={{
-									Vlaky: [
-										"Kolejová trakce.",
-										<Bars2Icon className={"w-8 h-8 pr-2"} />,
-										"/vlak/kapitoly",
-									],
-									Trolejbusy: [
-										"Homadná doprava.",
-										<UserGroupIcon className={"w-8 h-8 pr-2"} />,
-										"/trolejbus/kapitoly",
-									],
-									Elektroautomobily: [
-										"Řešení budoucnosti.",
-										<BoltIcon className={"w-8 h-8 pr-2"} />,
-										"/elektromobil/kapitoly",
-									],
-									LEV: [
-										"Lehká elekrická vozidla.",
-										<WifiIcon className={"w-8 h-8 pr-2"} />,
-										"/lev/kapitoly",
-									],
-								}}
-							/>
-							<ActiveLink linkAdress={"/autori"} linkName="Autoři" />
-						</div>
-					</div>
-					<div className="nav-third w-9 h-9">
-						{/** Third part of desktop header site navigation*/}
-						<ThemeChanger />
-					</div>
-					{/* Mobile menu opener - Hamburger menu */}
-					<div className="flex lg:hidden">
-						<button
-							className="w-9 h-9 dark:bg-zinc-600 bg-zinc-300 rounded-lg dark:black/5 flex items-center justify-center hover:ring-2 ring-zinc-50 transition-all"
-							onClick={() => {
-								// windowGoToPosition(lastScrollMem);
-								// windowPositionRet();
-								let mobileMenuContents;
-								if (MobileMenuLogic == 2) {
-									mobileMenuContents = document.getElementById(
-										"mobile-menu-wrapper"
-									);
-								}
+                        <img src="/assets/logo/logo.svg" className="w-10 h-10 mr-2" />
+                        <span>ElektroMobilita</span>
 
-								setIsOpen(!isOpen);
+                    </Link>
+                </div>
+                <div className="nav-second hidden lg:block">
+                    <div className="flex flex-row">
+                        {/** Second part of desktop header site navigation*/}
+                        {/** home link then delete and content paste to index.js */}
 
-								if (isOpen) {
-									document.body.classList.remove("fixed");
-									document.body.classList.remove("overflow-hidden");
+                        <DesktopMenuCollapseGroup
+                            groupName={"Výběr témat"}
+                            id={"1"}
+                            linkData={{
+                                Vlaky: [
+                                    "Kolejová trakce.",
+                                    <Bars2Icon className={"w-8 h-8 pr-2"} />,
+                                    "/vlak/kapitoly",
+                                ],
+                                Trolejbusy: [
+                                    "Homadná doprava.",
+                                    <UserGroupIcon className={"w-8 h-8 pr-2"} />,
+                                    "/trolejbus/kapitoly",
+                                ],
+                                Elektroautomobily: [
+                                    "Řešení budoucnosti.",
+                                    <BoltIcon className={"w-8 h-8 pr-2"} />,
+                                    "/elektromobil/kapitoly",
+                                ],
+                                LEV: [
+                                    "Lehká elekrická vozidla.",
+                                    <WifiIcon className={"w-8 h-8 pr-2"} />,
+                                    "/lev/kapitoly",
+                                ],
+                            }}
+                        />
+                        <ActiveLink linkAdress={"/autori"} linkName="Autoři" />
+                    </div>
+                </div>
+                <div className="nav-third w-9 h-9">
+                    {/** Third part of desktop header site navigation*/}
+                    <ThemeChanger />
+                </div>
+                {/* Mobile menu opener - Hamburger menu */}
+                <div className="flex lg:hidden">
+                    <button
+                        className="w-9 h-9 dark:bg-zinc-600 bg-zinc-300 rounded-lg dark:black/5 flex items-center justify-center hover:ring-2 ring-zinc-50 transition-all"
+                        onClick={() => {
+                            // windowGoToPosition(lastScrollMem);
+                            // windowPositionRet();
+                            let mobileMenuContents;
+                            if (MobileMenuLogic == 2) {
+                                mobileMenuContents = document.getElementById(
+                                    "mobile-menu-wrapper"
+                                );
+                            }
 
-									if (MobileMenuLogic == 2) {
-										mobileMenuContents.classList.remove("block");
-										mobileMenuContents.classList.add("hidden");
-									}
-									windowGoToPosition(lastScrollMem);
-								} else {
-									windowPositionRet();
+                            setIsOpen(!isOpen);
 
-									if (MobileMenuLogic == 2) {
-										mobileMenuContents.classList.add("block");
-										mobileMenuContents.classList.remove("hidden");
-									}
+                            if (isOpen) {
+                                document.body.classList.remove("fixed");
+                                document.body.classList.remove("overflow-hidden");
 
-									document.body.classList.add("fixed");
-									document.body.classList.add("overflow-hidden");
-								}
-								// document.body.classList.toggle("fixed");
-								// document.body.classList.toggle("w-full");
-							}}
-							type="button"
-							aria-controls="mobile-menu"
-							aria-expanded="false"
-						>
-							{isOpen ? (
-								<XMarkIcon className="w-5 h-5 dark:text-zinc-50 text-zinc-900 " />
-							) : (
-								<Bars3Icon className="w-5 h-5 dark:text-zinc-50 text-zinc-900 " />
-							)}
-						</button>
-					</div>
-				</nav>
+                                if (MobileMenuLogic == 2) {
+                                    mobileMenuContents.classList.remove("block");
+                                    mobileMenuContents.classList.add("hidden");
+                                }
+                                windowGoToPosition(lastScrollMem);
+                            } else {
+                                windowPositionRet();
 
-				<nav className="h-full dark:bg-zinc-900 bg-zinc-50">
-					{/* Mobile responsive menu */}
+                                if (MobileMenuLogic == 2) {
+                                    mobileMenuContents.classList.add("block");
+                                    mobileMenuContents.classList.remove("hidden");
+                                }
 
-					{MobileMenuLogic == 2 ? (
-						<>
-							{/* Changing top position because of banner height */}
-							<div
-								className={`lg:hidden hidden fixed w-full visible px-8 pt-4 inset-x-0 overflow-y-scroll text-base dark:bg-zinc-900 bg-zinc-50 bottom-0 ${
-									bannerEnabled ? "top-28" : "top-24"
-								}`}
-								id="mobile-menu-wrapper"
-							>
-								<ul className="">
-									{/* Paste menu items here */}
-									<ActiveMobileLink
-										linkAdress={"/"}
-										linkName={"elmobilita.cz"}
-									/>
+                                document.body.classList.add("fixed");
+                                document.body.classList.add("overflow-hidden");
+                            }
+                            // document.body.classList.toggle("fixed");
+                            // document.body.classList.toggle("w-full");
+                        }}
+                        type="button"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                    >
+                        {isOpen ? (
+                            <XMarkIcon className="w-5 h-5 dark:text-zinc-50 text-zinc-900 " />
+                        ) : (
+                            <Bars3Icon className="w-5 h-5 dark:text-zinc-50 text-zinc-900 " />
+                        )}
+                    </button>
+                </div>
+            </nav>
 
-									<MobileMenuCollapseGroup
-										id="1"
-										groupName="Výběr témat"
-										linkData={{
-											Vlaky: "/vlak/kapitoly",
-											Trolejbusy: "/trolejbus/kapitoly",
-											Elektroautomobil: "/elektromobil/kapitoly",
-											LEV: "/lev/kapitoly",
-										}}
-									/>
+            <nav className="h-full dark:bg-zinc-900 bg-zinc-50">
+                {/* Mobile responsive menu */}
 
-									<ActiveMobileLink
-										linkAdress={"/autori"}
-										linkName={"Autoři"}
-									/>
-								</ul>
-							</div>
-						</>
-					) : (
-						""
-					)}
+                {MobileMenuLogic == 2 ? (
+                    <>
+                        {/* Changing top position because of banner height */}
+                        <div
+                            className={`lg:hidden hidden fixed w-full visible px-8 pt-4 inset-x-0 overflow-y-scroll text-base dark:bg-zinc-900 bg-zinc-50 bottom-0 ${
+                                bannerEnabled ? "top-28" : "top-24"
+                            }`}
+                            id="mobile-menu-wrapper"
+                        >
+                            <ul className="">
+                                {/* Paste menu items here */}
+                                <ActiveMobileLink
+                                    linkAdress={"/"}
+                                    linkName={"elmobilita.cz"}
+                                />
 
-					{/* Transition from react for smoother transitions */}
-					<Transition
-						show={isOpen && MobileMenuLogic == 1}
-						enter="transition ease-out duration-100 "
-						enterFrom="opacity-0"
-						enterTo="opacity-100"
-						leave="transition ease-in duration-75"
-						leaveFrom="opacity-100"
-						leaveTo="opacity-0"
-					>
-						{() => (
-							<>
-								{/* Changing top position because of banner height */}
-								<div
-									className={`lg:hidden fixed w-full block visible px-8 pt-4 inset-x-0 overflow-y-scroll text-base dark:bg-zinc-900 bg-zinc-50 bottom-0 ${
-										bannerEnabled ? "top-28" : "top-24"
-									}`}
-								>
-									<ul className="">
-										<ActiveMobileLink
-											linkAdress={"/"}
-											linkName={"elmobilita.cz"}
-										/>
+                                <MobileMenuCollapseGroup
+                                    id="1"
+                                    groupName="Výběr témat"
+                                    linkData={{
+                                        Vlaky: "/vlak/kapitoly",
+                                        Trolejbusy: "/trolejbus/kapitoly",
+                                        Elektroautomobil: "/elektromobil/kapitoly",
+                                        LEV: "/lev/kapitoly",
+                                    }}
+                                />
 
-										<MobileMenuCollapseGroup
-											id="1"
-											groupName="Výběr témat"
-											linkData={{
-												Vlaky: "/vlak/kapitoly",
-												Trolejbusy: "/trolejbus/kapitoly",
-												Elektroautomobil: "/elektromobil/kapitoly",
-												LEV: "/lev/kapitoly",
-											}}
-										/>
+                                <ActiveMobileLink
+                                    linkAdress={"/autori"}
+                                    linkName={"Autoři"}
+                                />
+                            </ul>
+                        </div>
+                    </>
+                ) : (
+                    ""
+                )}
 
-										<ActiveMobileLink
-											linkAdress={"/autori"}
-											linkName={"Autoři"}
-										/>
-									</ul>
-								</div>
-							</>
-						)}
-					</Transition>
-				</nav>
-			</div>
-		</>
-	);
+                {/* Transition from react for smoother transitions */}
+                <Transition
+                    show={isOpen && MobileMenuLogic == 1}
+                    enter="transition ease-out duration-100 "
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition ease-in duration-75"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                >
+                    {() => (
+                        <>
+                            {/* Changing top position because of banner height */}
+                            <div
+                                className={`lg:hidden fixed w-full block visible px-8 pt-4 inset-x-0 overflow-y-scroll text-base dark:bg-zinc-900 bg-zinc-50 bottom-0 ${
+                                    bannerEnabled ? "top-28" : "top-24"
+                                }`}
+                            >
+                                <ul className="">
+                                    <ActiveMobileLink
+                                        linkAdress={"/"}
+                                        linkName={"elmobilita.cz"}
+                                    />
+
+                                    <MobileMenuCollapseGroup
+                                        id="1"
+                                        groupName="Výběr témat"
+                                        linkData={{
+                                            Vlaky: "/vlak/kapitoly",
+                                            Trolejbusy: "/trolejbus/kapitoly",
+                                            Elektroautomobil: "/elektromobil/kapitoly",
+                                            LEV: "/lev/kapitoly",
+                                        }}
+                                    />
+
+                                    <ActiveMobileLink
+                                        linkAdress={"/autori"}
+                                        linkName={"Autoři"}
+                                    />
+                                </ul>
+                            </div>
+                        </>
+                    )}
+                </Transition>
+            </nav>
+        </div>
+    </>;
 };
 
 export default Navbar;
