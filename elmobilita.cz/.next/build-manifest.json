@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/68OQnPjsnAHNUsP8JEKTV/_buildManifest.js",
-    "static/68OQnPjsnAHNUsP8JEKTV/_ssgManifest.js"
+    "static/fx6jJBqyVKFjHzB6EhgL2/_buildManifest.js",
+    "static/fx6jJBqyVKFjHzB6EhgL2/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -67,7 +67,7 @@
       "static/chunks/936-bdff1a776d80d4b7.js",
       "static/chunks/594-9b905595c76e6f50.js",
       "static/chunks/879-7a2394df61579456.js",
-      "static/chunks/pages/elektromobil/technologie-7c69fd4b549471b4.js"
+      "static/chunks/pages/elektromobil/technologie-11266df1bee88d0d.js"
     ],
     "/elektromobil/uvod-do-historie-elektromobilu": [
       "static/chunks/webpack-9b312e20a4e32339.js",
