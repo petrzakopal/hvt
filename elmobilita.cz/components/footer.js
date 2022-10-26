@@ -12,16 +12,16 @@ import { useEffect } from "react";
 // Footer basic link
 const FooterLink = ({ linkName, linkUrl, rel, target }) => {
 	return (
-		<Link href={linkUrl}>
-			<a
-				className="cursor-pointer lg:text-2xl text-2xl text-zinc-900 dark:text-zinc-50 dark:hover:text-platinum dark:hover:text-primary-accent hover:text-primary-accent font-semibold transition-colors easy-in-out"
-				rel={rel}
-				target={target}
-			>
-				{linkName}
-			</a>
-		</Link>
-	);
+        (<Link
+            href={linkUrl}
+            className="cursor-pointer lg:text-2xl text-2xl text-zinc-900 dark:text-zinc-50 dark:hover:text-platinum dark:hover:text-primary-accent hover:text-primary-accent font-semibold transition-colors easy-in-out"
+            rel={rel}
+            target={target}>
+
+            {linkName}
+
+        </Link>)
+    );
 };
 
 /**

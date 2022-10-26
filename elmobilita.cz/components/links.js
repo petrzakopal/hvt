@@ -25,22 +25,23 @@ export const ActiveMobileLink = ({
 }) => {
 	listClass == undefined ? (listClass = "") : listClass;
 	return (
-		<Link href={linkAdress} key={keyInput}>
-			<a
-				className={`dark:text-zinc-50 text-zinc-900 cursor-pointer `}
-				key={keyInput}
-				rel={rel}
-				target={target}
-			>
-				<li
-					className={`border-gray-accent/10 border-b-2 h-12 font-normal text flex items-center ${listClass}`}
-					key={keyInput}
-				>
-					{linkName}
-				</li>
-			</a>
-		</Link>
-	);
+        (<Link
+            href={linkAdress}
+            key={keyInput}
+            className={`dark:text-zinc-50 text-zinc-900 cursor-pointer `}
+            key={keyInput}
+            rel={rel}
+            target={target}>
+
+            <li
+                className={`border-gray-accent/10 border-b-2 h-12 font-normal text flex items-center ${listClass}`}
+                key={keyInput}
+            >
+                {linkName}
+            </li>
+
+        </Link>)
+    );
 };
 
 /**
@@ -60,18 +61,18 @@ export const ActiveLink = ({ linkAdress, linkName, rel, target }) => {
 	const currentRoute = router.pathname;
 	// console.log(currentRoute);
 	return (
-		<Link href={linkAdress}>
-			<a
-				className={`cursor-pointer ${
-					currentRoute === linkAdress ? "activeLink" : "notActiveLink"
-				} hover:bg-zinc-200 dark:hover:bg-zinc-200 dark:hover:text-zinc-900 hover:text-zinc-900 rounded-lg px-4 py-0.5 transition-all md:inline-block mx-1`}
-				rel={rel}
-				target={target}
-			>
-				{linkName}
-			</a>
-		</Link>
-	);
+        (<Link
+            href={linkAdress}
+            className={`cursor-pointer ${
+                currentRoute === linkAdress ? "activeLink" : "notActiveLink"
+            } hover:bg-zinc-200 dark:hover:bg-zinc-200 dark:hover:text-zinc-900 hover:text-zinc-900 rounded-lg px-4 py-0.5 transition-all md:inline-block mx-1`}
+            rel={rel}
+            target={target}>
+
+            {linkName}
+
+        </Link>)
+    );
 };
 
 /**
@@ -88,16 +89,16 @@ export const ActiveLink = ({ linkAdress, linkName, rel, target }) => {
 
 export const TextLink = ({ linkUrl, linkText, target, rel }) => {
 	return (
-		<Link href={linkUrl}>
-			<a
-				className={`text-left w-fit text-primary-accent after:inline-flex after:top-[0.11em] after:relative  hover:text-primary-accent after:transition-colors after:easy-in-out transition-colors easy-in-out after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:ml-1 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;]`}
-				target={target}
-				rel={rel}
-			>
-				{linkText}
-			</a>
-		</Link>
-	);
+        (<Link
+            href={linkUrl}
+            className={`text-left w-fit text-primary-accent after:inline-flex after:top-[0.11em] after:relative  hover:text-primary-accent after:transition-colors after:easy-in-out transition-colors easy-in-out after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:ml-1 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;]`}
+            target={target}
+            rel={rel}>
+
+            {linkText}
+
+        </Link>)
+    );
 };
 
 export const TextLinkProperties = `text-left w-fit text-primary-accent after:inline-flex after:top-[0.11em] after:relative  hover:text-primary-accent after:transition-colors after:easy-in-out transition-colors easy-in-out after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:ml-1 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;]`;

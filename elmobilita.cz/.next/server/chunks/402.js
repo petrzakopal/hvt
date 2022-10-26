@@ -174,7 +174,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 /***/ }),
 
-/***/ 8684:
+/***/ 3468:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -184,7 +184,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.addBasePath = addBasePath;
 var _addPathPrefix = __webpack_require__(1751);
-var _normalizeTrailingSlash = __webpack_require__(2392);
+var _normalizeTrailingSlash = __webpack_require__(2700);
 const basePath =  false || "";
 function addBasePath(path, required) {
     if (false) {}
@@ -201,7 +201,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 2725:
+/***/ 4465:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -210,7 +210,7 @@ Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
 exports.addLocale = void 0;
-var _normalizeTrailingSlash = __webpack_require__(2392);
+var _normalizeTrailingSlash = __webpack_require__(2700);
 const addLocale = (path, ...args)=>{
     if (true) {
         return (0, _normalizeTrailingSlash).normalizePathTrailingSlash((__webpack_require__(3431).addLocale)(path, ...args));
@@ -229,7 +229,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 8748:
+/***/ 4643:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -255,7 +255,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 1210:
+/***/ 227:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -267,8 +267,8 @@ exports.getDomainLocale = getDomainLocale;
 const basePath =  false || "";
 function getDomainLocale(path, locale, locales, domainLocales) {
     if (true) {
-        const normalizeLocalePath = (__webpack_require__(8875).normalizeLocalePath);
-        const detectDomainLocale = (__webpack_require__(8748).detectDomainLocale);
+        const normalizeLocalePath = (__webpack_require__(2554).normalizeLocalePath);
+        const detectDomainLocale = (__webpack_require__(4643).detectDomainLocale);
         const target = locale || normalizeLocalePath(path, locales).detectedLocale;
         const domain = detectDomainLocale(domainLocales, undefined, target);
         if (domain) {
@@ -290,7 +290,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 4119:
+/***/ 928:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -315,7 +315,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 6007:
+/***/ 1831:
 /***/ ((module, exports) => {
 
 "use strict";
@@ -448,13 +448,20 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 8045:
+/***/ 9749:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
 
+"use client";
 Object.defineProperty(exports, "__esModule", ({
     value: true
+}));
+Object.defineProperty(exports, "ImageLoaderProps", ({
+    enumerable: true,
+    get: function() {
+        return _imageConfig.ImageLoaderProps;
+    }
 }));
 exports["default"] = Image;
 var _extends = (__webpack_require__(6495)/* ["default"] */ .Z);
@@ -463,27 +470,25 @@ var _interop_require_wildcard = (__webpack_require__(1598)/* ["default"] */ .Z);
 var _object_without_properties_loose = (__webpack_require__(7273)/* ["default"] */ .Z);
 var _react = _interop_require_wildcard(__webpack_require__(6689));
 var _head = _interop_require_default(__webpack_require__(4957));
+var _imageBlurSvg = __webpack_require__(4486);
 var _imageConfig = __webpack_require__(5843);
-var _useIntersection = __webpack_require__(7190);
 var _imageConfigContext = __webpack_require__(744);
 var _utils = __webpack_require__(9232);
-var _normalizeTrailingSlash = __webpack_require__(2392);
+var _imageLoader = _interop_require_default(__webpack_require__(9552));
 function Image(_param) {
-    var { src , sizes , unoptimized =false , priority =false , loading , lazyRoot =null , lazyBoundary , className , quality , width , height , style , objectFit , objectPosition , onLoadingComplete , placeholder ="empty" , blurDataURL  } = _param, all = _object_without_properties_loose(_param, [
+    var { src , sizes , unoptimized =false , priority =false , loading , className , quality , width , height , fill , style , onLoad , onLoadingComplete , placeholder ="empty" , blurDataURL  } = _param, all = _object_without_properties_loose(_param, [
         "src",
         "sizes",
         "unoptimized",
         "priority",
         "loading",
-        "lazyRoot",
-        "lazyBoundary",
         "className",
         "quality",
         "width",
         "height",
+        "fill",
         "style",
-        "objectFit",
-        "objectPosition",
+        "onLoad",
         "onLoadingComplete",
         "placeholder",
         "blurDataURL"
@@ -504,43 +509,55 @@ function Image(_param) {
         configContext
     ]);
     let rest = all;
-    let layout = sizes ? "responsive" : "intrinsic";
-    if ("layout" in rest) {
-        // Override default layout if the user specified one:
-        if (rest.layout) layout = rest.layout;
-        // Remove property so it's not spread on <img>:
-        delete rest.layout;
-    }
-    let loader = defaultImageLoader;
-    if ("loader" in rest) {
-        if (rest.loader) {
-            const customImageLoader = rest.loader;
-            var _tmp;
-            _tmp = (obj)=>{
-                const { config: _  } = obj, opts = _object_without_properties_loose(obj, [
-                    "config"
-                ]);
-                // The config object is internal only so we must
-                // not pass it to the user-defined loader()
-                return customImageLoader(opts);
-            }, loader = _tmp, _tmp;
+    let loader = rest.loader || _imageLoader.default;
+    // Remove property so it's not spread on <img> element
+    delete rest.loader;
+    if ("__next_img_default" in loader) {
+        // This special value indicates that the user
+        // didn't define a "loader" prop or config.
+        if (config.loader === "custom") {
+            throw new Error(`Image with src "${src}" is missing "loader" prop.` + `\nRead more: https://nextjs.org/docs/messages/next-image-missing-loader`);
         }
-        // Remove property so it's not spread on <img>
-        delete rest.loader;
+    } else {
+        // The user defined a "loader" prop or config.
+        // Since the config object is internal only, we
+        // must not pass it to the user-defined "loader".
+        const customImageLoader = loader;
+        var _tmp;
+        _tmp = (obj)=>{
+            const { config: _  } = obj, opts = _object_without_properties_loose(obj, [
+                "config"
+            ]);
+            return customImageLoader(opts);
+        }, loader = _tmp, _tmp;
     }
     let staticSrc = "";
+    let widthInt = getInt(width);
+    let heightInt = getInt(height);
+    let blurWidth;
+    let blurHeight;
     if (isStaticImport(src)) {
         const staticImageData = isStaticRequire(src) ? src.default : src;
         if (!staticImageData.src) {
             throw new Error(`An object should only be passed to the image component src parameter if it comes from a static image import. It must include src. Received ${JSON.stringify(staticImageData)}`);
         }
+        if (!staticImageData.height || !staticImageData.width) {
+            throw new Error(`An object should only be passed to the image component src parameter if it comes from a static image import. It must include height and width. Received ${JSON.stringify(staticImageData)}`);
+        }
+        blurWidth = staticImageData.blurWidth;
+        blurHeight = staticImageData.blurHeight;
         blurDataURL = blurDataURL || staticImageData.blurDataURL;
         staticSrc = staticImageData.src;
-        if (!layout || layout !== "fill") {
-            height = height || staticImageData.height;
-            width = width || staticImageData.width;
-            if (!staticImageData.height || !staticImageData.width) {
-                throw new Error(`An object should only be passed to the image component src parameter if it comes from a static image import. It must include height and width. Received ${JSON.stringify(staticImageData)}`);
+        if (!fill) {
+            if (!widthInt && !heightInt) {
+                widthInt = staticImageData.width;
+                heightInt = staticImageData.height;
+            } else if (widthInt && !heightInt) {
+                const ratio = widthInt / staticImageData.width;
+                heightInt = Math.round(staticImageData.height * ratio);
+            } else if (!widthInt && heightInt) {
+                const ratio1 = heightInt / staticImageData.height;
+                widthInt = Math.round(staticImageData.width * ratio1);
             }
         }
     }
@@ -551,127 +568,46 @@ function Image(_param) {
         unoptimized = true;
         isLazy = false;
     }
-    if (false) {}
     if (config.unoptimized) {
         unoptimized = true;
     }
     const [blurComplete, setBlurComplete] = (0, _react).useState(false);
-    const [setIntersection, isIntersected, resetIntersected] = (0, _useIntersection).useIntersection({
-        rootRef: lazyRoot,
-        rootMargin: lazyBoundary || "200px",
-        disabled: !isLazy
-    });
-    const isVisible = !isLazy || isIntersected;
-    const wrapperStyle = {
-        boxSizing: "border-box",
-        display: "block",
-        overflow: "hidden",
-        width: "initial",
-        height: "initial",
-        background: "none",
-        opacity: 1,
-        border: 0,
-        margin: 0,
-        padding: 0
-    };
-    const sizerStyle = {
-        boxSizing: "border-box",
-        display: "block",
-        width: "initial",
-        height: "initial",
-        background: "none",
-        opacity: 1,
-        border: 0,
-        margin: 0,
-        padding: 0
-    };
-    let hasSizer = false;
-    let sizerSvgUrl;
-    const layoutStyle = {
-        position: "absolute",
-        top: 0,
-        left: 0,
-        bottom: 0,
-        right: 0,
-        boxSizing: "border-box",
-        padding: 0,
-        border: "none",
-        margin: "auto",
-        display: "block",
-        width: 0,
-        height: 0,
-        minWidth: "100%",
-        maxWidth: "100%",
-        minHeight: "100%",
-        maxHeight: "100%",
-        objectFit,
-        objectPosition
-    };
-    let widthInt = getInt(width);
-    let heightInt = getInt(height);
+    const [showAltText, setShowAltText] = (0, _react).useState(false);
     const qualityInt = getInt(quality);
     if (false) {}
-    const imgStyle = Object.assign({}, style, layoutStyle);
-    const blurStyle = placeholder === "blur" && !blurComplete ? {
-        backgroundSize: objectFit || "cover",
-        backgroundPosition: objectPosition || "0% 0%",
-        filter: "blur(20px)",
-        backgroundImage: `url("${blurDataURL}")`
+    const imgStyle = Object.assign(fill ? {
+        position: "absolute",
+        height: "100%",
+        width: "100%",
+        left: 0,
+        top: 0,
+        right: 0,
+        bottom: 0
+    } : {}, showAltText ? {} : {
+        color: "transparent"
+    }, style);
+    const blurStyle = placeholder === "blur" && blurDataURL && !blurComplete ? {
+        backgroundSize: imgStyle.objectFit || "cover",
+        backgroundPosition: imgStyle.objectPosition || "50% 50%",
+        backgroundRepeat: "no-repeat",
+        backgroundImage: `url("data:image/svg+xml;charset=utf-8,${(0, _imageBlurSvg).getImageBlurSvg({
+            widthInt,
+            heightInt,
+            blurWidth,
+            blurHeight,
+            blurDataURL
+        })}")`
     } : {};
-    if (layout === "fill") {
-        // <Image src="i.png" layout="fill" />
-        wrapperStyle.display = "block";
-        wrapperStyle.position = "absolute";
-        wrapperStyle.top = 0;
-        wrapperStyle.left = 0;
-        wrapperStyle.bottom = 0;
-        wrapperStyle.right = 0;
-    } else if (typeof widthInt !== "undefined" && typeof heightInt !== "undefined") {
-        // <Image src="i.png" width="100" height="100" />
-        const quotient = heightInt / widthInt;
-        const paddingTop = isNaN(quotient) ? "100%" : `${quotient * 100}%`;
-        if (layout === "responsive") {
-            // <Image src="i.png" width="100" height="100" layout="responsive" />
-            wrapperStyle.display = "block";
-            wrapperStyle.position = "relative";
-            hasSizer = true;
-            sizerStyle.paddingTop = paddingTop;
-        } else if (layout === "intrinsic") {
-            // <Image src="i.png" width="100" height="100" layout="intrinsic" />
-            wrapperStyle.display = "inline-block";
-            wrapperStyle.position = "relative";
-            wrapperStyle.maxWidth = "100%";
-            hasSizer = true;
-            sizerStyle.maxWidth = "100%";
-            sizerSvgUrl = `data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27${widthInt}%27%20height=%27${heightInt}%27/%3e`;
-        } else if (layout === "fixed") {
-            // <Image src="i.png" width="100" height="100" layout="fixed" />
-            wrapperStyle.display = "inline-block";
-            wrapperStyle.position = "relative";
-            wrapperStyle.width = widthInt;
-            wrapperStyle.height = heightInt;
-        }
-    } else {
-        // <Image src="i.png" />
-        if (false) {}
-    }
-    let imgAttributes = {
-        src: emptyDataURL,
-        srcSet: undefined,
-        sizes: undefined
-    };
-    if (isVisible) {
-        imgAttributes = generateImgAttrs({
-            config,
-            src,
-            unoptimized,
-            layout,
-            width: widthInt,
-            quality: qualityInt,
-            sizes,
-            loader
-        });
-    }
+    if (false) {}
+    const imgAttributes = generateImgAttrs({
+        config,
+        src,
+        unoptimized,
+        width: widthInt,
+        quality: qualityInt,
+        sizes,
+        loader
+    });
     let srcString = src;
     if (false) {}
     let imageSrcSetPropName = "imagesrcset";
@@ -683,24 +619,20 @@ function Image(_param) {
     const linkProps = {
         // Note: imagesrcset and imagesizes are not in the link element type with react 17.
         [imageSrcSetPropName]: imgAttributes.srcSet,
-        [imageSizesPropName]: imgAttributes.sizes
+        [imageSizesPropName]: imgAttributes.sizes,
+        crossOrigin: rest.crossOrigin
     };
-    const useLayoutEffect =  true ? _react.default.useEffect : 0;
+    const onLoadRef = (0, _react).useRef(onLoad);
+    (0, _react).useEffect(()=>{
+        onLoadRef.current = onLoad;
+    }, [
+        onLoad
+    ]);
     const onLoadingCompleteRef = (0, _react).useRef(onLoadingComplete);
-    const previousImageSrc = (0, _react).useRef(src);
     (0, _react).useEffect(()=>{
         onLoadingCompleteRef.current = onLoadingComplete;
     }, [
         onLoadingComplete
-    ]);
-    useLayoutEffect(()=>{
-        if (previousImageSrc.current !== src) {
-            resetIntersected();
-            previousImageSrc.current = src;
-        }
-    }, [
-        resetIntersected,
-        src
     ]);
     const imgElementArgs = _extends({
         isLazy,
@@ -708,42 +640,22 @@ function Image(_param) {
         heightInt,
         widthInt,
         qualityInt,
-        layout,
         className,
         imgStyle,
         blurStyle,
         loading,
         config,
+        fill,
         unoptimized,
         placeholder,
         loader,
         srcString,
+        onLoadRef,
         onLoadingCompleteRef,
         setBlurComplete,
-        setIntersection,
-        isVisible,
-        noscriptSizes: sizes
+        setShowAltText
     }, rest);
-    return /*#__PURE__*/ _react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/ _react.default.createElement("span", {
-        style: wrapperStyle
-    }, hasSizer ? /*#__PURE__*/ _react.default.createElement("span", {
-        style: sizerStyle
-    }, sizerSvgUrl ? /*#__PURE__*/ _react.default.createElement("img", {
-        style: {
-            display: "block",
-            maxWidth: "100%",
-            width: "initial",
-            height: "initial",
-            background: "none",
-            opacity: 1,
-            border: 0,
-            margin: 0,
-            padding: 0
-        },
-        alt: "",
-        "aria-hidden": true,
-        src: sizerSvgUrl
-    }) : null) : null, /*#__PURE__*/ _react.default.createElement(ImageElement, Object.assign({}, imgElementArgs))), priority ? // for browsers that do not support `imagesrcset`, and in those cases
+    return /*#__PURE__*/ _react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/ _react.default.createElement(ImageElement, Object.assign({}, imgElementArgs)), priority ? // for browsers that do not support `imagesrcset`, and in those cases
     // it would likely cause the incorrect image to be preloaded.
     //
     // https://html.spec.whatwg.org/multipage/semantics.html#attr-link-imagesrcset
@@ -754,14 +666,10 @@ function Image(_param) {
         href: imgAttributes.srcSet ? undefined : imgAttributes.src
     }, linkProps))) : null);
 }
-function normalizeSrc(src) {
-    return src[0] === "/" ? src.slice(1) : src;
-}
+"use client";
 const configEnv = {"deviceSizes":[640,750,828,1080,1200,1920,2048,3840],"imageSizes":[16,32,48,64,96,128,256,384],"path":"/_next/image","loader":"default","dangerouslyAllowSVG":false,"unoptimized":false};
-const loadedImageURLs = new Set();
 const allImgs = new Map();
 let perfObserver;
-const emptyDataURL = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7";
 if (true) {
     global.__NEXT_IMAGE_IMPORTED = true;
 }
@@ -769,74 +677,6 @@ const VALID_LOADING_VALUES = (/* unused pure expression or super */ null && ([
     "lazy",
     "eager",
     undefined
-]));
-function imgixLoader({ config , src , width , quality  }) {
-    // Demo: https://static.imgix.net/daisy.png?auto=format&fit=max&w=300
-    const url = new URL(`${config.path}${normalizeSrc(src)}`);
-    const params = url.searchParams;
-    // auto params can be combined with comma separation, or reiteration
-    params.set("auto", params.getAll("auto").join(",") || "format");
-    params.set("fit", params.get("fit") || "max");
-    params.set("w", params.get("w") || width.toString());
-    if (quality) {
-        params.set("q", quality.toString());
-    }
-    return url.href;
-}
-function akamaiLoader({ config , src , width  }) {
-    return `${config.path}${normalizeSrc(src)}?imwidth=${width}`;
-}
-function cloudinaryLoader({ config , src , width , quality  }) {
-    // Demo: https://res.cloudinary.com/demo/image/upload/w_300,c_limit,q_auto/turtles.jpg
-    const params = [
-        "f_auto",
-        "c_limit",
-        "w_" + width,
-        "q_" + (quality || "auto")
-    ];
-    const paramsString = params.join(",") + "/";
-    return `${config.path}${paramsString}${normalizeSrc(src)}`;
-}
-function customLoader({ src  }) {
-    throw new Error(`Image with src "${src}" is missing "loader" prop.` + `\nRead more: https://nextjs.org/docs/messages/next-image-missing-loader`);
-}
-function defaultLoader({ config , src , width , quality  }) {
-    if (false) {}
-    if (src.endsWith(".svg") && !config.dangerouslyAllowSVG) {
-        // Special case to make svg serve as-is to avoid proxying
-        // through the built-in Image Optimization API.
-        return src;
-    }
-    return `${(0, _normalizeTrailingSlash).normalizePathTrailingSlash(config.path)}?url=${encodeURIComponent(src)}&w=${width}&q=${quality || 75}`;
-}
-const loaders = new Map([
-    [
-        "default",
-        defaultLoader
-    ],
-    [
-        "imgix",
-        imgixLoader
-    ],
-    [
-        "cloudinary",
-        cloudinaryLoader
-    ],
-    [
-        "akamai",
-        akamaiLoader
-    ],
-    [
-        "custom",
-        customLoader
-    ], 
-]);
-const VALID_LAYOUT_VALUES = (/* unused pure expression or super */ null && ([
-    "fill",
-    "fixed",
-    "intrinsic",
-    "responsive",
-    undefined, 
 ]));
 function isStaticRequire(src) {
     return src.default !== undefined;
@@ -847,8 +687,8 @@ function isStaticImageData(src) {
 function isStaticImport(src) {
     return typeof src === "object" && (isStaticRequire(src) || isStaticImageData(src));
 }
-function getWidths({ deviceSizes , allSizes  }, width, layout, sizes) {
-    if (sizes && (layout === "fill" || layout === "responsive")) {
+function getWidths({ deviceSizes , allSizes  }, width, sizes) {
+    if (sizes) {
         // Find all the "vw" percent sizes used in the sizes prop
         const viewportWidthRe = /(^|\s)(1?\d?\d)vw/g;
         const percentSizes = [];
@@ -867,7 +707,7 @@ function getWidths({ deviceSizes , allSizes  }, width, layout, sizes) {
             kind: "w"
         };
     }
-    if (typeof width !== "number" || layout === "fill" || layout === "responsive") {
+    if (typeof width !== "number") {
         return {
             widths: deviceSizes,
             kind: "w"
@@ -884,14 +724,14 @@ function getWidths({ deviceSizes , allSizes  }, width, layout, sizes) {
         [
             width,
             width * 2 /*, width * 3*/ 
-        ].map((w)=>allSizes.find((p)=>p >= w) || allSizes[allSizes.length - 1])), 
+        ].map((w)=>allSizes.find((p)=>p >= w) || allSizes[allSizes.length - 1]))
     ];
     return {
         widths,
         kind: "x"
     };
 }
-function generateImgAttrs({ config , src , unoptimized , layout , width , quality , sizes , loader  }) {
+function generateImgAttrs({ config , src , unoptimized , width , quality , sizes , loader  }) {
     if (unoptimized) {
         return {
             src,
@@ -899,7 +739,7 @@ function generateImgAttrs({ config , src , unoptimized , layout , width , qualit
             sizes: undefined
         };
     }
-    const { widths , kind  } = getWidths(config, width, layout, sizes);
+    const { widths , kind  } = getWidths(config, width, sizes);
     const last = widths.length - 1;
     return {
         sizes: !sizes && kind === "w" ? "100vw" : sizes,
@@ -924,27 +764,18 @@ function generateImgAttrs({ config , src , unoptimized , layout , width , qualit
     };
 }
 function getInt(x) {
-    if (typeof x === "number") {
+    if (typeof x === "number" || typeof x === "undefined") {
         return x;
     }
-    if (typeof x === "string") {
+    if (typeof x === "string" && /^[0-9]+$/.test(x)) {
         return parseInt(x, 10);
     }
-    return undefined;
-}
-function defaultImageLoader(loaderProps) {
-    var ref;
-    const loaderKey = ((ref = loaderProps.config) == null ? void 0 : ref.loader) || "default";
-    const load = loaders.get(loaderKey);
-    if (load) {
-        return load(loaderProps);
-    }
-    throw new Error(`Unknown "loader" found in "next.config.js". Expected: ${_imageConfig.VALID_LOADERS.join(", ")}. Received: ${loaderKey}`);
+    return NaN;
 }
 // See https://stackoverflow.com/q/39777833/266535 for why we use this ref
 // handler instead of the img's onLoad attribute.
-function handleLoading(img, src, layout, placeholder, onLoadingCompleteRef, setBlurComplete) {
-    if (!img || img.src === emptyDataURL || img["data-loaded-src"] === src) {
+function handleLoading(img, src, placeholder, onLoadRef, onLoadingCompleteRef, setBlurComplete) {
+    if (!img || img["data-loaded-src"] === src) {
         return;
     }
     img["data-loaded-src"] = src;
@@ -958,75 +789,107 @@ function handleLoading(img, src, layout, placeholder, onLoadingCompleteRef, setB
             // - decode() completes
             return;
         }
-        loadedImageURLs.add(src);
         if (placeholder === "blur") {
             setBlurComplete(true);
         }
-        if (onLoadingCompleteRef == null ? void 0 : onLoadingCompleteRef.current) {
-            const { naturalWidth , naturalHeight  } = img;
-            // Pass back read-only primitive values but not the
-            // underlying DOM element because it could be misused.
-            onLoadingCompleteRef.current({
-                naturalWidth,
-                naturalHeight
+        if (onLoadRef == null ? void 0 : onLoadRef.current) {
+            // Since we don't have the SyntheticEvent here,
+            // we must create one with the same shape.
+            // See https://reactjs.org/docs/events.html
+            const event = new Event("load");
+            Object.defineProperty(event, "target", {
+                writable: false,
+                value: img
             });
+            let prevented = false;
+            let stopped = false;
+            onLoadRef.current(_extends({}, event, {
+                nativeEvent: event,
+                currentTarget: img,
+                target: img,
+                isDefaultPrevented: ()=>prevented,
+                isPropagationStopped: ()=>stopped,
+                persist: ()=>{},
+                preventDefault: ()=>{
+                    prevented = true;
+                    event.preventDefault();
+                },
+                stopPropagation: ()=>{
+                    stopped = true;
+                    event.stopPropagation();
+                }
+            }));
         }
-        if (false) { var ref; }
+        if (onLoadingCompleteRef == null ? void 0 : onLoadingCompleteRef.current) {
+            onLoadingCompleteRef.current(img);
+        }
+        if (false) {}
     });
 }
 const ImageElement = (_param)=>{
-    var { imgAttributes , heightInt , widthInt , qualityInt , layout , className , imgStyle , blurStyle , isLazy , placeholder , loading , srcString , config , unoptimized , loader , onLoadingCompleteRef , setBlurComplete , setIntersection , onLoad , onError , isVisible , noscriptSizes  } = _param, rest = _object_without_properties_loose(_param, [
+    var { imgAttributes , heightInt , widthInt , qualityInt , className , imgStyle , blurStyle , isLazy , fill , placeholder , loading , srcString , config , unoptimized , loader , onLoadRef , onLoadingCompleteRef , setBlurComplete , setShowAltText , onLoad , onError  } = _param, rest = _object_without_properties_loose(_param, [
         "imgAttributes",
         "heightInt",
         "widthInt",
         "qualityInt",
-        "layout",
         "className",
         "imgStyle",
         "blurStyle",
         "isLazy",
+        "fill",
         "placeholder",
         "loading",
         "srcString",
         "config",
         "unoptimized",
         "loader",
+        "onLoadRef",
         "onLoadingCompleteRef",
         "setBlurComplete",
-        "setIntersection",
+        "setShowAltText",
         "onLoad",
-        "onError",
-        "isVisible",
-        "noscriptSizes"
+        "onError"
     ]);
     loading = isLazy ? "lazy" : loading;
     return /*#__PURE__*/ _react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/ _react.default.createElement("img", Object.assign({}, rest, imgAttributes, {
+        width: widthInt,
+        height: heightInt,
         decoding: "async",
-        "data-nimg": layout,
+        "data-nimg": fill ? "fill" : "1",
         className: className,
+        // @ts-ignore - TODO: upgrade to `@types/react@17`
+        loading: loading,
         style: _extends({}, imgStyle, blurStyle),
         ref: (0, _react).useCallback((img)=>{
+            if (!img) {
+                return;
+            }
+            if (onError) {
+                // If the image has an error before react hydrates, then the error is lost.
+                // The workaround is to wait until the image is mounted which is after hydration,
+                // then we set the src again to trigger the error handler (if there was an error).
+                // eslint-disable-next-line no-self-assign
+                img.src = img.src;
+            }
             if (false) {}
-            setIntersection(img);
-            if (img == null ? void 0 : img.complete) {
-                handleLoading(img, srcString, layout, placeholder, onLoadingCompleteRef, setBlurComplete);
+            if (img.complete) {
+                handleLoading(img, srcString, placeholder, onLoadRef, onLoadingCompleteRef, setBlurComplete);
             }
         }, [
-            setIntersection,
             srcString,
-            layout,
             placeholder,
+            onLoadRef,
             onLoadingCompleteRef,
-            setBlurComplete, 
+            setBlurComplete,
+            onError
         ]),
         onLoad: (event)=>{
             const img = event.currentTarget;
-            handleLoading(img, srcString, layout, placeholder, onLoadingCompleteRef, setBlurComplete);
-            if (onLoad) {
-                onLoad(event);
-            }
+            handleLoading(img, srcString, placeholder, onLoadRef, onLoadingCompleteRef, setBlurComplete);
         },
         onError: (event)=>{
+            // if the real image fails to load, this will ensure "alt" is visible
+            setShowAltText(true);
             if (placeholder === "blur") {
                 // If the real image fails to load, this will still remove the placeholder.
                 setBlurComplete(true);
@@ -1035,23 +898,7 @@ const ImageElement = (_param)=>{
                 onError(event);
             }
         }
-    })), (isLazy || placeholder === "blur") && /*#__PURE__*/ _react.default.createElement("noscript", null, /*#__PURE__*/ _react.default.createElement("img", Object.assign({}, rest, generateImgAttrs({
-        config,
-        src: srcString,
-        unoptimized,
-        layout,
-        width: widthInt,
-        quality: qualityInt,
-        sizes: noscriptSizes,
-        loader
-    }), {
-        decoding: "async",
-        "data-nimg": layout,
-        style: imgStyle,
-        className: className,
-        // @ts-ignore - TODO: upgrade to `@types/react@17`
-        loading: loading
-    }))));
+    })));
 };
 if ((typeof exports.default === "function" || typeof exports.default === "object" && exports.default !== null) && typeof exports.default.__esModule === "undefined") {
     Object.defineProperty(exports.default, "__esModule", {
@@ -1064,11 +911,12 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 8418:
+/***/ 1551:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
 
+"use client";
 Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
@@ -1076,15 +924,14 @@ exports["default"] = void 0;
 var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);
 var _object_without_properties_loose = (__webpack_require__(7273)/* ["default"] */ .Z);
 var _react = _interop_require_default(__webpack_require__(6689));
-var _router = __webpack_require__(6273);
-var _addLocale = __webpack_require__(2725);
+var _router = __webpack_require__(1003);
+var _addLocale = __webpack_require__(4465);
 var _routerContext = __webpack_require__(4964);
 var _appRouterContext = __webpack_require__(3280);
-var _useIntersection = __webpack_require__(7190);
-var _getDomainLocale = __webpack_require__(1210);
-var _addBasePath = __webpack_require__(8684);
-// @ts-ignore useTransition exist
-const hasUseTransition = typeof _react.default.useTransition !== "undefined";
+var _useIntersection = __webpack_require__(9246);
+var _getDomainLocale = __webpack_require__(227);
+var _addBasePath = __webpack_require__(3468);
+"use client";
 const prefetched = {};
 function prefetch(router, href, as, options) {
     if (true) return;
@@ -1104,7 +951,7 @@ function isModifiedEvent(event) {
     const { target  } = event.currentTarget;
     return target && target !== "_self" || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.nativeEvent && event.nativeEvent.which === 2;
 }
-function linkClicked(e, router, href, as, replace, shallow, scroll, locale, startTransition, prefetchEnabled) {
+function linkClicked(e, router, href, as, replace, shallow, scroll, locale, isAppRouter, prefetchEnabled) {
     const { nodeName  } = e.currentTarget;
     // anchors inside an svg have a lowercase nodeName
     const isAnchorNodeName = nodeName.toUpperCase() === "A";
@@ -1124,21 +971,25 @@ function linkClicked(e, router, href, as, replace, shallow, scroll, locale, star
         } else {
             // If `beforePopState` doesn't exist on the router it's the AppRouter.
             const method = replace ? "replace" : "push";
-            router[method](href, {
+            // Apply `as` if it's provided.
+            router[method](as || href, {
                 forceOptimisticNavigation: !prefetchEnabled
             });
         }
     };
-    if (startTransition) {
-        startTransition(navigate);
+    if (isAppRouter) {
+        // @ts-expect-error startTransition exists.
+        _react.default.startTransition(navigate);
     } else {
         navigate();
     }
 }
-const Link = /*#__PURE__*/ _react.default.forwardRef(function LinkComponent(props, forwardedRef) {
+/**
+ * React Component that enables client-side transitions between routes.
+ */ const Link = /*#__PURE__*/ _react.default.forwardRef(function LinkComponent(props, forwardedRef) {
     if (false) {}
     let children;
-    const { href: hrefProp , as: asProp , children: childrenProp , prefetch: prefetchProp , passHref , replace , shallow , scroll , locale , onClick , onMouseEnter , onTouchStart , legacyBehavior =Boolean(false) !== true  } = props, restProps = _object_without_properties_loose(props, [
+    const { href: hrefProp , as: asProp , children: childrenProp , prefetch: prefetchProp , passHref , replace , shallow , scroll , locale , onClick , onMouseEnter , onTouchStart , legacyBehavior =Boolean(true) !== true  } = props, restProps = _object_without_properties_loose(props, [
         "href",
         "as",
         "children",
@@ -1158,9 +1009,6 @@ const Link = /*#__PURE__*/ _react.default.forwardRef(function LinkComponent(prop
         children = /*#__PURE__*/ _react.default.createElement("a", null, children);
     }
     const p = prefetchProp !== false;
-    const [, /* isPending */ startTransition] = hasUseTransition ? // @ts-ignore useTransition exists
-    // eslint-disable-next-line react-hooks/rules-of-hooks
-    _react.default.useTransition() : [];
     let router = _react.default.useContext(_routerContext.RouterContext);
     // TODO-APP: type error. Remove `as any`
     const appRouter = _react.default.useContext(_appRouterContext.AppRouterContext);
@@ -1186,6 +1034,8 @@ const Link = /*#__PURE__*/ _react.default.forwardRef(function LinkComponent(prop
         if (false) {} else {
             child = _react.default.Children.only(children);
         }
+    } else {
+        if (false) { var ref; }
     }
     const childRef = legacyBehavior ? child && typeof child === "object" && child.ref : forwardedRef;
     const [setIntersectionRef, isVisible, resetVisible] = (0, _useIntersection).useIntersection({
@@ -1240,7 +1090,7 @@ const Link = /*#__PURE__*/ _react.default.forwardRef(function LinkComponent(prop
                 child.props.onClick(e);
             }
             if (!e.defaultPrevented) {
-                linkClicked(e, router, href, as, replace, shallow, scroll, locale, appRouter ? startTransition : undefined, p);
+                linkClicked(e, router, href, as, replace, shallow, scroll, locale, Boolean(appRouter), p);
             }
         },
         onMouseEnter: (e)=>{
@@ -1300,7 +1150,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 8875:
+/***/ 2554:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -1330,7 +1180,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 2392:
+/***/ 2700:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -1361,7 +1211,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 9320:
+/***/ 2813:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -1370,7 +1220,7 @@ Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
 exports.removeBasePath = removeBasePath;
-var _hasBasePath = __webpack_require__(4119);
+var _hasBasePath = __webpack_require__(928);
 const basePath =  false || "";
 function removeBasePath(path) {
     if (false) {}
@@ -1389,7 +1239,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 5776:
+/***/ 6876:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -1419,7 +1269,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 9311:
+/***/ 4686:
 /***/ ((module, exports) => {
 
 "use strict";
@@ -1455,7 +1305,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 2669:
+/***/ 2497:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -1469,8 +1319,8 @@ exports.getClientBuildManifest = getClientBuildManifest;
 exports.createRouteLoader = createRouteLoader;
 var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);
 var _getAssetPathFromRoute = _interop_require_default(__webpack_require__(9565));
-var _trustedTypes = __webpack_require__(4991);
-var _requestIdleCallback = __webpack_require__(9311);
+var _trustedTypes = __webpack_require__(5407);
+var _requestIdleCallback = __webpack_require__(4686);
 // 3.8s was arbitrarily chosen as it's what https://web.dev/interactive
 // considers as "Good" time-to-interactive. We must assume something went
 // wrong beyond this point, and then fall-back to a full page transition to
@@ -1502,7 +1352,7 @@ function hasPrefetch(link) {
     try {
         link = document.createElement("link");
         return(// with relList.support
-        (!!window.MSInputMethodContext && !!document.documentMode) || link.relList.supports("prefetch"));
+        !!window.MSInputMethodContext && !!document.documentMode || link.relList.supports("prefetch"));
     } catch (e) {
         return false;
     }
@@ -1681,7 +1531,7 @@ function createRouteLoader(assetPrefix) {
                 return resolvePromiseWithTimeout(getFilesForRoute(assetPrefix, route).then(({ scripts , css  })=>{
                     return Promise.all([
                         entrypoints.has(route) ? [] : Promise.all(scripts.map(maybeExecuteScript)),
-                        Promise.all(css.map(fetchStyleSheet)), 
+                        Promise.all(css.map(fetchStyleSheet))
                     ]);
                 }).then((res)=>{
                     return this.whenEntrypoint(route).then((entrypoint)=>({
@@ -1731,11 +1581,12 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 699:
+/***/ 3573:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
 
+"use client";
 Object.defineProperty(exports, "__esModule", ({
     value: true
 }));
@@ -1743,12 +1594,15 @@ exports.handleClientScriptLoad = handleClientScriptLoad;
 exports.initScriptLoader = initScriptLoader;
 exports["default"] = void 0;
 var _extends = (__webpack_require__(6495)/* ["default"] */ .Z);
+var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);
 var _interop_require_wildcard = (__webpack_require__(1598)/* ["default"] */ .Z);
 var _object_without_properties_loose = (__webpack_require__(7273)/* ["default"] */ .Z);
+var _reactDom = _interop_require_default(__webpack_require__(6405));
 var _react = _interop_require_wildcard(__webpack_require__(6689));
 var _headManagerContext = __webpack_require__(2796);
-var _headManager = __webpack_require__(6007);
-var _requestIdleCallback = __webpack_require__(9311);
+var _headManager = __webpack_require__(1831);
+var _requestIdleCallback = __webpack_require__(4686);
+"use client";
 const ScriptCache = new Map();
 const LoadCache = new Set();
 const ignoreProps = [
@@ -1757,10 +1611,10 @@ const ignoreProps = [
     "dangerouslySetInnerHTML",
     "children",
     "onError",
-    "strategy", 
+    "strategy"
 ];
 const loadScript = (props)=>{
-    const { src , id , onLoad =()=>{} , onReady =null , dangerouslySetInnerHTML , children ="" , strategy ="afterInteractive" , onError ,  } = props;
+    const { src , id , onLoad =()=>{} , onReady =null , dangerouslySetInnerHTML , children ="" , strategy ="afterInteractive" , onError  } = props;
     const cacheKey = id || src;
     // Script has already loaded
     if (cacheKey && LoadCache.has(cacheKey)) {
@@ -1769,7 +1623,8 @@ const loadScript = (props)=>{
     // Contents of this script are already loading/loaded
     if (ScriptCache.has(src)) {
         LoadCache.add(cacheKey);
-        // Execute onLoad since the script loading has begun
+        // It is possible that multiple `next/script` components all have same "src", but has different "onLoad"
+        // This is to make sure the same remote script will only load once, but "onLoad" are executed in order
         ScriptCache.get(src).then(onLoad, onError);
         return;
     }
@@ -1845,7 +1700,7 @@ function loadLazyScript(props) {
 function addBeforeInteractiveToCache() {
     const scripts = [
         ...document.querySelectorAll('[data-nscript="beforeInteractive"]'),
-        ...document.querySelectorAll('[data-nscript="beforePageRender"]'), 
+        ...document.querySelectorAll('[data-nscript="beforePageRender"]')
     ];
     scripts.forEach((script)=>{
         const cacheKey = script.id || script.getAttribute("src");
@@ -1866,19 +1721,20 @@ function Script(props) {
         "onError"
     ]);
     // Context is available only during SSR
-    const { updateScripts , scripts , getIsSsr  } = (0, _react).useContext(_headManagerContext.HeadManagerContext);
+    const { updateScripts , scripts , getIsSsr , appDir , nonce  } = (0, _react).useContext(_headManagerContext.HeadManagerContext);
     /**
    * - First mount:
    *   1. The useEffect for onReady executes
    *   2. hasOnReadyEffectCalled.current is false, but the script hasn't loaded yet (not in LoadCache)
    *      onReady is skipped, set hasOnReadyEffectCalled.current to true
    *   3. The useEffect for loadScript executes
-   *      Once the script is loaded, the onReady will be called by then
+   *   4. hasLoadScriptEffectCalled.current is false, loadScript executes
+   *      Once the script is loaded, the onLoad and onReady will be called by then
    *   [If strict mode is enabled / is wrapped in <OffScreen /> component]
    *   5. The useEffect for onReady executes again
    *   6. hasOnReadyEffectCalled.current is true, so entire effect is skipped
    *   7. The useEffect for loadScript executes again
-   *   8. The script is already loaded/loading, loadScript bails out
+   *   8. hasLoadScriptEffectCalled.current is true, so entire effect is skipped
    *
    * - Second mount:
    *   1. The useEffect for onReady executes
@@ -1890,7 +1746,7 @@ function Script(props) {
    *   5. The useEffect for onReady executes again
    *   6. hasOnReadyEffectCalled.current is true, so entire effect is skipped
    *   7. The useEffect for loadScript executes again
-   *   8. The script is already loaded, loadScript will bail out
+   *   8. hasLoadScriptEffectCalled.current is true, so entire effect is skipped
    */ const hasOnReadyEffectCalled = (0, _react).useRef(false);
     (0, _react).useEffect(()=>{
         const cacheKey = id || src;
@@ -1906,11 +1762,15 @@ function Script(props) {
         id,
         src
     ]);
+    const hasLoadScriptEffectCalled = (0, _react).useRef(false);
     (0, _react).useEffect(()=>{
-        if (strategy === "afterInteractive") {
-            loadScript(props);
-        } else if (strategy === "lazyOnload") {
-            loadLazyScript(props);
+        if (!hasLoadScriptEffectCalled.current) {
+            if (strategy === "afterInteractive") {
+                loadScript(props);
+            } else if (strategy === "lazyOnload") {
+                loadLazyScript(props);
+            }
+            hasLoadScriptEffectCalled.current = true;
         }
     }, [
         props,
@@ -1925,7 +1785,7 @@ function Script(props) {
                     onLoad,
                     onReady,
                     onError
-                }, restProps), 
+                }, restProps)
             ]);
             updateScripts(scripts);
         } else if (getIsSsr && getIsSsr()) {
@@ -1933,6 +1793,54 @@ function Script(props) {
             LoadCache.add(id || src);
         } else if (getIsSsr && !getIsSsr()) {
             loadScript(props);
+        }
+    }
+    // For the app directory, we need React Float to preload these scripts.
+    if (appDir) {
+        // Before interactive scripts need to be loaded by Next.js' runtime instead
+        // of native <script> tags, because they no longer have `defer`.
+        if (strategy === "beforeInteractive") {
+            if (!src) {
+                // For inlined scripts, we put the content in `children`.
+                if (restProps.dangerouslySetInnerHTML) {
+                    restProps.children = restProps.dangerouslySetInnerHTML.__html;
+                    delete restProps.dangerouslySetInnerHTML;
+                }
+                return /*#__PURE__*/ _react.default.createElement("script", {
+                    nonce: nonce,
+                    dangerouslySetInnerHTML: {
+                        __html: `(self.__next_s=self.__next_s||[]).push(${JSON.stringify([
+                            0,
+                            _extends({}, restProps)
+                        ])})`
+                    }
+                });
+            }
+            // @ts-ignore
+            _reactDom.default.preload(src, restProps.integrity ? {
+                as: "script",
+                integrity: restProps.integrity
+            } : {
+                as: "script"
+            });
+            return /*#__PURE__*/ _react.default.createElement("script", {
+                nonce: nonce,
+                dangerouslySetInnerHTML: {
+                    __html: `(self.__next_s=self.__next_s||[]).push(${JSON.stringify([
+                        src
+                    ])})`
+                }
+            });
+        } else if (strategy === "afterInteractive") {
+            if (src) {
+                // @ts-ignore
+                _reactDom.default.preload(src, restProps.integrity ? {
+                    as: "script",
+                    integrity: restProps.integrity
+                } : {
+                    as: "script"
+                });
+            }
         }
     }
     return null;
@@ -1953,7 +1861,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 4991:
+/***/ 5407:
 /***/ ((module, exports) => {
 
 "use strict";
@@ -1988,7 +1896,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 7190:
+/***/ 9246:
 /***/ ((module, exports, __webpack_require__) => {
 
 "use strict";
@@ -1998,7 +1906,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports.useIntersection = useIntersection;
 var _react = __webpack_require__(6689);
-var _requestIdleCallback = __webpack_require__(9311);
+var _requestIdleCallback = __webpack_require__(4686);
 const hasIntersectionObserver = typeof IntersectionObserver === "function";
 const observers = new Map();
 const idList = [];
@@ -2099,7 +2007,7 @@ if ((typeof exports.default === "function" || typeof exports.default === "object
 
 /***/ }),
 
-/***/ 6273:
+/***/ 1003:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
@@ -2117,10 +2025,10 @@ var _async_to_generator = (__webpack_require__(932)/* ["default"] */ .Z);
 var _extends = (__webpack_require__(6495)/* ["default"] */ .Z);
 var _interop_require_default = (__webpack_require__(2648)/* ["default"] */ .Z);
 var _interop_require_wildcard = (__webpack_require__(1598)/* ["default"] */ .Z);
-var _normalizeTrailingSlash = __webpack_require__(2392);
+var _normalizeTrailingSlash = __webpack_require__(2700);
 var _removeTrailingSlash = __webpack_require__(3297);
-var _routeLoader = __webpack_require__(2669);
-var _script = __webpack_require__(699);
+var _routeLoader = __webpack_require__(2497);
+var _script = __webpack_require__(3573);
 var _isError = _interop_require_wildcard(__webpack_require__(676));
 var _denormalizePagePath = __webpack_require__(4406);
 var _normalizeLocalePath = __webpack_require__(4014);
@@ -2130,19 +2038,20 @@ var _isDynamic = __webpack_require__(1428);
 var _parseRelativeUrl = __webpack_require__(1292);
 var _querystring = __webpack_require__(979);
 var _resolveRewrites = _interop_require_default(__webpack_require__(6052));
-var _routeMatcher = __webpack_require__(4226);
+var _routeMatcher = __webpack_require__(1224);
 var _routeRegex = __webpack_require__(5052);
 var _formatUrl = __webpack_require__(3938);
-var _detectDomainLocale = __webpack_require__(8748);
+var _detectDomainLocale = __webpack_require__(4643);
 var _parsePath = __webpack_require__(8854);
-var _addLocale = __webpack_require__(2725);
-var _removeLocale = __webpack_require__(5776);
-var _removeBasePath = __webpack_require__(9320);
-var _addBasePath = __webpack_require__(8684);
-var _hasBasePath = __webpack_require__(4119);
+var _addLocale = __webpack_require__(4465);
+var _removeLocale = __webpack_require__(6876);
+var _removeBasePath = __webpack_require__(2813);
+var _addBasePath = __webpack_require__(3468);
+var _hasBasePath = __webpack_require__(928);
 var _getNextPathnameInfo = __webpack_require__(5789);
 var _formatNextPathnameInfo = __webpack_require__(299);
 var _compareStates = __webpack_require__(6220);
+var _isBot = __webpack_require__(1897);
 function buildCancellationError() {
     return Object.assign(new Error("Route Cancelled"), {
         cancelled: true
@@ -2194,7 +2103,8 @@ function interpolateAs(route, asPathname, query) {
     let interpolatedRoute = "";
     const dynamicRegex = (0, _routeRegex).getRouteRegex(route);
     const dynamicGroups = dynamicRegex.groups;
-    const dynamicMatches = (asPathname !== route ? (0, _routeMatcher).getRouteMatcher(dynamicRegex)(asPathname) : "") || // TODO: should this take priority; also need to change in the router.
+    const dynamicMatches = (asPathname !== route ? (0, _routeMatcher).getRouteMatcher(dynamicRegex)(asPathname) : "") || // Fall back to reading the values from the href
+    // TODO: should this take priority; also need to change in the router.
     query;
     interpolatedRoute = route;
     const params = Object.keys(dynamicGroups);
@@ -2210,7 +2120,8 @@ function interpolateAs(route, asPathname, query) {
         if (repeat && !Array.isArray(value)) value = [
             value
         ];
-        return (optional || param in dynamicMatches) && (interpolatedRoute = interpolatedRoute.replace(replaced, repeat ? value.map(// path delimiter escaped since they are being inserted
+        return (optional || param in dynamicMatches) && // Interpolate group into data URL if present
+        (interpolatedRoute = interpolatedRoute.replace(replaced, repeat ? value.map(// path delimiter escaped since they are being inserted
         // into the URL and we expect URL encoded segments
         // when parsing dynamic route params
         (segment)=>encodeURIComponent(segment)).join("/") : encodeURIComponent(value)) || "/");
@@ -2336,7 +2247,7 @@ function getMiddlewareData(source, response, options) {
             let fsPathname = (0, _removeTrailingSlash).removeTrailingSlash(pathnameInfo.pathname);
             return Promise.all([
                 options.router.pageLoader.getPageList(),
-                (0, _routeLoader).getClientBuildManifest(), 
+                (0, _routeLoader).getClientBuildManifest()
             ]).then(([pages, { __rewrites: rewrites  }])=>{
                 let as = (0, _addLocale).addLocale(pathnameInfo.pathname, pathnameInfo.locale);
                 if ((0, _isDynamic).isDynamicRoute(as) || !rewriteHeader && pages.includes((0, _normalizeLocalePath).normalizeLocalePath((0, _removeBasePath).removeBasePath(as), options.router.locales).pathname)) {
@@ -2449,6 +2360,13 @@ function fetchRetry(url, attempts, options) {
     });
 }
 const backgroundCache = {};
+function handleSmoothScroll(fn) {
+    const htmlElement = document.documentElement;
+    const existing = htmlElement.style.scrollBehavior;
+    htmlElement.style.scrollBehavior = "auto";
+    fn();
+    htmlElement.style.scrollBehavior = existing;
+}
 function tryToParseAsJSON(text) {
     try {
         return JSON.parse(text);
@@ -2637,7 +2555,7 @@ class Router {
             // hydration. Your app should _never_ use this property. It may change at
             // any time without notice.
             const isQueryUpdating = options._h;
-            const shouldResolveHref = isQueryUpdating || options._shouldResolveHref || (0, _parsePath).parsePath(url).pathname === (0, _parsePath).parsePath(as).pathname;
+            let shouldResolveHref = isQueryUpdating || options._shouldResolveHref || (0, _parsePath).parsePath(url).pathname === (0, _parsePath).parsePath(as).pathname;
             const nextState = _extends({}, _this.state);
             // for static pages with query params in the URL we delay
             // marking the router ready until after the query is updated
@@ -2757,7 +2675,7 @@ class Router {
                 [pages, { __rewrites: rewrites  }] = yield Promise.all([
                     _this.pageLoader.getPageList(),
                     (0, _routeLoader).getClientBuildManifest(),
-                    _this.pageLoader.getMiddleware(), 
+                    _this.pageLoader.getMiddleware()
                 ]);
             } catch (err1) {
                 // If we fail to resolve the page list or client-build manifest, we must
@@ -2792,6 +2710,9 @@ class Router {
             });
             if (options.shallow && isMiddlewareMatch) {
                 pathname = _this.pathname;
+            }
+            if (isQueryUpdating && isMiddlewareMatch) {
+                shouldResolveHref = false;
             }
             if (shouldResolveHref && pathname !== "/_error") {
                 options._shouldResolveHref = true;
@@ -2854,7 +2775,9 @@ class Router {
                     routeProps,
                     locale: nextState.locale,
                     isPreview: nextState.isPreview,
-                    hasMiddleware: isMiddlewareMatch
+                    hasMiddleware: isMiddlewareMatch,
+                    unstable_skipClientCache: options.unstable_skipClientCache,
+                    isQueryUpdating: isQueryUpdating && !_this.isFallback
                 });
                 if ("route" in routeInfo && isMiddlewareMatch) {
                     pathname = routeInfo.route || route;
@@ -2862,7 +2785,8 @@ class Router {
                     if (!routeProps.shallow) {
                         query = Object.assign({}, routeInfo.query || {}, query);
                     }
-                    if (routeMatch && pathname !== parsed.pathname) {
+                    const cleanedParsedPathname = (0, _hasBasePath).hasBasePath(parsed.pathname) ? (0, _removeBasePath).removeBasePath(parsed.pathname) : parsed.pathname;
+                    if (routeMatch && pathname !== cleanedParsedPathname) {
                         Object.keys(routeMatch).forEach((key)=>{
                             if (routeMatch && query[key] === routeMatch[key]) {
                                 delete query[key];
@@ -2881,7 +2805,7 @@ class Router {
                             rewriteAs = localeResult.pathname;
                         }
                         const routeRegex1 = (0, _routeRegex).getRouteRegex(pathname);
-                        const curRouteMatch = (0, _routeMatcher).getRouteMatcher(routeRegex1)(rewriteAs);
+                        const curRouteMatch = (0, _routeMatcher).getRouteMatcher(routeRegex1)(new URL(rewriteAs, location.href).pathname);
                         if (curRouteMatch) {
                             Object.assign(query, curRouteMatch);
                         }
@@ -3084,7 +3008,7 @@ class Router {
             }
         })();
     }
-    getRouteInfo({ route: requestedRoute , pathname , query , as , resolvedAs , routeProps , locale , hasMiddleware , isPreview , unstable_skipClientCache  }) {
+    getRouteInfo({ route: requestedRoute , pathname , query , as , resolvedAs , routeProps , locale , hasMiddleware , isPreview , unstable_skipClientCache , isQueryUpdating  }) {
         var _this = this;
         return _async_to_generator(function*() {
             /**
@@ -3123,14 +3047,18 @@ class Router {
                     inflightCache: _this.sdc,
                     persistCache: !isPreview,
                     isPrefetch: false,
-                    unstable_skipClientCache
+                    unstable_skipClientCache,
+                    isBackground: isQueryUpdating
                 };
-                const data = yield withMiddlewareEffects({
+                const data = isQueryUpdating ? {} : yield withMiddlewareEffects({
                     fetchData: ()=>fetchNextData(fetchNextDataParams),
                     asPath: resolvedAs,
                     locale: locale,
                     router: _this
                 });
+                if (isQueryUpdating && data) {
+                    data.json = self.__NEXT_DATA__.props;
+                }
                 handleCancelled();
                 if ((data == null ? void 0 : (ref = data.effect) == null ? void 0 : ref.type) === "redirect-internal" || (data == null ? void 0 : (ref4 = data.effect) == null ? void 0 : ref4.type) === "redirect-external") {
                     return data.effect;
@@ -3162,18 +3090,12 @@ class Router {
                         Component: res.page,
                         styleSheets: res.styleSheets,
                         __N_SSG: res.mod.__N_SSG,
-                        __N_SSP: res.mod.__N_SSP,
-                        __N_RSC: !!res.mod.__next_rsc__
+                        __N_SSP: res.mod.__N_SSP
                     })));
                 if (false) {}
-                /**
-       * For server components, non-SSR pages will have statically optimized
-       * flight data in a production build. So only development and SSR pages
-       * will always have the real-time generated and streamed flight data.
-       */ const useStreamedFlightData = routeInfo.__N_RSC && ( false || routeInfo.__N_SSP);
-                const shouldFetchData = routeInfo.__N_SSG || routeInfo.__N_SSP || routeInfo.__N_RSC;
+                const shouldFetchData = routeInfo.__N_SSG || routeInfo.__N_SSP;
                 const { props , cacheKey  } = yield _this._getData(_async_to_generator(function*() {
-                    if (shouldFetchData && !useStreamedFlightData) {
+                    if (shouldFetchData) {
                         const { json , cacheKey: _cacheKey  } = (data == null ? void 0 : data.json) ? data : yield fetchNextData({
                             dataHref: _this.pageLoader.getDataHref({
                                 href: (0, _formatUrl).formatWithValidation({
@@ -3216,25 +3138,14 @@ class Router {
                 }
                 // we kick off a HEAD request in the background
                 // when a non-prefetch request is made to signal revalidation
-                if (!_this.isPreview && routeInfo.__N_SSG && "production" !== "development") {
+                if (!_this.isPreview && routeInfo.__N_SSG && "production" !== "development" && !isQueryUpdating) {
                     fetchNextData(Object.assign({}, fetchNextDataParams, {
                         isBackground: true,
                         persistCache: false,
                         inflightCache: backgroundCache
                     })).catch(()=>{});
                 }
-                let flightInfo;
-                if (routeInfo.__N_RSC) {
-                    flightInfo = {
-                        __flight__: useStreamedFlightData ? (yield _this._getData(()=>_this._getFlightData((0, _formatUrl).formatWithValidation({
-                                query: _extends({}, query, {
-                                    __flight__: "1"
-                                }),
-                                pathname: (0, _isDynamic).isDynamicRoute(route) ? interpolateAs(pathname, (0, _parseRelativeUrl).parseRelativeUrl(resolvedAs).pathname, query).result : pathname
-                            })))).data : props.__flight__
-                    };
-                }
-                props.pageProps = Object.assign({}, props.pageProps, flightInfo);
+                props.pageProps = Object.assign({}, props.pageProps);
                 routeInfo.props = props;
                 routeInfo.route = route;
                 routeInfo.query = query;
@@ -3279,7 +3190,7 @@ class Router {
         // Scroll to top if the hash is just `#` with no value or `#top`
         // To mirror browsers
         if (hash === "" || hash === "top") {
-            window.scrollTo(0, 0);
+            handleSmoothScroll(()=>window.scrollTo(0, 0));
             return;
         }
         // Decode hash to make non-latin anchor works.
@@ -3287,14 +3198,14 @@ class Router {
         // First we check if the element by id is found
         const idEl = document.getElementById(rawHash);
         if (idEl) {
-            idEl.scrollIntoView();
+            handleSmoothScroll(()=>idEl.scrollIntoView());
             return;
         }
         // If there's no element with the id, we check the `name` property
         // To mirror browsers
         const nameEl = document.getElementsByName(rawHash)[0];
         if (nameEl) {
-            nameEl.scrollIntoView();
+            handleSmoothScroll(()=>nameEl.scrollIntoView());
         }
     }
     urlIsNew(asPath) {
@@ -3308,6 +3219,7 @@ class Router {
    */ prefetch(url, asPath = url, options = {}) {
         var _this = this;
         return _async_to_generator(function*() {
+            if (false) {}
             let parsed = (0, _parseRelativeUrl).parseRelativeUrl(url);
             let { pathname , query  } = parsed;
             if (true) {
@@ -3352,7 +3264,7 @@ class Router {
                         unstable_skipClientCache: options.unstable_skipClientCache || options.priority && !!true
                     }).then(()=>false) : false;
                 }),
-                _this.pageLoader[options.priority ? "loadPage" : "prefetch"](route), 
+                _this.pageLoader[options.priority ? "loadPage" : "prefetch"](route)
             ]);
         })();
     }
@@ -3436,7 +3348,7 @@ class Router {
     get isPreview() {
         return this.state.isPreview;
     }
-    constructor(pathname1, query1, as1, { initialProps , pageLoader , App , wrapApp , Component , err , subscription , isFallback , locale , locales , defaultLocale , domainLocales , isPreview , isRsc  }){
+    constructor(pathname1, query1, as1, { initialProps , pageLoader , App , wrapApp , Component , err , subscription , isFallback , locale , locales , defaultLocale , domainLocales , isPreview  }){
         // Server Data Cache
         this.sdc = {};
         this.isFirstPopStateEvent = true;
@@ -3532,8 +3444,7 @@ class Router {
                 props: initialProps,
                 err,
                 __N_SSG: initialProps && initialProps.__N_SSG,
-                __N_SSP: initialProps && initialProps.__N_SSP,
-                __N_RSC: !!isRsc
+                __N_SSP: initialProps && initialProps.__N_SSP
             };
         }
         this.components["/_app"] = {
@@ -3584,7 +3495,7 @@ exports["default"] = Router; //# sourceMappingURL=router.js.map
 /***/ 5675:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__(8045)
+module.exports = __webpack_require__(9749)
 
 
 /***/ }),
@@ -3592,7 +3503,7 @@ module.exports = __webpack_require__(8045)
 /***/ 1664:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__(8418)
+module.exports = __webpack_require__(1551)
 
 
 /***/ }),
@@ -3600,7 +3511,10 @@ module.exports = __webpack_require__(8418)
 /***/ 4298:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__(699)
+module.exports =
+   false
+    ? 0
+    : __webpack_require__(3573)
 
 
 /***/ })

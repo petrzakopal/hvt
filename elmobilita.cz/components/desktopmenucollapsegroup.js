@@ -42,68 +42,69 @@ function DesktopMenuCollapseGroup({ id, groupName, linkData }) {
 		};
 	}, []);
 
-	return (
-		<>
-			{/* Group link and icon opener */}
-			<button
-				className={`flex flex-row items-center dark:hover:bg-zinc-200 dark:hover:text-zinc-900 hover:bg-zinc-200 hover:text-zinc-900 rounded-lg px-4 py-0.5 transition-all mx-1 easy-in-out ${
-					pathname.includes("aktivity") && groupName == "Aktivity"
-						? "bg-white dark:text-zinc-50 text-zinc-900"
-						: ""
-				}`}
-				aria-controls={`desktop-collapse-group-content-${id}`}
-				aria-expanded="false"
-				id={`desktop-collapse-group-button-${id}`}
-				onClick={() => {
-					multipleGroupHandler("clickButton", id);
-					let group = document.getElementById(
-						`desktop-collapse-group-content-${id}`
-					);
-					let groupIcon = document.getElementById(
-						`desktop-icon-collapse-group-${id}`
-					);
-					groupIcon.classList.toggle("-rotate-180");
-					group.classList.toggle("hidden");
+	return <>
+        {/* Group link and icon opener */}
+        <button
+            className={`flex flex-row items-center dark:hover:bg-zinc-200 dark:hover:text-zinc-900 hover:bg-zinc-200 hover:text-zinc-900 rounded-lg px-4 py-0.5 transition-all mx-1 easy-in-out ${
+                pathname.includes("aktivity") && groupName == "Aktivity"
+                    ? "bg-white dark:text-zinc-50 text-zinc-900"
+                    : ""
+            }`}
+            aria-controls={`desktop-collapse-group-content-${id}`}
+            aria-expanded="false"
+            id={`desktop-collapse-group-button-${id}`}
+            onClick={() => {
+                multipleGroupHandler("clickButton", id);
+                let group = document.getElementById(
+                    `desktop-collapse-group-content-${id}`
+                );
+                let groupIcon = document.getElementById(
+                    `desktop-icon-collapse-group-${id}`
+                );
+                groupIcon.classList.toggle("-rotate-180");
+                group.classList.toggle("hidden");
 
-					group.ariaExpanded === "true"
-						? (group.ariaExpanded = "false")
-						: (group.ariaExpanded = "true");
-				}}
-			>
-				<span className={""}>{groupName}</span>
-				<span>
-					<ChevronDownIcon
-						className={`w-5 h-5 ml-2 transition-transform easy-in-out`}
-						id={`desktop-icon-collapse-group-${id}`}
-					/>
-				</span>
-			</button>
-			{/* Group mega container - full width of a page with background */}
-			{/* Using id of group determined in props to distinguish multiple groups */}
-			<div
-				className="hidden absolute top-20 lg:w-full  left-0 items-center bg-zinc-50 dark:bg-zinc-900 desktop-expandable-menu-container"
-				id={`desktop-collapse-group-content-${id}`}
-				aria-expanded="false"
-			>
-				{/* Grid of a links */}
-				<div className="grid grid-cols-3 gap-8 justify-center justify-items-start content-center lg:w-inside-full h-auto h-min-12 mx-auto items-center p-8 py-4 bg-transparent">
-					{/* Mapping entries
-                    Object.entries(props) takes input object and creates array consisting of keys and values [key, value], when value is in this scenario value too. So we get [key, value[]] where key is linkName, value[] consists of linkUrl = linkData[2], linkIcon = linkData[1] and linkSubname = linkData[0]. Then this [key, value[0]] pair is mapped to linkName and linkData[] array property and used. So we iterate/map over all entries in input object. */}
-					{Object.entries(linkData).map(([linkName, linkData]) => (
-						<Link href={linkData[2]} key={linkName}>
-							<a className="hover:bg-zinc-200 hover:dark:bg-zinc-200 hover:dark:text-zinc-900 hover:text-zinc-900 rounded-lg px-4 py-0.5 transition-all font-bold text-sm flex flex-col w-full">
-								<div className="flex flex-row items-center">
-									{linkData[1]}
-									<span>{linkName}</span>
-								</div>
-								<span className="text-sm font-normal pl-8">{linkData[0]}</span>
-							</a>
-						</Link>
-					))}
-				</div>
-			</div>
-		</>
-	);
+                group.ariaExpanded === "true"
+                    ? (group.ariaExpanded = "false")
+                    : (group.ariaExpanded = "true");
+            }}
+        >
+            <span className={""}>{groupName}</span>
+            <span>
+                <ChevronDownIcon
+                    className={`w-5 h-5 ml-2 transition-transform easy-in-out`}
+                    id={`desktop-icon-collapse-group-${id}`}
+                />
+            </span>
+        </button>
+        {/* Group mega container - full width of a page with background */}
+        {/* Using id of group determined in props to distinguish multiple groups */}
+        <div
+            className="hidden absolute top-20 lg:w-full  left-0 items-center bg-zinc-50 dark:bg-zinc-900 desktop-expandable-menu-container"
+            id={`desktop-collapse-group-content-${id}`}
+            aria-expanded="false"
+        >
+            {/* Grid of a links */}
+            <div className="grid grid-cols-3 gap-8 justify-center justify-items-start content-center lg:w-inside-full h-auto h-min-12 mx-auto items-center p-8 py-4 bg-transparent">
+                {/* Mapping entries
+                Object.entries(props) takes input object and creates array consisting of keys and values [key, value], when value is in this scenario value too. So we get [key, value[]] where key is linkName, value[] consists of linkUrl = linkData[2], linkIcon = linkData[1] and linkSubname = linkData[0]. Then this [key, value[0]] pair is mapped to linkName and linkData[] array property and used. So we iterate/map over all entries in input object. */}
+                {Object.entries(linkData).map(([linkName, linkData]) => (
+                    (<Link
+                        href={linkData[2]}
+                        key={linkName}
+                        className="hover:bg-zinc-200 hover:dark:bg-zinc-200 hover:dark:text-zinc-900 hover:text-zinc-900 rounded-lg px-4 py-0.5 transition-all font-bold text-sm flex flex-col w-full">
+
+                        <div className="flex flex-row items-center">
+                            {linkData[1]}
+                            <span>{linkName}</span>
+                        </div>
+                        <span className="text-sm font-normal pl-8">{linkData[0]}</span>
+
+                    </Link>)
+                ))}
+            </div>
+        </div>
+    </>;
 }
 
 export default DesktopMenuCollapseGroup;

@@ -39,21 +39,18 @@ export const VideoImageLink = ({
 	return (
 		<div className="relative video-image-link flex flex-col items-center justify-center mx-auto rounded-xl ml-[-3vw] w-[calc(100%+6vw] h-80 group cursor-pointer my-5">
 			{/* {children} */}
-			<Link href={linkUrl}>
-				<a rel={rel} target={target}>
-					<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
-					<picture className="rounded-xl z-[1]">
-						<Image
-							src={imageUrl}
-							layout={"fill"}
-							objectFit={"cover"}
-							className={
-								"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out"
-							}
-							alt={alt}
-						/>
-					</picture>
-				</a>
+			<Link href={linkUrl} rel={rel} target={target}>
+				<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+				<picture className="rounded-xl z-[1]">
+					<Image
+						src={imageUrl}
+						fill
+						className={
+							"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+						}
+						alt={alt}
+					/>
+				</picture>
 			</Link>
 		</div>
 	);
@@ -165,12 +162,10 @@ export const PostFooterNavigation = ({
 				{previousEnabled == "true" ? (
 					<>
 						<button className="text-left h-10">
-							<Link href={hrefPrevious}>
-								<a className="cursor-pointer">
-									<span className="bg-primary-accent/20 border-2 border-primary-accent px-4 py-2 rounded-lg text-zinc-900 dark:text-zinc-50">
-										{previous}
-									</span>
-								</a>
+							<Link href={hrefPrevious} className="cursor-pointer">
+								<span className="bg-primary-accent/20 border-2 border-primary-accent px-4 py-2 rounded-lg text-zinc-900 dark:text-zinc-50">
+									{previous}
+								</span>
 							</Link>
 						</button>
 					</>
@@ -183,12 +178,10 @@ export const PostFooterNavigation = ({
 				{nextEnabled == "true" ? (
 					<>
 						<button className="text-right h-10">
-							<Link href={hrefNext}>
-								<a className="cursor-pointer">
-									<span className="bg-primary-accent/20 border-2 border-primary-accent px-4 py-2 rounded-lg text-zinc-900 dark:text-zinc-50">
-										{next}
-									</span>
-								</a>
+							<Link href={hrefNext} className="cursor-pointer">
+								<span className="bg-primary-accent/20 border-2 border-primary-accent px-4 py-2 rounded-lg text-zinc-900 dark:text-zinc-50">
+									{next}
+								</span>
 							</Link>
 						</button>
 					</>
@@ -214,8 +207,8 @@ export const ListNavigationItem = ({ href, text }) => {
 	return (
 		<>
 			<li>
-				<Link href={href}>
-					<a className="internal">{text}</a>
+				<Link href={href} className="internal">
+					{text}
 				</Link>
 			</li>
 		</>
@@ -228,23 +221,25 @@ export const TrolejbusyVideoGallery = () => {
 			<div className="relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4">
 				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
 					{/* {children} */}
-					<Link href={"https://www.youtube.com/watch?v=73x5TA9vCbU"}>
-						<a rel={"external"} target={"_blank"} className="internal">
-							<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
-							<picture className="rounded-xl z-[1]">
-								<Image
-									src={
-										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
-									}
-									layout={"fill"}
-									objectFit={"cover"}
-									className={
-										"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out"
-									}
-									alt={"Trolejbusy v České a Slovenské republice 1/4"}
-								/>
-							</picture>
-						</a>
+					<Link
+						href={"https://www.youtube.com/watch?v=73x5TA9vCbU"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={
+									"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
+								}
+								fill
+								className={
+									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+								}
+								alt={"Trolejbusy v České a Slovenské republice 1/4"}
+							/>
+						</picture>
 					</Link>
 					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5">
 						1. část
@@ -252,23 +247,25 @@ export const TrolejbusyVideoGallery = () => {
 				</div>
 				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
 					{/* {children} */}
-					<Link href={"https://www.youtube.com/watch?v=y574VfBqUMM"}>
-						<a rel={"external"} target={"_blank"} className="internal">
-							<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
-							<picture className="rounded-xl z-[1]">
-								<Image
-									src={
-										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
-									}
-									layout={"fill"}
-									objectFit={"cover"}
-									className={
-										"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out"
-									}
-									alt={"Trolejbusy v České a Slovenské republice 1/4"}
-								/>
-							</picture>
-						</a>
+					<Link
+						href={"https://www.youtube.com/watch?v=y574VfBqUMM"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={
+									"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
+								}
+								fill
+								className={
+									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+								}
+								alt={"Trolejbusy v České a Slovenské republice 1/4"}
+							/>
+						</picture>
 					</Link>
 					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5">
 						2. část
@@ -276,23 +273,25 @@ export const TrolejbusyVideoGallery = () => {
 				</div>
 				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
 					{/* {children} */}
-					<Link href={"https://www.youtube.com/watch?v=gqM-kkwqOQI"}>
-						<a rel={"external"} target={"_blank"} className="internal">
-							<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
-							<picture className="rounded-xl z-[1]">
-								<Image
-									src={
-										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
-									}
-									layout={"fill"}
-									objectFit={"cover"}
-									className={
-										"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out"
-									}
-									alt={"Trolejbusy v České a Slovenské republice 1/4"}
-								/>
-							</picture>
-						</a>
+					<Link
+						href={"https://www.youtube.com/watch?v=gqM-kkwqOQI"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={
+									"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
+								}
+								fill
+								className={
+									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+								}
+								alt={"Trolejbusy v České a Slovenské republice 1/4"}
+							/>
+						</picture>
 					</Link>
 					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5">
 						3. část
@@ -300,23 +299,25 @@ export const TrolejbusyVideoGallery = () => {
 				</div>
 				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
 					{/* {children} */}
-					<Link href={"https://www.youtube.com/watch?v=61DuiVpZlrI"}>
-						<a rel={"external"} target={"_blank"} className="internal">
-							<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
-							<picture className="rounded-xl z-[1]">
-								<Image
-									src={
-										"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
-									}
-									layout={"fill"}
-									objectFit={"cover"}
-									className={
-										"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out"
-									}
-									alt={"Trolejbusy v České a Slovenské republice 1/4"}
-								/>
-							</picture>
-						</a>
+					<Link
+						href={"https://www.youtube.com/watch?v=61DuiVpZlrI"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={
+									"/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp"
+								}
+								fill
+								className={
+									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+								}
+								alt={"Trolejbusy v České a Slovenské republice 1/4"}
+							/>
+						</picture>
 					</Link>
 					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5">
 						4. část
@@ -333,74 +334,82 @@ export const Shows = () => {
 			<div className="relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4">
 				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
 					{/* {children} */}
-					<Link href={"https://fullycharged.show/"}>
-						<a rel={"external"} target={"_blank"} className="internal">
-							<picture className="rounded-xl z-[1]">
-								<Image
-									src={"/assets/images/misc/fully-charged-show.svg"}
-									layout={"fill"}
-									objectFit={"contain"}
-									className={
-										"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out bg-[#f7f71c] !p-5"
-									}
-									alt={"Fully Charged Show"}
-								/>
-							</picture>
-						</a>
+					<Link
+						href={"https://fullycharged.show/"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/misc/fully-charged-show.svg"}
+								fill
+								className={
+									"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out bg-[#f7f71c] !p-5 object-contain"
+								}
+								alt={"Fully Charged Show"}
+							/>
+						</picture>
 					</Link>
 				</div>
 				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
 					{/* {children} */}
-					<Link href={"https://insideevs.com/"}>
-						<a rel={"external"} target={"_blank"} className="internal">
-							<picture className="rounded-xl z-[1]">
-								<Image
-									src={"/assets/images/misc/inside-ev.webp"}
-									layout={"fill"}
-									objectFit={"contain"}
-									className={
-										"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out bg-white !p-5"
-									}
-									alt={"Inside EV's"}
-								/>
-							</picture>
-						</a>
+					<Link
+						href={"https://insideevs.com/"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/misc/inside-ev.webp"}
+								fill
+								className={
+									"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out bg-white !p-5 object-contain"
+								}
+								alt={"Inside EV's"}
+							/>
+						</picture>
 					</Link>
 				</div>
 				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
 					{/* {children} */}
-					<Link href={"https://micromobility.io/"}>
-						<a rel={"external"} target={"_blank"} className="internal">
-							<picture className="rounded-xl z-[1]">
-								<Image
-									src={"/assets/images/misc/micromobility.webp"}
-									layout={"fill"}
-									objectFit={"cover"}
-									className={
-										"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out"
-									}
-									alt={"Micromobility"}
-								/>
-							</picture>
-						</a>
+					<Link
+						href={"https://micromobility.io/"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/misc/micromobility.webp"}
+								fill
+								className={
+									"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out object-contain"
+								}
+								alt={"Micromobility"}
+							/>
+						</picture>
 					</Link>
 				</div>
 				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
 					{/* {children} */}
-					<Link href={"https://thedriven.io/"}>
-						<a rel={"external"} target={"_blank"} className="internal">
-							<picture className="rounded-xl z-[1]">
-								<Image
-									src={"/assets/images/misc/the-driven.webp"}
-									layout={"fill"}
-									objectFit={"contain"}
-									className={
-										"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out !p-5 bg-white"
-									}
-									alt={"The Driven Podcast"}
-								/>
-							</picture>
-						</a>
+					<Link
+						href={"https://thedriven.io/"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/misc/the-driven.webp"}
+								fill
+								className={
+									"rounded-lg group-hover:md:animate-breathe transition-all ease-in-out !p-5 bg-white object-contain"
+								}
+								alt={"The Driven Podcast"}
+							/>
+						</picture>
 					</Link>
 				</div>
 			</div>

@@ -19,10 +19,13 @@ export const SourceBlock = ({ icon, name, linkName, linkUrl, id }) => {
 					{linkUrl ? (
 						<>
 							<p className=" italic text-zinc-600 dark:text-zinc-600 dark:hover:text-zinc-50 hover:text-zinc-900 transition-colors ease-in-out text-lg">
-								<Link href={linkUrl}>
-									<a rel="external" target={"_blank"} className={"break-all"}>
-										{linkName}
-									</a>
+								<Link
+									href={linkUrl}
+									rel="external"
+									target={"_blank"}
+									className={"break-all"}
+								>
+									{linkName}
 								</Link>
 							</p>
 						</>
@@ -65,19 +68,16 @@ export const PersonCard = ({ name, position, image, socialUrl, socialTag }) => {
 					{name}
 				</h4>
 			</div> */}
-			<Link href={socialUrl}>
-				<a className="relative flex">
-					<picture className="w-[177px] h-[233px] relative">
-						<Image
-							src={image}
-							layout={"fill"}
-							sizes="50vw"
-							// placeholder="blur" // only available when staticly importing file like import profilePic from "../public/assets/..."
-							objectFit="cover"
-							className="rounded-md"
-						></Image>
-					</picture>
-				</a>
+			<Link href={socialUrl} className="relative flex">
+				<picture className="w-[177px] h-[233px] relative">
+					<Image
+						src={image}
+						fill
+						sizes="50vw"
+						// placeholder="blur" // only available when staticly importing file like import profilePic from "../public/assets/..."
+						className="rounded-md object-cover"
+					></Image>
+				</picture>
 			</Link>
 			<div className="grid gap-1">
 				<h4
@@ -95,13 +95,12 @@ export const PersonCard = ({ name, position, image, socialUrl, socialTag }) => {
 					""
 				)}
 
-				<Link href={socialUrl}>
-					<a
-						className={`text-normal font-semibold transition-colors easy-in-out ${LinkProperties}`}
-						target={"_blank"}
-					>
-						{socialTag}
-					</a>
+				<Link
+					href={socialUrl}
+					className={`text-normal font-semibold transition-colors easy-in-out ${LinkProperties}`}
+					target={"_blank"}
+				>
+					{socialTag}
 				</Link>
 			</div>
 		</div>
