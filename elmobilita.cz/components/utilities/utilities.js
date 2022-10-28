@@ -9,10 +9,7 @@ export const SpaceY = ({ mt }) => {
 export const SourceBlock = ({ icon, name, linkName, linkUrl, id }) => {
 	return (
 		<>
-			<div
-				className="w-full flex flex-row lg:-mt-20 lg:pt-20 -mt-24 pt-24"
-				id={id}
-			>
+			<div className="w-full flex flex-row" id={id}>
 				<span className="w-5 mr-5 text-zinc-600 dark:text-zinc-600 text-base justify-items-start flex flex-col">
 					{icon}
 				</span>

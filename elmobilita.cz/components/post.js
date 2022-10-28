@@ -219,7 +219,7 @@ export const TrolejbusyVideoGallery = () => {
 	return (
 		<>
 			<div className="relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4">
-				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
 					{/* {children} */}
 					<Link
 						href={"https://www.youtube.com/watch?v=73x5TA9vCbU"}
@@ -235,7 +235,7 @@ export const TrolejbusyVideoGallery = () => {
 								}
 								fill
 								className={
-									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe group-hover:saturate-100 transition-all ease-in-out object-cover"
 								}
 								alt={"Trolejbusy v České a Slovenské republice 1/4"}
 							/>
@@ -245,7 +245,7 @@ export const TrolejbusyVideoGallery = () => {
 						1. část
 					</span>
 				</div>
-				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
 					{/* {children} */}
 					<Link
 						href={"https://www.youtube.com/watch?v=y574VfBqUMM"}
@@ -261,7 +261,7 @@ export const TrolejbusyVideoGallery = () => {
 								}
 								fill
 								className={
-									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe group-hover:saturate-100 transition-all ease-in-out object-cover"
 								}
 								alt={"Trolejbusy v České a Slovenské republice 1/4"}
 							/>
@@ -271,7 +271,7 @@ export const TrolejbusyVideoGallery = () => {
 						2. část
 					</span>
 				</div>
-				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
 					{/* {children} */}
 					<Link
 						href={"https://www.youtube.com/watch?v=gqM-kkwqOQI"}
@@ -287,7 +287,7 @@ export const TrolejbusyVideoGallery = () => {
 								}
 								fill
 								className={
-									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe group-hover:saturate-100 transition-all ease-in-out object-cover"
 								}
 								alt={"Trolejbusy v České a Slovenské republice 1/4"}
 							/>
@@ -297,7 +297,7 @@ export const TrolejbusyVideoGallery = () => {
 						3. část
 					</span>
 				</div>
-				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
 					{/* {children} */}
 					<Link
 						href={"https://www.youtube.com/watch?v=61DuiVpZlrI"}
@@ -313,7 +313,7 @@ export const TrolejbusyVideoGallery = () => {
 								}
 								fill
 								className={
-									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+									"rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe group-hover:saturate-100 transition-all ease-in-out object-cover"
 								}
 								alt={"Trolejbusy v České a Slovenské republice 1/4"}
 							/>
@@ -332,7 +332,7 @@ export const Shows = () => {
 	return (
 		<>
 			<div className="relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4">
-				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
 					{/* {children} */}
 					<Link
 						href={"https://fullycharged.show/"}
@@ -352,7 +352,7 @@ export const Shows = () => {
 						</picture>
 					</Link>
 				</div>
-				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
 					{/* {children} */}
 					<Link
 						href={"https://insideevs.com/"}
@@ -372,7 +372,7 @@ export const Shows = () => {
 						</picture>
 					</Link>
 				</div>
-				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
 					{/* {children} */}
 					<Link
 						href={"https://micromobility.io/"}
@@ -392,7 +392,7 @@ export const Shows = () => {
 						</picture>
 					</Link>
 				</div>
-				<div className="relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out">
 					{/* {children} */}
 					<Link
 						href={"https://thedriven.io/"}
@@ -411,6 +411,141 @@ export const Shows = () => {
 							/>
 						</picture>
 					</Link>
+				</div>
+			</div>
+		</>
+	);
+};
+
+export const VlakVideoGallery = () => {
+	return (
+		<>
+			<div className="relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4">
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+					{/* {children} */}
+					<Link
+						href={"https://www.youtube.com/watch?v=dC1Ucwl8LHs"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/vlak/video-elektrizace-trati-csd.webp"}
+								fill
+								className={
+									"rounded-lg opacity-60 saturate-0 group-hover:saturate-100 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+								}
+								alt={"Elektrizace tratí ČSD"}
+							/>
+						</picture>
+					</Link>
+					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5 text-center">
+						Elektrizace tratí ČSD
+					</span>
+				</div>
+
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+					{/* {children} */}
+					<Link
+						href={"https://www.youtube.com/watch?v=EOdATLzRGHc"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/vlak/video-tgv-speed-record.webp"}
+								fill
+								className={
+									"rounded-lg opacity-60 saturate-0 group-hover:saturate-100 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+								}
+								alt={"TGV speed record 574,8 km/h"}
+							/>
+						</picture>
+					</Link>
+					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5 text-center">
+						TGV speed record 574,8 km/h
+					</span>
+				</div>
+
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+					{/* {children} */}
+					<Link
+						href={"https://www.youtube.com/watch?v=voIpxChh7nE&t"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/vlak/video-lokomotiva-skoda-rady-363.webp"}
+								fill
+								className={
+									"rounded-lg opacity-60 saturate-0 group-hover:saturate-100 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+								}
+								alt={"Lokomotiva Škoda řady 363 (Eso) dokument"}
+							/>
+						</picture>
+					</Link>
+					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5 text-center">
+						Lokomotiva Škoda řady 363 (Eso) dokument
+					</span>
+				</div>
+
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+					{/* {children} */}
+					<Link
+						href={"https://www.youtube.com/watch?v=rpzx1CzwccY"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={
+									"/assets/images/vlak/video-trisystemova-lokomotiva-emil-zatopek.webp"
+								}
+								fill
+								className={
+									"rounded-lg opacity-60 saturate-0 group-hover:saturate-100 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+								}
+								alt={"Třísystémová lokomotiva Emil Zátopek"}
+							/>
+						</picture>
+					</Link>
+					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5 text-center">
+						Třísystémová lokomotiva Emil Zátopek
+					</span>
+				</div>
+
+				<div className="group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer">
+					{/* {children} */}
+					<Link
+						href={"https://www.youtube.com/watch?v=-2-bFSuukOM"}
+						rel={"external"}
+						target={"_blank"}
+						className="internal"
+					>
+						<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/vlak/video-sen-o-rychlovlaku.webp"}
+								fill
+								className={
+									"rounded-lg opacity-60 saturate-0 group-hover:saturate-100 group-hover:md:animate-breathe transition-all ease-in-out object-cover"
+								}
+								alt={"Sen o rychlovlaku"}
+							/>
+						</picture>
+					</Link>
+					<span className="relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5 text-center">
+						Sen o rychlovlaku
+					</span>
 				</div>
 			</div>
 		</>
