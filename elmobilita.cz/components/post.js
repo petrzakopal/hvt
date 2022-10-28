@@ -555,3 +555,207 @@ export const VlakVideoGallery = () => {
 		</>
 	);
 };
+
+export const LevTable = () => {
+	return (
+		<>
+			<div class="overflow-x-auto relative rounded-lg">
+				<table class="w-full text-sm text-left text-zinc-500 dark:text-zinc-400">
+					<thead class="text-sm text-zinc-700 dark:bg-zinc-700 dark:text-zinc-300 bg-zinc-200">
+						<tr>
+							<th scope="col" class="py-3 px-6">
+								Kategorie
+							</th>
+							<th scope="col" class="py-3 px-6">
+								Maximální konstrukční rychlost (km/h)
+							</th>
+							<th scope="col" class="py-3 px-6">
+								Maximální celková váha (kg)
+							</th>
+							<th scope="col" class="py-3 px-6">
+								Maximální výkon
+							</th>
+							<th scope="col" class="py-3 px-6">
+								Maximální rozměry: l x w x h (m)
+							</th>
+							<th scope="col" class="py-3 px-6">
+								Počet přepravovaných osob
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="dark:bg-zinc-800 border-zinc-700 bg-zinc-100">
+							<th
+								scope="row"
+								class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50"
+							>
+								{"1a. elektrokolo s pedály < 55 kg"}
+							</th>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								≤ 25
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								200
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								250 W
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								2 kola: 3 x 0,75 x 2 / {"> 2 kola:3 x 1 x 2"}
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								1 řidič + maximálně 2 spolujezdci
+							</td>
+						</tr>
+						<tr class="dark:bg-zinc-800 border-zinc-700 bg-zinc-100">
+							<th
+								scope="row"
+								class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50"
+							>
+								1b. všechna LEV jiná než 1a.
+							</th>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								≤ 25
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								140
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								-
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								2 x 0,75 x 1,5
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								1 řidič
+							</td>
+						</tr>
+						<tr class="dark:bg-zinc-800 border-zinc-700 bg-zinc-100">
+							<th
+								scope="row"
+								class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50"
+							>
+								{"2a. Přeprava zboží > 55kg"}
+							</th>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								≤ 25
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								556
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								-
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								3 x 1 x 2
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								1 řidič
+							</td>
+						</tr>
+						<tr class="dark:bg-zinc-800 border-zinc-700 bg-zinc-100">
+							<th
+								scope="row"
+								class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50"
+							>
+								{"2b.  Přeprava osob > 55kg"}
+							</th>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								≤ 25
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								556
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								-
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								3 x 1 x 2
+							</td>
+							<td class="py-4 px-6 font-medium text-zinc-900 whitespace-nowrap dark:text-zinc-50">
+								1 řidič + maximálně 8 spolujezdců
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</>
+	);
+};
+
+export const DefinedCaption = ({ children }) => {
+	return (
+		<div className="mt-1 text-sm text-zinc-600 dark:text-zinc-400 pb-4 text-center italic w-full">
+			{children}
+		</div>
+	);
+};
+
+export const RozdeleniKolobezek = () => {
+	return (
+		<>
+			<div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+				<div className="w-full flex flex-col items-center justify-center">
+					<div className="flex flex-col w-[230px] h-[350px] relative rounded-lg items-center justify-center bg-black">
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/lev/mestska-kolobezka.webp"}
+								fill
+								className={"rounded-lg object-cover"}
+								alt={"Městská koloběžka"}
+							/>
+						</picture>
+					</div>
+					<DefinedCaption>
+						Obr. 11 Městská
+						<br />
+						elektrokoloběžka&nbsp;
+						<Citation href="/lev/zdroje#alza-elektricke-kolobezky">
+							[25]
+						</Citation>
+						.
+					</DefinedCaption>
+				</div>
+				<div className="w-full flex flex-col items-center justify-center">
+					<div className="flex flex-col w-[230px] h-[350px] relative rounded-lg items-center justify-center bg-black">
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/lev/terenni-kolobezka.webp"}
+								fill
+								className={"rounded-lg object-cover"}
+								alt={"Městská koloběžka"}
+							/>
+						</picture>
+					</div>
+					<DefinedCaption>
+						Obr. 12 Terénní
+						<br />
+						elektrokoloběžka&nbsp;
+						<Citation href="/lev/zdroje#alza-elektricke-kolobezky">
+							[25]
+						</Citation>
+						.
+					</DefinedCaption>
+				</div>
+				<div className="w-full flex flex-col items-center justify-center">
+					<div className="flex flex-col w-[230px] h-[350px] relative rounded-lg items-center justify-center bg-black">
+						<picture className="rounded-xl z-[1]">
+							<Image
+								src={"/assets/images/lev/chopper-kolobezka.webp"}
+								fill
+								className={"rounded-lg object-cover"}
+								alt={"Městská koloběžka"}
+							/>
+						</picture>
+					</div>
+					<DefinedCaption>
+						Obr. 13 Chopper
+						<br />
+						elektrokoloběžka&nbsp;
+						<Citation href="/lev/zdroje#amazon-chopper">[26]</Citation>.
+					</DefinedCaption>
+				</div>
+			</div>
+		</>
+	);
+};
