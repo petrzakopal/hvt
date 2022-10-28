@@ -8,6 +8,8 @@ import {
 	Fact,
 	ListNavigationWrapper,
 	ListNavigationItem,
+	LevTable,
+	DefinedCaption,
 } from "../../components/post";
 import Link from "next/link";
 
@@ -15,31 +17,64 @@ import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
 import Image from "next/image";
 
 export const metaData = {
-	meta_title: "Historie lehkých elektrických vozidel v letech - elmobilita.cz", // meta_title
+	meta_title:
+		"Úvod do problematiky lehkých elektrických vozidel - elmobilita.cz", // meta_title
 	meta_description:
 		"Úvod tématu historie lehkých elektrických vozidel. Vývoj lehkých elektrických vozidel v letech. elmobilita.cz – historie elektromobility na jednom místě.", // meta_description
 	canonical_url: "https://elmobilita.cz/lev/uvod", // canonical url
 	og_type: "website", //og:type
 	og_url: "https://elmobilita.cz/lev/uvod", //og_url
 	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
-	og_title: "Historie lehkých elektrických vozidel v letech - elmobilita.cz", // og_title
+	og_title: "Úvod do problematiky lehkých elektrických vozidel - elmobilita.cz", // og_title
 	og_description:
 		"Úvod tématu historie lehkých elektrických vozidel. Vývoj lehkých elektrických vozidel v letech. elmobilita.cz – historie elektromobility na jednom místě.", // og_description
 	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
 	twitterDescription:
 		"Úvod tématu historie lehkých elektrických vozidel. Vývoj lehkých elektrických vozidel v letech. elmobilita.cz – historie elektromobility na jednom místě.", // twitter:description
 	twitterTitle:
-		"Historie lehkých elektrických vozidel v letech - elmobilita.cz", // twitter:title
+		"Úvod do problematiky lehkých elektrických vozidel - elmobilita.cz", // twitter:title
 };
 
-# Lehká elektrická vozidla
+# Úvod do problematiky lehkých elektrických vozidel
+
+## Co je to LEV?
+
+LEV je zkratka pro Light Electric Vehicles, což po překladu z angličtiny znamená: “Lehká elektrická vozidla“. Z názvu je jasné, že se jedná o „lehké či malé“ dopravní prostředky, které využívají elektrický pohon. Samotný název je dost obecný a neříká přímo co je jeho součástí. Může se ve své podstatě jednat o veškerá dvoukolová, tříkolová nebo čtyřkolová vozidla v kategorii vozidel - L. Tato kategorie je určena Nařízením evropského parlamentu a Rady (EU) č. 168/2013. Dále také jednokolová vozidla, které nejsou ve zmíněném nařízení zmíněna.&nbsp;<Citation href="/lev/zdroje#narizeni-eu-168-2013">[1]</Citation>
+
+Zmíněné nařízení se netýká rozdělení přímo lehkých elektrických vozidel, ale obecně vozidlům menších rozměrů. Pro rozdělení pouze vozidel s elektrickým pohonem lze využít tabulku níže, která zobrazuje možný návrh rozdělení LEV.
+
+<LevTable />
+{/* prettier-ignore */}
+<DefinedCaption>Tabulka 1 Návrh rozdělení LEV&nbsp;<Citation href="/lev/zdroje#lev-swov">[2]</Citation></DefinedCaption>
+
+_Poznámky_
+
+- Hmotnostní omezení u kategorií představuje maximální hmotnost vozidla a baterie. Do této hmotnosti není započtena žádná další zátěž.
+- Maximální celková hmotnost obsahuje hmotnost LEV + hmotnost řidiče a přepravovaných osob/zboží.
+- Maximální výkon pro kategorie 1b, 2a, 2b není aktuálně pevně určen.
+
+Tabulka 1 zobrazuje návrh rozdělení LEV v budoucnu. Kategorie 1 je rozdělena do dvou podkategorií, kde kategorie 1a obsahuje vozidla s pedály (elektrokolo) a kategorie 1b obsahuje veškerá ostatní vozidla bez pedálového pohonu (elektrická koloběžka, segway, atd.). Kategorie 1 je také v aktuální literatuře nazývána anglickou zkratkou „PLEVs“, která představuje: „Personal Light Electric Vehicles“(po překladu: „Osobní lehká elektrická vozidla“). Dále lze jednotlivá vozidla z kategorie 1 najít pod názvem „Mikromobilita“. Kategorie 2 představuje vozidla pro transport zboží a osob.
+
+Z popsaných kategorií se text bude zaobírat hlavně kategoriemi 1a a 1b, a to přesněji jednostopými a dvoustopými vozidly jako jsou elektrické koloběžky, elektrická kola, elektrické skútry a segwaye různých typů. Nejedná se o celkový výčet vozidel, které do této skupiny spadají, ale spíše o aktuálně nejrozšířenější a nejpoužívanější typy elektrických vozidel, které jsou ve společnosti používány a je možné je nabíjet bez vybudování nabíjecích stanic, či změně elektrické instalace v místě nabíjení. Zmíněným typům vozidel je dále v textu věnován vlastní prostor, kde je popsán jejich vývoj od vzniku až po současnost.
+
+## K čemu LEV slouží?
+
+Odpovědí na tuto otázku také nejlépe specifikovat o jaká vozidla se vlastně jedná. Jedná se o vozidla, která slouží k dopravě na kratší vzdálenosti, a to hlavně v městském prostředí. Jako pohon těchto vozidel jsou využívány elektrické motory v kombinaci s bateriemi.
+
+## Za jakým účelem LEV vznikly?
+
+Z výše popsaného je jasné, že se nejedná o druhy vozidel, které doposud neexistovali. Z většiny se jedná o dopravní prostředky, které byly využívány, ale neměli elektrický pohon. Elektrický pohon se k těmto typům vozidel začal dodělávat hlavně za účelem snížení emisí škodlivých látek (v případech kdy elektromotor nahradil spalovací motor), snížení hluku v obytných oblastech, zvýšení komfortu uživatele a zvětšení užitného prostoru v hustých oblastech měst. Ze zmíněných důvodů měla největší vliv emise škodlivých látek, a to hlavně skleníkových plynů, jelikož pro státy v evropské unii postupně od roku 2009 vznikali požadavky na snížení emise těchto plynů (hlavně CO2 – oxidu uhličitého). A právě mobilita v městech dle odhadu evropské komise měla produkovat 40 % celkového CO2 z celé evropské silniční dopravy.
+
+Na základě snížení emisí CO2 měl být největší krok přechod ze spalovacích motorů na elektromotory a to hlavně u automobilů. Ovšem na základě technologického vývoje v oblasti automobilů začali dále vznikat již zmíněné a dále popisované dopravní prostředky s elektrickým pohonem.
+
+Nelze ovšem říci, že veškeré dále popisované typy vznikly za účelem snížení emisí, popřípadě že všechny typy vznikly až po roce 2009 kdy od EU začali vznikat různá nařízení pro snížení emisí skleníkových plynů. Vznikali i typy LEV, které spíše měli zlepšit pohyb na krátké vzdálenosti. Také se s vývojem technologií objevili využití elektrického pohonu jako efektivnější způsob pohybu v městech s vysokou populací.
 
 <PostFooterNavigation
-	hrefPrevious="/"
-	hrefNext="/"
+	hrefPrevious="/lev/kapitoly"
+	hrefNext="/lev/technologie"
 	next="Následující"
 	previous="Předchozí"
-	previousEnabled="false"
+	previousEnabled="true"
 	nextEnabled="true"
 />
 {/* --------------------- DANGER ZONE --------------------- */}
