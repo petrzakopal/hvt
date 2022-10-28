@@ -1423,7 +1423,7 @@ const SpaceY = ({ mt  })=>{
 const SourceBlock = ({ icon , name , linkName , linkUrl , id  })=>{
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "w-full flex flex-row lg:-mt-20 lg:pt-20 -mt-24 pt-24",
+            className: "w-full flex flex-row",
             id: id,
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {

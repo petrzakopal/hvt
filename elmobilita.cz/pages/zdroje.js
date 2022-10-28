@@ -43,6 +43,33 @@ function Index() {
 			<Shows />
 			<SpaceY mt={"mt-14"} />
 			<h2 className={`${SecondHeadingProperties} text-left w-full`}>
+				Zdroje jednotlivých kategorií
+			</h2>
+			<SpaceY mt={"mt-10"} />
+			<div className="w-full grid grid-cols-1 md:grid-cols-2 gap-y-5 items-center justify-center justify-items-center">
+				<GroupSection
+					linkName={"Železniční doprava"}
+					linkUrl={"/vlak/zdroje"}
+					imageUrl={"/assets/images/kategorie/vlaky.webp"}
+				/>
+				<GroupSection
+					linkName={"Trolejbusy"}
+					linkUrl={"/trolejbus/zdroje"}
+					imageUrl={"/assets/images/kategorie/autobusy.webp"}
+				/>
+				<GroupSection
+					linkName={"Elektromobily"}
+					linkUrl={"/elektromobil/zdroje"}
+					imageUrl={"/assets/images/kategorie/elektromobily.webp"}
+				/>
+				<GroupSection
+					linkName={"Lehká Elektrická Vozidla"}
+					linkUrl={"/lev/zdroje"}
+					imageUrl={"/assets/images/kategorie/lev.webp"}
+				/>
+			</div>
+			<SpaceY mt={"mt-14"} />
+			<h2 className={`${SecondHeadingProperties} text-left w-full`}>
 				Obecný seznam zdrojů
 			</h2>
 			<SpaceY mt={"mt-10"} />
@@ -99,59 +126,6 @@ function Index() {
 					linkName={"http://www.fotodoprava.com/images_mhd_v2/usti558v.jpg"}
 					linkUrl={"http://www.fotodoprava.com/images_mhd_v2/usti558v.jpg"}
 				/>
-
-				<SourceBlock
-					icon={<span className="text-primary-accent">[1]</span>}
-					name={
-						"ANDERSON, Curtis D. a Judy ANDERSON. Electric and Hybrid Cars: A History. Jefferson: McFarland & Company, Incorporated Publishers, 2010. ISBN 0786433019;9780786433018;"
-					}
-					id="anderson-electric-and-hybrid-cars"
-				/>
-
-				<SourceBlock
-					icon={
-						<>
-							<span
-								className={`text-left w-fit text-primary-accent after:inline-flex  after:relative  hover:text-primary-accent after:transition-colors after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;] after:top-[0.11em]`}
-							>
-								<span className="text-left justify-start">[2]</span>
-							</span>
-						</>
-					}
-					name={"Obrázek Vývoje Pneumatik / Automobiloých kol"}
-					linkName={"https://getblogo.com/car-tire-history/"}
-					linkUrl={"https://getblogo.com/car-tire-history/"}
-					id="getblogo-car-tire-history"
-				/>
-				<SourceBlock
-					icon={
-						<>
-							<span
-								className={`text-left w-fit text-primary-accent after:inline-flex  after:relative  hover:text-primary-accent after:transition-colors after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;] after:top-[0.11em]`}
-							>
-								<span className="text-left justify-start">[2]</span>
-							</span>
-						</>
-					}
-					name={"Obrázek Enfield 8000"}
-					linkName={"https://commons.wikimedia.org/wiki/File:HYDE_PARK.JPG"}
-					linkUrl={"https://commons.wikimedia.org/wiki/File:HYDE_PARK.JPG"}
-					id="wikipedia-enfield"
-				/>
-
-				<SourceBlock
-					icon={
-						<span
-							className={`text-left w-fit text-primary-accent after:inline-flex  after:relative  hover:text-primary-accent after:transition-colors after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;] after:top-[0.11em]`}
-						>
-							<span className="text-left justify-start">[4]</span>
-						</span>
-					}
-					name={"Tesla, Inc. Wikipedia The Free Encyclopedia"}
-					linkName={"https://en.wikipedia.org/wiki/Tesla,_Inc."}
-					linkUrl={"https://en.wikipedia.org/wiki/Tesla,_Inc."}
-					id="wikipedia-tesla"
-				/>
 			</SourceWrapper>
 		</>
 	);
@@ -165,6 +139,33 @@ Index.getLayout = function getLayout(page) {
 			<DefaultLayout metaData={metaData} schema={schema}>
 				{page}
 			</DefaultLayout>
+		</>
+	);
+};
+
+const GroupSection = ({ linkUrl, linkName, imageUrl }) => {
+	return (
+		<>
+			<Link href={linkUrl}>
+				<div className="group flex flex-col w-80 h-80 relative rounded-lg items-center justify-center bg-black">
+					<h2
+						className={`z-[4] opacity-100 relative lg:text-4xl text-3xl text-zinc-50 dark:text-zinc-50 font-bold text-center flex transition-all ease-in-out duration-1000`}
+					>
+						{linkName}
+					</h2>
+					<picture className="peer bg-black transition-all ease-in-out z-[1]">
+						<Image
+							src={imageUrl}
+							fill
+							className={
+								"rounded-lg group-hover:md:animate-breathe opacity-50 transition-all ease-in-out object-cover"
+							}
+							alt={""}
+							priority
+						/>
+					</picture>
+				</div>
+			</Link>
 		</>
 	);
 };

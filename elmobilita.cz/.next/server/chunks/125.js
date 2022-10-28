@@ -14,6 +14,7 @@ exports.modules = {
 /* harmony export */   "SO": () => (/* binding */ Post),
 /* harmony export */   "Tk": () => (/* binding */ Citation),
 /* harmony export */   "dm": () => (/* binding */ TrolejbusyVideoGallery),
+/* harmony export */   "nR": () => (/* binding */ VlakVideoGallery),
 /* harmony export */   "xU": () => (/* binding */ ListNavigationItem),
 /* harmony export */   "zr": () => (/* binding */ Fact)
 /* harmony export */ });
@@ -225,7 +226,7 @@ const TrolejbusyVideoGallery = ()=>{
             className: "relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4",
             children: [
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
                     children: [
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                             href: "https://www.youtube.com/watch?v=73x5TA9vCbU",
@@ -241,7 +242,7 @@ const TrolejbusyVideoGallery = ()=>{
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
                                         src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp",
                                         fill: true,
-                                        className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover",
+                                        className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe group-hover:saturate-100 transition-all ease-in-out object-cover",
                                         alt: "Trolejbusy v Česk\xe9 a Slovensk\xe9 republice 1/4"
                                     })
                                 })
@@ -254,7 +255,7 @@ const TrolejbusyVideoGallery = ()=>{
                     ]
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
                     children: [
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                             href: "https://www.youtube.com/watch?v=y574VfBqUMM",
@@ -270,7 +271,7 @@ const TrolejbusyVideoGallery = ()=>{
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
                                         src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp",
                                         fill: true,
-                                        className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover",
+                                        className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe group-hover:saturate-100 transition-all ease-in-out object-cover",
                                         alt: "Trolejbusy v Česk\xe9 a Slovensk\xe9 republice 1/4"
                                     })
                                 })
@@ -283,7 +284,7 @@ const TrolejbusyVideoGallery = ()=>{
                     ]
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
                     children: [
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                             href: "https://www.youtube.com/watch?v=gqM-kkwqOQI",
@@ -299,7 +300,7 @@ const TrolejbusyVideoGallery = ()=>{
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
                                         src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp",
                                         fill: true,
-                                        className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover",
+                                        className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe group-hover:saturate-100 transition-all ease-in-out object-cover",
                                         alt: "Trolejbusy v Česk\xe9 a Slovensk\xe9 republice 1/4"
                                     })
                                 })
@@ -312,7 +313,7 @@ const TrolejbusyVideoGallery = ()=>{
                     ]
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
                     children: [
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                             href: "https://www.youtube.com/watch?v=61DuiVpZlrI",
@@ -328,7 +329,7 @@ const TrolejbusyVideoGallery = ()=>{
                                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
                                         src: "/assets/images/trolejbus/trolejbusy-v-ceske-a-slovenske-republice.webp",
                                         fill: true,
-                                        className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe transition-all ease-in-out object-cover",
+                                        className: "rounded-lg opacity-60 saturate-0 group-hover:md:animate-breathe group-hover:saturate-100 transition-all ease-in-out object-cover",
                                         alt: "Trolejbusy v Česk\xe9 a Slovensk\xe9 republice 1/4"
                                     })
                                 })
@@ -350,7 +351,7 @@ const Shows = ()=>{
             className: "relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4",
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                         href: "https://fullycharged.show/",
                         rel: "external",
@@ -368,7 +369,7 @@ const Shows = ()=>{
                     })
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                         href: "https://insideevs.com/",
                         rel: "external",
@@ -386,7 +387,7 @@ const Shows = ()=>{
                     })
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                         href: "https://micromobility.io/",
                         rel: "external",
@@ -404,7 +405,7 @@ const Shows = ()=>{
                     })
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                    className: "relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer hover:opacity-50 transition-all ease-in-out",
                     children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
                         href: "https://thedriven.io/",
                         rel: "external",
@@ -420,6 +421,160 @@ const Shows = ()=>{
                             })
                         })
                     })
+                })
+            ]
+        })
+    });
+};
+const VlakVideoGallery = ()=>{
+    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+        children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+            className: "relative grid grid-cols-1 md:grid-cols-2 w-full gap-x-3 gap-y-4",
+            children: [
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
+                    children: [
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                            href: "https://www.youtube.com/watch?v=dC1Ucwl8LHs",
+                            rel: "external",
+                            target: "_blank",
+                            className: "internal",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_3__.PlayIcon, {
+                                    className: "relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                                    className: "rounded-xl z-[1]",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                        src: "/assets/images/vlak/video-elektrizace-trati-csd.webp",
+                                        fill: true,
+                                        className: "rounded-lg opacity-60 saturate-0 group-hover:saturate-100 group-hover:md:animate-breathe transition-all ease-in-out object-cover",
+                                        alt: "Elektrizace trat\xed ČSD"
+                                    })
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                            className: "relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5 text-center",
+                            children: "Elektrizace trat\xed ČSD"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
+                    children: [
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                            href: "https://www.youtube.com/watch?v=EOdATLzRGHc",
+                            rel: "external",
+                            target: "_blank",
+                            className: "internal",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_3__.PlayIcon, {
+                                    className: "relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                                    className: "rounded-xl z-[1]",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                        src: "/assets/images/vlak/video-tgv-speed-record.webp",
+                                        fill: true,
+                                        className: "rounded-lg opacity-60 saturate-0 group-hover:saturate-100 group-hover:md:animate-breathe transition-all ease-in-out object-cover",
+                                        alt: "TGV speed record 574,8 km/h"
+                                    })
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                            className: "relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5 text-center",
+                            children: "TGV speed record 574,8 km/h"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
+                    children: [
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                            href: "https://www.youtube.com/watch?v=voIpxChh7nE&t",
+                            rel: "external",
+                            target: "_blank",
+                            className: "internal",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_3__.PlayIcon, {
+                                    className: "relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                                    className: "rounded-xl z-[1]",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                        src: "/assets/images/vlak/video-lokomotiva-skoda-rady-363.webp",
+                                        fill: true,
+                                        className: "rounded-lg opacity-60 saturate-0 group-hover:saturate-100 group-hover:md:animate-breathe transition-all ease-in-out object-cover",
+                                        alt: "Lokomotiva Škoda řady 363 (Eso) dokument"
+                                    })
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                            className: "relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5 text-center",
+                            children: "Lokomotiva Škoda řady 363 (Eso) dokument"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
+                    children: [
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                            href: "https://www.youtube.com/watch?v=rpzx1CzwccY",
+                            rel: "external",
+                            target: "_blank",
+                            className: "internal",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_3__.PlayIcon, {
+                                    className: "relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                                    className: "rounded-xl z-[1]",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                        src: "/assets/images/vlak/video-trisystemova-lokomotiva-emil-zatopek.webp",
+                                        fill: true,
+                                        className: "rounded-lg opacity-60 saturate-0 group-hover:saturate-100 group-hover:md:animate-breathe transition-all ease-in-out object-cover",
+                                        alt: "Tř\xedsyst\xe9mov\xe1 lokomotiva Emil Z\xe1topek"
+                                    })
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                            className: "relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5 text-center",
+                            children: "Tř\xedsyst\xe9mov\xe1 lokomotiva Emil Z\xe1topek"
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+                    className: "group relative flex flex-col w-80 h-80 items-center justify-center cursor-pointer",
+                    children: [
+                        /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)((next_link__WEBPACK_IMPORTED_MODULE_5___default()), {
+                            href: "https://www.youtube.com/watch?v=-2-bFSuukOM",
+                            rel: "external",
+                            target: "_blank",
+                            className: "internal",
+                            children: [
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_3__.PlayIcon, {
+                                    className: "relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200"
+                                }),
+                                /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("picture", {
+                                    className: "rounded-xl z-[1]",
+                                    children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_image__WEBPACK_IMPORTED_MODULE_4___default()), {
+                                        src: "/assets/images/vlak/video-sen-o-rychlovlaku.webp",
+                                        fill: true,
+                                        className: "rounded-lg opacity-60 saturate-0 group-hover:saturate-100 group-hover:md:animate-breathe transition-all ease-in-out object-cover",
+                                        alt: "Sen o rychlovlaku"
+                                    })
+                                })
+                            ]
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
+                            className: "relative text-zinc-700 dark:text-zinc-200 text-2xl font-bold pt-5 -mt-5 text-center",
+                            children: "Sen o rychlovlaku"
+                        })
+                    ]
                 })
             ]
         })

@@ -1,0 +1,60 @@
+import { DefaultLayout } from "../../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+	VlakVideoGallery,
+} from "../../components/post";
+
+import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
+import Image from "next/image";
+
+export const metaData = {
+	meta_title: "Zajímavá videa o železniční dopravě - elmobilita.cz", // meta_title
+	meta_description:
+		"Dokumenty o železniční dopravě v Českých zemích, zajímavosti o vlakových jednotkách a vlacích. – elmobilita.cz – historie elektromobility na jednom místě.", // meta_description
+	canonical_url: "https://elmobilita.cz/vlak/video", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz/vlak/video", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "Zajímavá videa o železniční dopravě - elmobilita.cz", // og_title
+	og_description:
+		"Dokumenty o železniční dopravě v Českých zemích, zajímavosti o vlakových jednotkách a vlacích. – elmobilita.cz – historie elektromobility na jednom místě.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Dokumenty o železniční dopravě v Českých zemích, zajímavosti o vlakových jednotkách a vlacích. – elmobilita.cz – historie elektromobility na jednom místě.", // twitter:description
+	twitterTitle: "Zajímavá videa o železniční dopravě - elmobilita.cz", // twitter:title
+};
+
+# Zajímavá videa o železniční dopravě
+
+<VlakVideoGallery />
+
+<PostFooterNavigation
+	hrefPrevious="/vlak/typicke-lokomotivy-na-ceske-zeleznici"
+	hrefNext="/vlak/zdroje"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="true"
+	nextEnabled="true"
+/>
+{/* --------------------- DANGER ZONE --------------------- */}
+export default ({children}) => (
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
+);
