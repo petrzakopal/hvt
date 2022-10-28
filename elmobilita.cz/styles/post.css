@@ -47,7 +47,7 @@
 	}
 
 	.post img {
-		@apply mx-auto rounded-xl max-w-[calc(100%+6vw)] ml-[-3vw];
+		@apply mx-auto rounded-xl;
 	}
 
 	.post img + em {

@@ -9,16 +9,21 @@ export const SpaceY = ({ mt }) => {
 export const SourceBlock = ({ icon, name, linkName, linkUrl, id }) => {
 	return (
 		<>
-			<div className="w-full flex flex-row" id={id}>
-				<span className="w-5 mr-2 text-zinc-600 dark:text-zinc-600 text-base justify-items-start flex flex-col">
+			<div
+				className="w-full flex flex-row lg:-mt-20 lg:pt-20 -mt-24 pt-24"
+				id={id}
+			>
+				<span className="w-5 mr-5 text-zinc-600 dark:text-zinc-600 text-base justify-items-start flex flex-col">
 					{icon}
 				</span>
 				<div className=" text-left w-full grid grid-cols-1">
-					<p className="text-zinc-900 dark:text-zinc-50 text-base">{name}</p>
+					<p className="text-zinc-900 dark:text-zinc-50 text-base break-words">
+						{name}
+					</p>
 
 					{linkUrl ? (
 						<>
-							<p className=" italic text-zinc-600 dark:text-zinc-600 dark:hover:text-zinc-50 hover:text-zinc-900 transition-colors ease-in-out text-lg">
+							<p className="italic text-zinc-600 dark:text-zinc-600 dark:hover:text-zinc-50 hover:text-zinc-900 transition-colors ease-in-out text-lg break-all">
 								<Link
 									href={linkUrl}
 									rel="external"
