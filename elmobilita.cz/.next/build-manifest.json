@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/GiooMZtHrNDoM3s1sSjQG/_buildManifest.js",
-    "static/GiooMZtHrNDoM3s1sSjQG/_ssgManifest.js"
+    "static/MMMTYlPrR8uohRMHaSdiv/_buildManifest.js",
+    "static/MMMTYlPrR8uohRMHaSdiv/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -15,14 +15,14 @@
       "static/chunks/framework-ca78144470cbdfe6.js",
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/pages/index-d24e26b075e3049b.js"
     ],
     "/_app": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
       "static/chunks/framework-ca78144470cbdfe6.js",
       "static/chunks/main-26a20039f7d8d4a1.js",
-      "static/css/83c1eedf48e4e973.css",
+      "static/css/ba19d647f446868e.css",
       "static/chunks/pages/_app-88cec1a23a580e89.js"
     ],
     "/_error": [
@@ -36,7 +36,7 @@
       "static/chunks/framework-ca78144470cbdfe6.js",
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/pages/autori-1999d094db3f4255.js"
     ],
     "/elektromobil/detailni-historie-elektroautomobilu": [
@@ -45,7 +45,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/elektromobil/detailni-historie-elektroautomobilu-45039e2a83a35967.js"
     ],
@@ -55,7 +55,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/elektromobil/kapitoly-c669e849b3a238ec.js"
     ],
@@ -65,7 +65,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/elektromobil/technologie-e3bcc5316546db00.js"
     ],
@@ -75,7 +75,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/elektromobil/uvod-do-historie-elektromobilu-c1ad4833ce439317.js"
     ],
@@ -85,7 +85,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/elektromobil/vlivy-na-prostredi-5efc1f22682eb899.js"
     ],
@@ -94,7 +94,7 @@
       "static/chunks/framework-ca78144470cbdfe6.js",
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/pages/elektromobil/zdroje-aeca668b095fcb1b.js"
     ],
     "/lev/kapitoly": [
@@ -103,7 +103,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/lev/kapitoly-0c002f2fd305b426.js"
     ],
@@ -113,7 +113,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/lev/uvod-e3111a84e35504c8.js"
     ],
@@ -122,7 +122,7 @@
       "static/chunks/framework-ca78144470cbdfe6.js",
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/pages/lev/zdroje-67a48af4e1848abb.js"
     ],
     "/mdtest": [
@@ -131,7 +131,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/mdtest-8d69f06be0ffcda4.js"
     ],
@@ -141,7 +141,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/trolejbus/historicky-vyvoj-trolejbusove-dopravy-1c21b5526c8a96e1.js"
     ],
@@ -151,7 +151,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/trolejbus/kapitoly-5bcbc4e1661e6950.js"
     ],
@@ -160,7 +160,7 @@
       "static/chunks/framework-ca78144470cbdfe6.js",
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/pages/trolejbus/zdroje-354e80a8a259185a.js"
     ],
     "/vlak/detailni-elektrifikace-zeleznice-cr": [
@@ -169,9 +169,9 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
-      "static/chunks/pages/vlak/detailni-elektrifikace-zeleznice-cr-2d8e214954a5584d.js"
+      "static/chunks/pages/vlak/detailni-elektrifikace-zeleznice-cr-3a478d38c168f7c6.js"
     ],
     "/vlak/elektrifikace-ceske-zeleznice": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
@@ -179,9 +179,9 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
-      "static/chunks/pages/vlak/elektrifikace-ceske-zeleznice-b7fd58e6bbbc0d8b.js"
+      "static/chunks/pages/vlak/elektrifikace-ceske-zeleznice-4bf9a7e4f9aca444.js"
     ],
     "/vlak/kapitoly": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
@@ -189,9 +189,19 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
-      "static/chunks/pages/vlak/kapitoly-fa6257efe566dd89.js"
+      "static/chunks/pages/vlak/kapitoly-2c9abb60b433fa26.js"
+    ],
+    "/vlak/typicke-lokomotivy-na-ceske-zeleznici": [
+      "static/chunks/webpack-ee7e63bc15b31913.js",
+      "static/chunks/framework-ca78144470cbdfe6.js",
+      "static/chunks/main-26a20039f7d8d4a1.js",
+      "static/chunks/922-29792afae58dbcab.js",
+      "static/chunks/35-803e891d392f5335.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
+      "static/chunks/125-ca0e4826fb79c46e.js",
+      "static/chunks/pages/vlak/typicke-lokomotivy-na-ceske-zeleznici-4c8f16ea3103f7b5.js"
     ],
     "/vlak/uvod": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
@@ -199,17 +209,27 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
-      "static/chunks/pages/vlak/uvod-b26b4e6d35739b31.js"
+      "static/chunks/pages/vlak/uvod-81810cae5e167915.js"
+    ],
+    "/vlak/vrt": [
+      "static/chunks/webpack-ee7e63bc15b31913.js",
+      "static/chunks/framework-ca78144470cbdfe6.js",
+      "static/chunks/main-26a20039f7d8d4a1.js",
+      "static/chunks/922-29792afae58dbcab.js",
+      "static/chunks/35-803e891d392f5335.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
+      "static/chunks/125-ca0e4826fb79c46e.js",
+      "static/chunks/pages/vlak/vrt-b14068a15e603980.js"
     ],
     "/vlak/zdroje": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
       "static/chunks/framework-ca78144470cbdfe6.js",
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
-      "static/chunks/246-62377daa729a2edd.js",
-      "static/chunks/pages/vlak/zdroje-52a8c6e6a00762d0.js"
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
+      "static/chunks/pages/vlak/zdroje-dbee1169ea721664.js"
     ],
     "/zdroje": [
       "static/chunks/webpack-ee7e63bc15b31913.js",
@@ -217,7 +237,7 @@
       "static/chunks/main-26a20039f7d8d4a1.js",
       "static/chunks/922-29792afae58dbcab.js",
       "static/chunks/35-803e891d392f5335.js",
-      "static/chunks/246-62377daa729a2edd.js",
+      "static/chunks/246-ac0ceaf9fe21ef4c.js",
       "static/chunks/125-ca0e4826fb79c46e.js",
       "static/chunks/pages/zdroje-ead264e17d83dc87.js"
     ]

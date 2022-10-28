@@ -835,7 +835,7 @@ _headlessui_react__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__
                                             groupName: "V\xfdběr t\xe9mat",
                                             id: "1",
                                             linkData: {
-                                                Vlaky: [
+                                                "Železničn\xed doprava": [
                                                     "Kolejov\xe1 trakce.",
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_heroicons_react_24_outline__WEBPACK_IMPORTED_MODULE_9__.Bars2Icon, {
                                                         className: "w-8 h-8 pr-2"
@@ -938,10 +938,10 @@ _headlessui_react__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__
                                                 id: "1",
                                                 groupName: "V\xfdběr t\xe9mat",
                                                 linkData: {
-                                                    Vlaky: "/vlak/kapitoly",
+                                                    "Železničn\xed doprava": "/vlak/kapitoly",
                                                     Trolejbusy: "/trolejbus/kapitoly",
                                                     Elektroautomobil: "/elektromobil/kapitoly",
-                                                    LEV: "/lev/kapitoly"
+                                                    "Lehk\xe1 elektrick\xe1 vozidla": "/lev/kapitoly"
                                                 }
                                             }),
                                             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_links__WEBPACK_IMPORTED_MODULE_4__/* .ActiveMobileLink */ .LP, {
@@ -974,10 +974,10 @@ _headlessui_react__WEBPACK_IMPORTED_MODULE_3__ = (__webpack_async_dependencies__
                                                         id: "1",
                                                         groupName: "V\xfdběr t\xe9mat",
                                                         linkData: {
-                                                            Vlaky: "/vlak/kapitoly",
+                                                            "Železničn\xed doprava": "/vlak/kapitoly",
                                                             Trolejbusy: "/trolejbus/kapitoly",
                                                             Elektroautomobil: "/elektromobil/kapitoly",
-                                                            LEV: "/lev/kapitoly"
+                                                            "Lehk\xe1 elektrick\xe1 vozidla": "/lev/kapitoly"
                                                         }
                                                     }),
                                                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_links__WEBPACK_IMPORTED_MODULE_4__/* .ActiveMobileLink */ .LP, {
@@ -1423,23 +1423,23 @@ const SpaceY = ({ mt  })=>{
 const SourceBlock = ({ icon , name , linkName , linkUrl , id  })=>{
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-            className: "w-full flex flex-row",
+            className: "w-full flex flex-row lg:-mt-20 lg:pt-20 -mt-24 pt-24",
             id: id,
             children: [
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                    className: "w-5 mr-2 text-zinc-600 dark:text-zinc-600 text-base justify-items-start flex flex-col",
+                    className: "w-5 mr-5 text-zinc-600 dark:text-zinc-600 text-base justify-items-start flex flex-col",
                     children: icon
                 }),
                 /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
                     className: " text-left w-full grid grid-cols-1",
                     children: [
                         /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                            className: "text-zinc-900 dark:text-zinc-50 text-base",
+                            className: "text-zinc-900 dark:text-zinc-50 text-base break-words",
                             children: name
                         }),
                         linkUrl ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
                             children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                                className: " italic text-zinc-600 dark:text-zinc-600 dark:hover:text-zinc-50 hover:text-zinc-900 transition-colors ease-in-out text-lg",
+                                className: "italic text-zinc-600 dark:text-zinc-600 dark:hover:text-zinc-50 hover:text-zinc-900 transition-colors ease-in-out text-lg break-all",
                                 children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {
                                     href: linkUrl,
                                     rel: "external",
