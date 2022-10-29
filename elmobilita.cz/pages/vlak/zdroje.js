@@ -5,6 +5,7 @@ import {
 	SourceBlock,
 	SourceWrapper,
 } from "../../components/utilities/utilities";
+import { PostFooterNavigation } from "../../components/post";
 
 export const metaData = {
 	meta_title:
@@ -257,6 +258,15 @@ function Index() {
 					id="trakcni-jednotka-alstom-680-pendolino"
 				/>
 			</SourceWrapper>
+			<SpaceY mt={"mt-10"} />
+			<PostFooterNavigation
+				hrefPrevious="/vlak/video"
+				hrefNext="/"
+				next="Následující"
+				previous="Předchozí"
+				previousEnabled="true"
+				nextEnabled="false"
+			/>
 		</>
 	);
 }

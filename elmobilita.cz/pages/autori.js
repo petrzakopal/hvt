@@ -68,13 +68,13 @@ function Index() {
 				/>
 				<PersonCard
 					name={"Jiří Marek"}
-					image="/assets/images/misc/profile-placeholder.webp"
-					socialUrl={"#void"}
+					image="/assets/images/misc/marek.webp"
+					socialUrl={"https://www.instagram.com/panjiri_marek/"}
 					socialTag="@jiri-marek"
 				/>
 				<PersonCard
 					name={"Dominik Sochulák"}
-					image="/assets/images/misc/profile-placeholder.webp"
+					image="/assets/images/misc/sochulak.webp"
 					socialUrl={
 						"https://www.linkedin.com/in/dominik-sochul%C3%A1k-a719011b7/"
 					}

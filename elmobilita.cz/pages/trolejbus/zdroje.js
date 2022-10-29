@@ -5,6 +5,7 @@ import {
 	SourceBlock,
 	SourceWrapper,
 } from "../../components/utilities/utilities";
+import { PostFooterNavigation } from "../../components/post";
 
 export const metaData = {
 	meta_title:
@@ -89,6 +90,15 @@ function Index() {
 					id="strucna-historie-trolejbusu"
 				/>
 			</SourceWrapper>
+			<SpaceY mt={"mt-10"} />
+			<PostFooterNavigation
+				hrefPrevious="/trolejbus/historicky-vyvoj-trolejbusove-dopravy"
+				hrefNext="/"
+				next="Následující"
+				previous="Předchozí"
+				previousEnabled="true"
+				nextEnabled="false"
+			/>
 		</>
 	);
 }

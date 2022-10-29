@@ -5,6 +5,7 @@ import {
 	SourceBlock,
 	SourceWrapper,
 } from "../../components/utilities/utilities";
+import { PostFooterNavigation } from "../../components/post";
 
 export const metaData = {
 	meta_title:
@@ -418,6 +419,15 @@ function Index() {
 					id="onewheel-image"
 				/>
 			</SourceWrapper>
+			<SpaceY mt={"mt-10"} />
+			<PostFooterNavigation
+				hrefPrevious="/lev/novodoba-lev"
+				hrefNext="/"
+				next="Následující"
+				previous="Předchozí"
+				previousEnabled="true"
+				nextEnabled="false"
+			/>
 		</>
 	);
 }
