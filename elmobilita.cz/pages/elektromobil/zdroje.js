@@ -5,6 +5,7 @@ import {
 	SourceBlock,
 	SourceWrapper,
 } from "../../components/utilities/utilities";
+import { PostFooterNavigation } from "../../components/post";
 
 export const metaData = {
 	meta_title:
@@ -45,48 +46,82 @@ function Index() {
 				<SourceBlock
 					icon={
 						<>
-							<span
-								className={`text-left w-fit text-primary-accent after:inline-flex  after:relative  hover:text-primary-accent after:transition-colors after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;] after:top-[0.11em]`}
-							>
-								<span className="text-left justify-start">[2]</span>
-							</span>
+							<span className="text-primary-accent">[2]</span>
 						</>
 					}
-					name={"Obrázek Vývoje Pneumatik / Automobiloých kol"}
-					linkName={"https://getblogo.com/car-tire-history/"}
-					linkUrl={"https://getblogo.com/car-tire-history/"}
+					name={
+						"Car Tire History. [vid. 2022-10-29]. Dostupné z: https://getblogo.com/car-tire-history/"
+					}
 					id="getblogo-car-tire-history"
 				/>
 				<SourceBlock
 					icon={
 						<>
-							<span
-								className={`text-left w-fit text-primary-accent after:inline-flex  after:relative  hover:text-primary-accent after:transition-colors after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;] after:top-[0.11em]`}
-							>
-								<span className="text-left justify-start">[3]</span>
-							</span>
+							<span className="text-primary-accent">[3]</span>
 						</>
 					}
-					name={"Obrázek Enfield 8000"}
-					linkName={"https://commons.wikimedia.org/wiki/File:HYDE_PARK.JPG"}
-					linkUrl={"https://commons.wikimedia.org/wiki/File:HYDE_PARK.JPG"}
+					name={
+						"Enfield 8000. [vid. 2022-10-29]. Dostupné z: https://en.wikipedia.org/wiki/Enfield_8000"
+					}
 					id="wikipedia-enfield"
 				/>
 
 				<SourceBlock
 					icon={
-						<span
-							className={`text-left w-fit text-primary-accent after:inline-flex  after:relative  hover:text-primary-accent after:transition-colors after:[mask:url("/assets/images/misc/external-link.svg")] after:[mask-repeat:no-repeat;] after:[content: "";] after:h-4 after:w-4 after:bg-primary-accent after:hover:bg-primary-accent after:[mask-size: cover;] after:top-[0.11em]`}
-						>
-							<span className="text-left justify-start">[4]</span>
-						</span>
+						<>
+							<span className="text-primary-accent">[4]</span>
+						</>
 					}
-					name={"Tesla, Inc. Wikipedia The Free Encyclopedia"}
-					linkName={"https://en.wikipedia.org/wiki/Tesla,_Inc."}
-					linkUrl={"https://en.wikipedia.org/wiki/Tesla,_Inc."}
+					name={
+						"Tesla, Inc. Wikipedia The Free Encyclopedia. [vid. 2022-10-29]. Dostupné z: https://en.wikipedia.org/wiki/Tesla,_Inc."
+					}
 					id="wikipedia-tesla"
 				/>
+				<SourceBlock
+					icon={<span className="text-primary-accent">[5]</span>}
+					name={
+						"Electrobat [online]. [vid. 2022-10-29]. Dostupné z: https://en.wikipedia.org/wiki/Electrobat"
+					}
+					id="wikipedia-electrobat"
+				/>
+				<SourceBlock
+					icon={<span className="text-primary-accent">[6]</span>}
+					name={
+						"EARTH DAY: Nissan built a hybrid-electric pickup back in 1973. [vid. 2022-10-29]. Dostupné z: https://japanesenostalgiccar.com/1973-nissan-ev4-electric-pickup/"
+					}
+					id="nissan-ev4"
+				/>
+				<SourceBlock
+					icon={<span className="text-primary-accent">[7]</span>}
+					name={
+						"Ford Ecostar 1992 photos. [vid. 2022-10-29]. Dostupné z: https://www.favcars.com/ford-ecostar-1992-photos-111840.htm"
+					}
+					id="ford-ecostar-1992"
+				/>
+				<SourceBlock
+					icon={<span className="text-primary-accent">[8]</span>}
+					name={
+						"General Motors EV1. [vid. 2022-10-29]. Dostupné z: https://www.favcars.com/ford-ecostar-1992-photos-111840.htm"
+					}
+					id="gm-ev1-1996"
+				/>
+				<SourceBlock
+					icon={<span className="text-primary-accent">[9]</span>}
+					name={
+						"2008 Tesla Roadster. [vid. 2022-10-29]. Dostupné z: https://carsandbids.com/auctions/3goZQ16P/2008-tesla-roadster"
+					}
+					id="tesla-roadster-2008"
+				/>
 			</SourceWrapper>
+			<SpaceY mt={"mt-10"} />
+			<PostFooterNavigation
+				hrefPrevious="/elektromobil/technologie"
+				hrefNext="/"
+				next="Následující"
+				previous="Předchozí"
+				previousEnabled="true"
+				nextEnabled="false"
+			/>
 		</>
 	);
 }

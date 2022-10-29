@@ -66,11 +66,11 @@ function Index() {
 					imageUrl={"/assets/images/kategorie/lev.webp"}
 				/>
 			</div>
-			<SpaceY mt={"mt-10"} />
+			{/* <SpaceY mt={"mt-10"} />
 			<p className="italic text-sm text-zinc-600 dark:text-zinc-600">
 				Omluvte prosím sníženou kvalitu webových stránek. Stránky jsou ve
 				výstavbě v rámci semestrální práce předmětu B0M16HVT.{" "}
-			</p>
+			</p> */}
 		</>
 	);
 }
