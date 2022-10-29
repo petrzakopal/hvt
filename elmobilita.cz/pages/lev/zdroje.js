@@ -218,6 +218,59 @@ function Index() {
 					}
 					id="amazon-chopper"
 				/>
+				<SourceBlock
+					icon={<span className="text-primary-accent">[27]</span>}
+					name={
+						"History of Electric Bicycle - E-bike Facts [online]. [vid. 2022-10-20]. Dostupné z: http://www.bicyclehistory.net/motorcycle-history/electric-bicycle/?fbclid=IwAR1ODOdmzlQLuN1CNqJJNcnehD8d4CTASxZc5oDDEAmssKK5a1u1rA88bYY/"
+					}
+					id="history-of-electric-bicycle"
+				/>
+
+				<SourceBlock
+					icon={<span className="text-primary-accent">[28]</span>}
+					name={
+						"Electric bicycle - Wikipedia [online]. [vid. 2022-10-20]. Dostupné z: https://en.wikipedia.org/wiki/Electric_bicycle"
+					}
+					id="wikipedia-electric-bicycle"
+				/>
+				<SourceBlock
+					icon={<span className="text-primary-accent">[29]</span>}
+					name={
+						"Reveal the electric bicycle history [online]. [vid. 2022-10-29]. Dostupné z: https://www.electric-bicycle-guide.com/electric-bicycle-history.html"
+					}
+					id="schnepf-electric-bicycle"
+				/>
+				<SourceBlock
+					icon={<span className="text-primary-accent">[30]</span>}
+					name={
+						"Základní popis elektrokola - BikeParkMost.cz [online]. [vid. 2022-10-24]. Dostupné z: https://www.bikeparkmost.cz/informace/poradna/6/"
+					}
+					id="zakladni-popis-elektrokola"
+				/>
+
+				<SourceBlock
+					icon={<span className="text-primary-accent">[31]</span>}
+					name={
+						"Jaké jsou druhy elektrokol? 3 Druhy - Výhody & Specifika [online]. [vid. 2022-10-24]. Dostupné z: https://www.spotrebitelov.cz/clanky/druhy-elektrokol-a-jejich-specifika/"
+					}
+					id="jake-jsou-druhy-elektrokol"
+				/>
+
+				<SourceBlock
+					icon={<span className="text-primary-accent">[32]</span>}
+					name={
+						"Městské elektrokolo Winora Tria 10 | 2022 | Haibike Morava [online]. [vid. 2022-10-24]. Dostupné z: https://www.haibike-morava.cz/mestske-elektrokolo-winora-tria-10-2022"
+					}
+					id="winora-tria-10"
+				/>
+
+				<SourceBlock
+					icon={<span className="text-primary-accent">[33]</span>}
+					name={
+						"Horské elektrokolo SCOTT ASPECT ERIDE 950 2021 - Moolbike [online]. [vid. 2022-10-24]. Dostupné z: https://www.moolbike.cz/horska-elektrokola/horske-elektrokolo-scott-aspect-eride-950-2021/"
+					}
+					id="scott-aspect-eride-950-2021"
+				/>
 			</SourceWrapper>
 		</>
 	);

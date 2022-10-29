@@ -1,0 +1,221 @@
+import { DefaultLayout } from "../../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+	ListNavigationWrapper,
+	ListNavigationItem,
+	LevTable,
+	DefinedCaption,
+	RozdeleniKolobezek,
+} from "../../components/post";
+import Link from "next/link";
+
+import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
+import Image from "next/image";
+
+export const metaData = {
+	meta_title: "Elektrické kolo a jeho historie - elmobilita.cz", // meta_title
+	meta_description:
+		"Elektrické kolo, elektrokolo či e-bike. Historický vývoj elektrických kol. elmobilita.cz – historie elektromobility na jednom místě.", // meta_description
+	canonical_url: "https://elmobilita.cz/lev/elektricke-kolo", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz/lev/elektricke-kolo", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "Elektrické kolo a jeho historie - elmobilita.cz", // og_title
+	og_description:
+		"Elektrické kolo, elektrokolo či e-bike. Historický vývoj elektrických kol. elmobilita.cz – historie elektromobility na jednom místě.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Elektrické kolo, elektrokolo či e-bike. Historický vývoj elektrických kol. elmobilita.cz – historie elektromobility na jednom místě.", // twitter:description
+	twitterTitle: "Elektrické kolo a jeho historie - elmobilita.cz", // twitter:title
+};
+
+# Elektrické kolo
+
+Elektrické kolo nebo také elektrokolo či e-bike je klasické kolo poháněné elektrickou energií, která je přeměněna na mechanickou pomocí elektromotoru. Pro funkci elektromotoru je nutné, aby i člověk sám využil své síly a tzv. „šlapal“, jinak elektromotor nebude pracovat. Toto omezení je dáno legislativou. Elektrokolo je stále z hlediska legislativy bráno jako klasické kolo, pokud splňuje určitá omezení. Jestliže by nesplňovalo určitá omezení, tak je elektrokolo bráno jako vozidlo s pohonem (např. elektrický motocykl), na které se vztahují přísnější nařízení (řidičské oprávnění, povinná výbava apod..) a je třeba provádět typové zkoušky (tzv. homologaci).
+
+Hlavní výhodou elektrokol oproti tradičním kolům je komfort pro uživatele, jelikož uživatel nemusí vydat velké množství vlastní energie na dosažení svého cíle. Tato výhoda je významnější u seniorů nebo u lidí, kteří se nemohou příliš přetěžovat, jelikož se mohou díky elektrokolu dostat i do míst či vzdáleností, které by svými silami nikdy nedosáhly. Zároveň jim elektrokolo může zajistit pravidelnou fyzickou zátěž, která jim pomůže udržet svou fyzickou kondici. Další výhodou je možnost částečného nahrazení elektrokol za auta či MHD se spalovacími motory, které zejména ve městech znečišťují ovzduší. Tuto výhodu ještě zlepšuje fakt, že na elektrokolo nepotřebujeme žádné řidičské oprávnění či jízdné. Další výhody byly zmíněny již v předchozích kapitolách.
+
+Jednou z nevýhod elektrokol je vyšší pořizovací cena elektrokola oproti klasickým kolům, která může být vyšší v jednotkách až desítkách tisíc Kč. Cena se velmi liší podle typu použití kola a jeho dojezdové vzdálenosti. Další nevýhodou je vyšší hmotnost oproti klasickým kolům, která je vyšší o zhruba jednotky kil (5 – 6 kg).
+
+## Historie a vývoj elektrických kol
+
+Vývoj elektrokol sahá až do konce 19. stolení, kdy byly vydány první patenty na elektrokola. Jedním z prvních vynálezců, kteří získali patent je Ogden Bolton Jr., jemuž byl udělen patent (č. 552 271) v roce 1895 za kolo poháněné bateriemi se stejnosměrným motorem umístěném na zadním kole. Tento patent není brán ovšem jako první elektrokolo, jelikož se jednalo pouze o kolo s elektrickým pohonem bez převodů. Jako první vynálezce elektrokola je brán Hosea W. Libbey, který v roce 1897 získal patent (č. 596 272) na elektrické kolo poháněné dvojitým elektrickým motorem, který byl umístěn ve středu osy klikové hřídele.
+
+![Nákres prvního elektrokola.](/assets/images/lev/first-electric-bicycle.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 14 Nákres prvního elektrokola&nbsp;<Citation href="/lev/zdroje#history-of-electric-bicycle">[27]</Citation>
+</figcaption>
+
+![Nákres elektrokola od J. Schnepf.](/assets/images/lev/schenpf-electric-bicycle.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 15 Nákres elektrokola od J. Schnepf&nbsp;<Citation href="/lev/zdroje#schnepf-electric-bicycle">[29]</Citation>
+</figcaption>
+
+V roce 1898 Matthew J. Steffens patentoval elektrické kolo s pohonem zadního kola pomocí hnacího řemenu. Následně v roce 1899 John Schnepf získal patent (č. 607 066) na elektrické kolo s pohonem zadního kola pomocí tření s „válcovým kolečkem“. Další vývoj elektrokol v této době byl upozaděn vzestupem motorových vozidel a také kvůli chybějící technologii, která by elektrokola posunula dále na pole komerčního využití.
+
+Patent od Schnepfa byl později vylepšen patentem (č. US3431994A) od G. A. Wood Jr. v roce 1969, jehož elektrokolo bylo poháněno čtyřmi malými motorky propojených řadou ozubených kol, která opět poháněla válcová kolečka.
+
+V Českých zemím začal vývoj o chvilku později a jedním z prvních konstruktérů elektrického kola, resp. elektrocyklu, byl Ing. H. Fügner, který se zabýval vývojem již od roku 1938 a v roce 1944 přestavil prototyp elektrického kola využívající pro pohon upravené dynamo Sentuilla o výkonu 150 W a napětí 24 V. Zdrojem elektrické energie byly olověné baterie s kapacitou 75 Ah, ovšem nevýhodou elektrokola byla jeho velmi vysoká váha a to 140 kg. Dojezd tohoto prototypu byl až 70 km na rovině.
+
+Největší rozvoj elektrokol začal v 90. let 20. století. V tomto období začali některé japonské společnosti (např. Yamaha či Panasonic) vyvíjet elektrokola s elektromotorem a bateriemi. Yamaha započala vývoj již okolo roku 1989 a v roce 1993 vynalezla systém pomoci při šlapání do pedálů. V roce 1992 začala společnost Vector Services Limited prodávat elektrokolo s názvem Zike, které bylo prvním komerčně vyráběným elektrokolem ve velkých sériích. Toto elektrokolo bylo poháněno elektromotorem s permanentním magnetem, který získával energii z NiCd baterie. Na konci 90. let 20. století byly vyvinuty první snímače točivého momentu a řízení výkonu. První úspěšně prodávané elektrokolo s názvem Select se objevilo na trhu v roce 1997. Již v roce 1998 bylo na trhu 49 různých elektrokol. Levnější modely elektrokol používaly těžké olověné baterie, naproti tomu dražší a novější modely elektrokol používaly již NiMH, NiCd či Li-ion baterie, které jsou mnohem lehčí a poskytují vyšší hustotu energie.
+
+Na začátku 21. století masivně stoupá prodej elektrokol a mezi roky 2002 a 2004 vzrostla výroba elektrokol o 40 %. Největšímu rozšíření elektrokol dochází v Číně, kde se dnes projíždí odhadem více než 120 milionů elektrokol, přičemž ještě v roce 1998 bylo v Číně pouze odhadem 58 tisíc elektrokol. Za takto velkým rozšířením stojí zejména špatné ovzduší ve městech, jelikož elektrokola neprodukují žádné zplodiny. Elektrokola nejsou tolik rozšířena v Severní Americe a Evropě, ovšem jejich počet a oblíbenost se začíná zvyšovat každým rokem (odhadem 1,5 milionu nových kusů za rok).&nbsp;<Citation href="/lev/zdroje#history-of-electric-bicycle">[27]</Citation>,&nbsp;<Citation href="/lev/zdroje#wikipedia-electric-bicycle">[28]</Citation>
+
+## Základní charakteristika a parametry elektrického kola
+
+Elektrické kolo je velmi podobné klasických jízdním kolům a vychází z jejich konstrukce. A proto má většinu základních komponentů stejných anebo velmi podobných.
+
+Elektrokola se zejména skládají z následujících částí.
+
+### Rám
+
+Rám je velmi podobný rámu klasických jízdních kol a je i ze stejných materiálů (hliník, karbon). Rozdílem je, že rám elektrokol je přizpůsoben k namontování elektromotoru, baterií a dalších komponent a často jsou tyto komponenty přímo integrovány v samotném rámu.
+
+### Zadní a přední vidlice
+
+Slouží k uchycení zadního kola spolu s jeho měničem či předního kola k rámu elektrokola. Vidlice bývají často odpruženy pro zvýšení komfortu uživatele.
+
+### Řídítka s rukojeťmi
+
+Řídítka jsou spojena pomocí představce s rámem a slouží k ovládání elektrokola a k umístění ovládacích částí elektrokola. Těmito částmi jsou například brzdové páky, páky řazení, zvonku či LCD displeje.
+
+### Elektromotor
+
+Bývá uložen na předním či zadním náboji anebo ve středu elektrokola. Elektromotor vypomáhá uživateli při šlapání a usnadňuje mu jízdu. Nejčastějšími parametry, kterými se elektromotory srovnávají jsou výkon, kroutící moment a maximální rychlost. Obvyklý výkon a maximální rychlost jsou dány nejvyšší zákonnou hranicí. Výkon bývá tedy do 250 W a maximální rychlost je do 25 km/h.
+
+### Baterie
+
+Bývá uložena ve středovém rámu, v zadním nosiči či za sedlovou trubkou. Baterie slouží jako zdroj elektrické energie elektromotoru. U baterií sledujeme nejčastěji jejich napětí, kapacitu a počet cyklů. V dnešní době se nejčastěji používají Li-ion baterie s napětím 36 V a kapacitou od 10 Ah do 20 Ah.
+
+### Řídící jednotka
+
+Řídicí jednotka reaguje na podměty ze snímačů a reguluje moment a otáčky motoru.
+
+### LCD Display
+
+LCD displej nebo také LED panel slouží k obsluze elektromotoru a zobrazuje informace o stupni podpory, stavu baterie, dojezdu a dalším. Levnější elektrokola nedisponují tímto displejem a k regulaci slouží jen pár základních stisknutí tlačítek.
+
+### Snímač
+
+Elektrokola obsahují několik typů snímačů a na všechny elektrokola mají všechny snímače. Snímač šlapání kontroluje otáčení šlapek (jejich klik) a tím reguluje motor. Snímač šlapání se nachází i všech typů elektrokol. Snímač točivého momentu měří sílu šlapání a podle toho upravuje výkon elektromotoru. Snímač točivého momentu se nachází u elektrokol s uložením motoru ve středu elektrokola. Posledním snímačem je snímač rychlosti, který informuje o aktuální rychlosti elektrokola. Snímač rychlosti se nachází u elektrokol, která mají LCD displej. Některé modely elektrokol obsahují snímače brždění, které při použití brzd okamžitě vyřadí elektromotor z chodu.
+
+Dalšími komponenty, které jsou stejné jako u klasického jízdního kola jsou například pedály, brzdy, sedlo, řetěz, soustava ložisek, středová osa, řazení (zadní a přední měnič, kazety s ozubenými koly...), soupravy předního a zadního kola apod.&nbsp;<Citation href="/lev/zdroje#zakladni-popis-elektrokola">[30]</Citation>
+
+## Typické parametry elektrokola
+
+### Výkon elektromotoru
+
+Typickou hodnotou je 250 W, která je limitována zákonem. Ovšem u nás je možnost dodatečného zvýšení výkonu až na 1 000 W. Někteří výrobci již při koupi uvádějí, že lze výkon zvýšit z 250 W až na 500 W.
+
+### Kroutící moment
+
+Nám udává jakou silou nám motor při šlapání vypomáhá. Pro městská kola se hodnota pohybuje okolo 50 – 60 Nm. Horská kola dosahují běžně hodnoty 70 Nm a nejlepší elektromotory mají až 95 Nm.
+
+### Maximální rychlost
+
+Nejvyšší rychlost je opět omezena zákonem a to na 25 km/h. Ovšem některá elektrokola umožňují odblokování až na 55 km/h. Tyto elektrokola nesmějí do veřejného provozu.
+
+### Dojezd
+
+Dojezd elektrokola je velmi proměnlivý a záleží na poskytované pomoci, váze uživatele, strmosti stoupání či na teplotních a povětrnostních podmínkách. Dojezd je také ovlivněn kapacitou baterie. Horská kola mají často vyšší spotřebu, kvůli strmosti terénů a tím i kratší dojezd. Naproti tomu městská elektrokola mají menší spotřebuji, jelikož jezdí většinou v rovinném terénu. Podle terénu je proto vhodné uzpůsobit velikost baterie a tím i maximální dojezd. Běžná elektrokola dosahují dojezdu 60 – 80 km. Elektrokola s vyšší kapacitou dosahují až 180 km dojezdu.
+
+### Kapacita baterie
+
+Kapacita baterie je jedním z hlavních parametrů, jelikož nám určuje dojezd elektrokola. Nejlevnější elektrokola mají kapacitu okolo 10 Ah a s rostoucí cenou roste i kapacita až do nějakých 20 Ah.
+
+### Napětí
+
+U městských nenáročných elektrokol bývá postačující nižší napětí a to 24 V. Nejčastěji používanou napěťovou hladinou je ovšem 36 V. Pro výkonná elektrokola, která potřebují vyšší kroutící moment se používá napětí o hodnotě 48 V.
+
+### Jízdní režimy
+
+Jízdní režimy nám určují, jakou silou nám pomáhá elektromotor a klasicky se skládá z 3 – 5 stupňů asistence. Nejnižší stupeň je označován jako ECO. Naopak nejvyšší stupeň je označován jako TURBO a poskytuje nejvyšší výkon a kroutící moment. U všech elektrokol je možné asistentu elektromotoru zcela vypnout.
+
+### Hmotnost
+
+Při výběru elektrokola je velmi důležitá hmotnost, jelikož příliš těžké elektrokolo může být pro uživatele spíše ke škodě než k užitku. Levnější elektrokola dosahují vyšší hmotnosti a to okolo 26 – 28 kg, naproti tomu dražší elektrokola mají hmotnost okolo 22 – 24 kg. Hmotnost elektrokola ovlivňuje kapacita baterie, jelikož s ní souvisí i její rozměry a hmotnost.
+
+Dalšími parametry elektrokol může být například možnost asistence při vedení elektrokola, množství převodových stupňů elektromotoru a voděodolnost.
+
+## Rozdělení elektrických kol
+
+Elektrických kol existuje velké množství různých typů a lze je rozdělit podle několika způsobů. Prvním způsobem je klasifikace podle řídícím systému, který reguluje výkonu. Skládá se z elektrokol s:
+
+1. Asistentem při šlapání - Výkon elektromotoru je regulován šlapáním. Pokud uživatel přestane šlapat, tak motor přestane pracovat. Elektrokola často obsahují snímače rychlosti šlapání či síly šlapání. Tato kategorie lze rozdělit ještě podle výkonu elektromotoru a to na elektrokolo typu:
+
+   a. Pedelec - Jedná se o elektrokolo, které využívá asistenci při šlapání. Dle právní klasifikace se jedná stále o jízdní kolo, pokud je jeho výkon do 250 W, podpora elektromotoru při šlapání je do rychlosti 25 km/h či podpora elektromotoru bez šlapání je do rychlosti 6 km/h.
+
+   b. S-Pedelec - Jedná se opět elektrokolo, které využívá asistenci při šlapání. Dle právní klasifikace se jedná o moped (kategorie L1e-B), který musí být vybaven poznávací značkou, mít pojištění a uživatel musí mít řidičské oprávnění. Dále je stanoven maximální výkon motoru na 4 kW, maximální rychlost podpory elektromotoru při šlapání na 45 km/h a maximální rychlost podpory elektromotoru bez šlapání na 6 km/h.
+
+2. Regulací výkonu na vyžádání - Výkon elektromotoru je regulován pomocí páčky či „plynu“ obvykle namontovaných na řídítkách, podobně jako u motocyklů. Elektrokola s touto regulací výkonu jsou klasifikovány jako mopedy.
+
+3. Oběma předchozími regulacemi společně - Výkon elektromotoru lze regulován jak i šlapáním, tak i pomocí páčky či „plynu“.
+
+Obě klasifikace jsou často využívány v právních předpisech.
+
+Dalším způsobem klasifikace je podle typu pohonu. Tato klasifikace se skládá z:
+
+1. Motor na předním kole – Využíván pouze u městských elektrokol, jelikož přední kolo může prokluzovat na nezpevněném terénu. Nižší cena proti dalším kategoriím, horší ovladatelnost při obtížných situacích, vyšší opotřebení předního kola, menší dojezd a složitější oprava defektů na předním kole. V současné době se ovšem přestává používat.
+
+2. Motor na zadním kole – Využíván zejména u elektrokol s nižší pořizovací cenou. Zadní kolo neprokluzuje a motor tak lépe přenáší točivý moment. Nižší cena oproti motoru umístěném ve středu, levný servis, vhodný do všech terénů, vyšší opotřebení zadního kola, menší dojezd a složitější oprava defektů na zadním kole.
+
+3. Motor ve středu elektrokola – Nejrozšířenější typ motoru, který dosahuje nejlepších vlastností. Lepší vyvážení elektrokola a velmi dobrý přenos a stabilita točivého momentu. Dávkování výkonu je u tohoto typu přesnější a s vyšší citlivostí oproti předchozím kategoriím, jelikož tento motor využívá torzní senzor, který snímá tlakovou sílu na pedál. Předchozí kategorie tímto senzorem nedisponují. Vyšší cena oproti předchozím kategoriím, vhodný do všech terénů, dlouhý dojezd a vyšší výkon elektromotoru.
+
+Poslední klasifikace je podle způsobu užití &nbsp;<Citation href="/lev/zdroje#jake-jsou-druhy-elektrokol">[31]</Citation>. Tato klasifikace se skládá z kategorií:
+
+1. Městská elektrokola – Pro každodenní využití, jednoduchá konstrukce (nízká hmotnost), nízká kapacita baterií (dojezd 50 – 70 km), jedny z nejlevnější elektrokol.
+
+2. Horská elektrokola – Pro sportovní využití v terénu, mohutný rám s odpruženými vidlicemi (vyšší hmotnost) a složitější převodovkou, vyšší kapacita baterií a výkon elektromotoru, vyšší pořizovací cena.
+
+3. Trekingová elektrokola – Pro cesty na delší vzdálenosti, nízká hmotnost rámu a všech komponentů, vysoká kapacita baterií, které zaručují dlouhý dojezd (až 150 km). Vyšší pořizovací cena. Vhodná jako kompromis mezi městským a horským elektrokolem.
+
+4. Skládací elektrokola – Pro kratší cesty nebo do měst. Jednoduchá konstrukce, která lze složit a snadno přepravovat. Malá kapacity baterií a nižší pořizovací cena.
+
+![Městské elektrokolo.](/assets/images/lev/winora-tria-10.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 16 Městské elektrokolo&nbsp;<Citation href="/lev/zdroje#winora-tria-10">[32]</Citation>
+</figcaption>
+
+![Horské elektrokolo.](/assets/images/lev/scott-aspect-eride-950-2021.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 17 Horské elektrokolo&nbsp;<Citation href="/lev/zdroje#scott-aspect-eride-950-2021">[33]</Citation>
+</figcaption>
+
+<PostFooterNavigation
+	hrefPrevious="/lev/elektricka-kolobezka"
+	hrefNext="/lev/"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="true"
+	nextEnabled="true"
+/>
+{/* --------------------- DANGER ZONE --------------------- */}
+export default ({children}) => (
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
+);
