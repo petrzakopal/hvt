@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/lev/kapitoly": "pages/lev/kapitoly.js",
+  "/elektromobil/kapitoly": "pages/elektromobil/kapitoly.js",
   "/lev/novodoba-lev": "pages/lev/novodoba-lev.js"
 }
