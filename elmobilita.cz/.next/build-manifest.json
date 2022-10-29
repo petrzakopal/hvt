@@ -25,10 +25,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/lev/elektricka-kolobezka": [
+    "/lev/elektricke-kolo": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/lev/elektricka-kolobezka.js"
+      "static/chunks/pages/lev/elektricke-kolo.js"
     ]
   },
   "ampFirstPages": []
