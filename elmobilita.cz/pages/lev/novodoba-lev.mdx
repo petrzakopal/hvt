@@ -1,0 +1,65 @@
+import { DefaultLayout } from "../../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+	ListNavigationWrapper,
+	ListNavigationItem,
+	LevTable,
+	DefinedCaption,
+	RozdeleniKolobezek,
+} from "../../components/post";
+import Link from "next/link";
+
+import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
+import Image from "next/image";
+
+export const metaData = {
+	meta_title: "Novodobá lehká elektrická vozidla - elmobilita.cz", // meta_title
+	meta_description:
+		"Elektrický skateboard, segway, Easy Glider nebo One Wheel. Jaká je jejich historie a současnost?  elmobilita.cz – historie elektromobility na jednom místě.", // meta_description
+	canonical_url: "https://elmobilita.cz/lev/novodoba-lev", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz/lev/novodoba-lev", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "Novodobá lehká elektrická vozidla - elmobilita.cz", // og_title
+	og_description:
+		"Elektrický skateboard, segway, Easy Glider nebo One Wheel. Jaká je jejich historie a současnost?  elmobilita.cz – historie elektromobility na jednom místě.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Elektrický skateboard, segway, Easy Glider nebo One Wheel. Jaká je jejich historie a současnost?  elmobilita.cz – historie elektromobility na jednom místě.", // twitter:description
+	twitterTitle: "Novodobá lehká elektrická vozidla - elmobilita.cz", // twitter:title
+};
+
+# Novodobá LEV
+
+Tato kapitola seskupuje zbylá používaná LEV v dnešní době. Jednotlivé typy jsou v podkapitolách povrchově popsány. Typy těchto LEV jsou seskupeny do této kapitoly, jelikož u nich nelze dohledávat historický vývoj jako u elektrokola a elektrokoloběžky. Důvodem je jejich vznik až s příchodem novodobých technologií (jednotlivé typy lze mapovat okolo roku 2000, ale hromadné využití nastalo až okolo roku 2010 a později).
+
+<PostFooterNavigation
+	hrefPrevious="/lev/elektricke-kolo"
+	hrefNext="/lev/zdroje"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="true"
+	nextEnabled="true"
+/>
+{/* --------------------- DANGER ZONE --------------------- */}
+export default ({children}) => (
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
+);
