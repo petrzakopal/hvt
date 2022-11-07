@@ -37,7 +37,7 @@ export const VideoImageLink = ({
 	target,
 }) => {
 	return (
-		<div className="relative video-image-link flex flex-col items-center justify-center mx-auto rounded-xl ml-[-3vw] w-[calc(100%+6vw] h-80 group cursor-pointer my-5">
+		<div className="relative video-image-link flex flex-col items-center justify-center mx-auto rounded-xl h-80 group cursor-pointer my-5">
 			{/* {children} */}
 			<Link href={linkUrl} rel={rel} target={target}>
 				<PlayIcon className="relative w-24 h-24 z-[2] text-zinc-700 dark:text-zinc-200" />
