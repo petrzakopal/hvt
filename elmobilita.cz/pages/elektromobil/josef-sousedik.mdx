@@ -1,0 +1,90 @@
+import { DefaultLayout } from "../../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+} from "../../components/post";
+
+import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
+import Image from "next/image";
+
+export const metaData = {
+	meta_title: "Hybridní a elektrická vozidla Josefa Sousedíka - elmobilita.cz", // meta_title
+	meta_description:
+		"Josef Sousedík byl významný vynálezce, businessman a továrník. Sousedíkovy vynálezy pocházely zejména z oboru točivých strojů, přístrojů, elektrické trakce a automatické regulace. Také sestrojil a sám využíval elektrická a hybridní vozidla.", // meta_description
+	canonical_url: "https://elmobilita.cz/elektromobil/josef-sousedik", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz/elektromobil/josef-sousedik", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "Hybridní a elektrická vozidla Josefa Sousedíka - elmobilita.cz", // og_title
+	og_description:
+		"Josef Sousedík byl významný vynálezce, businessman a továrník. Sousedíkovy vynálezy pocházely zejména z oboru točivých strojů, přístrojů, elektrické trakce a automatické regulace. Také sestrojil a sám využíval elektrická a hybridní vozidla.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription:
+		"Josef Sousedík byl významný vynálezce, businessman a továrník. Sousedíkovy vynálezy pocházely zejména z oboru točivých strojů, přístrojů, elektrické trakce a automatické regulace. Také sestrojil a sám využíval elektrická a hybridní vozidla.", // twitter:description
+	twitterTitle:
+		"Hybridní a elektrická vozidla Josefa Sousedíka - elmobilita.cz", // twitter:title
+};
+
+# Hybridní a elektrická vozidla Josefa Sousedíka
+
+Josef Sousedík byl významný vynálezce, businessman a továrník. Sousedíkovy vynálezy pocházely zejména z oboru točivých strojů, přístrojů, elektrické trakce a automatické regulace. Jeho neslavnějším přínosem v oboru elektrotechniky bylo řešení elektro-mechanického přenosu trakční síly používané v motorovém vlaku M 290.0, známého také pod názvem Slovenská strela. Josef Sousedík byl významný československý vynálezce, o němž měli zájem i zahraniční firmy jak v Evropě, tak USA. Sousedík byl však patriot a všechny jeho nápady chtěl uchovat pro mladou Československou republiku.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+{/* prettier-ignore */}
+<Fact header="Zajímavost" color="primary" description="vlastenec">
+	Lákavé zahraniční nabídky odmítal a komentoval slovy: „Pánové, já jsem Čechoslovák a mojí povinností je pracovat pro Československou republiku.“&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+</Fact>
+
+Josef Sousedík se zabýval vývojem a výrobou elektrických vozidel v období 1927 až 1929 a poté v letech 1939 až 1943. Jeho nápad vynalézt hybridní elektrické vozidlo byl zapříčiněn nehospodárností tehdejších motorových vozidel a technickými nedostatky čistě akumulátorových elektrických vozidel.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+{/* prettier-ignore */}
+<Fact header="Zajímavost" color="primary" description="rozšíření patentu">
+	První přihlášku k patentování hybridního vozidla podal v roce 1927, zároveň jeho vynález byl následně patentován v dalších 22 zemích světa.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+</Fact>
+
+Sousedíkovo hybridní vozidlo se sestávalo ze spalovacího motoru, dynama a elektromotorů. Každé kolo bylo osazeno nábojovými elektromotory Sousedíkovy konstrukce s možností rekuperace. Součástí vozidla byla také samočinná bezeztrátová regulace otáček založená na postupném připojováním kaskád bateriových skupin jak při jízdě, tak při brzdění.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+Princip Sousedíkovo hybridního vozidla byl založen na myšlence potřebného výkonu vozidla pro převážnou část jízdy, který je značně menší, než jakých dosahují běžná vozidla se spalovacími motory. Vysoký až maximální výkon vozidla je využit jen při akceleraci, při velkém stoupání či v těžkém terénu. Výkon spalovacího motoru hybridního vozidla navrhl Sousedík na potřebný (průměrný) výkon, který vozidlo vyžaduje pro převážnou část cesty. Potřebná rezerva výkonu (např. při akceleraci) je zajištěna akumulátorovými bateriemi. Tím pádem slabší spalovací motor může pracovat při optimálních otáčkách s vyšší účinností. Zároveň tak byl prodloužen dojezd oproti tehdejším čistě elektrickým vozidlům.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+Dynamo bylo primárně poháněno spalovacím motorem se vzduchovým chlazením, přičemž podle potřeb zákazníka mohlo být palivo pro spalovací motor benzín, nafta, dehet či benzol. Nábojové elektromotory mohly být poháněny buď pouze z dynama nebo pouze z akumulátorů či kombinací obojího.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+Například ve městě umožňovalo vozidlo jízdu čistě na baterie, mimo město nebo při malém nabití akumulátorů spalovací motor poháněl dynamo a nabíjel akumulátory. Při velkém zatížení byly elektromotory napájeny jak z baterie tak z dynama. Výhodou Sousedíkovo hybridního vozidla bylo startování spalovacího motoru pomocí dynama napájeného z baterií. Běžná spalovací vozidla v té době bylo nutné startovat mechanicky pomocí kliky.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+Nabíjení akumulátorů bylo zajištěno přes dynamo, tím pádem bylo nutné vozidlo doplňovat pouze palivem pro spalovací motor. Provozní náklady byly poloviční oproti tehdejším vozidlům stejné třídy. Zároveň Sousedíkovo hybridní vozidlo mělo nízké těžiště a disponovalo pohonem všech kol se stejným záběrným i brzdným momentem.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+Spalovací motor, nádrž paliva a generátor byly umístěny nad přední nápravou, alkalické baterie nad zadní nápravou. Přední nábojové elektromotory byly umístěny natáčivě na svislých čepech. Ovládací přepínače se nacházely pod volantem. Vozidlo bylo vedle elektrické rekuperační brzdy také vybaveno mechanickou brzdou, která byla ovládána ruční pákou.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+Vozidlo mělo šest rychlostí a rychlost jízdy se regulovala lineárně páčkou na volantu. Čistý elektrický dojezd dosahoval 60 km při rychlosti jízdy 70 až 80 km/h.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+Za okupace Československa v letech 1939 až 1941 Josef Sousedík pracoval na dalším hybridním vozidlu. I když bylo toto hybridní vozidlo technicky dokončeno a připraveno pro sériovou výrobu Josef Sousedík tuto skutečnost tajil před německými úřady, protože nechtěl, aby bylo využito pro válečné účely. Sám Sousedík využíval své hybridní vozidlo pro převážení zbraní a jídla pro partyzány ve valašských horách a také pro styk s členy protiněmeckého odboje.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+Patent k jeho hybridnímu vozidlu, vynalezeném během 2. sv. války, byl podán až po skončení války. Z důvodu neplacení poplatků za patent v době komunistického režimu zanikly patentová práva na Sousedíkovo hybridní vozidlo a mohl jej tak zkonstruovat každý.&nbsp;<Citation href="/elektromobil/zdroje#kohoutka-sousedik">[10]</Citation>
+
+<PostFooterNavigation
+	hrefPrevious="/elektromobil/technologie"
+	hrefNext="/elektromobil/zdroje"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="true"
+	nextEnabled="true"
+/>
+{/* --------------------- DANGER ZONE --------------------- */}
+export default ({children}) => (
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
+);

@@ -112,6 +112,14 @@ function Index() {
 					}
 					id="tesla-roadster-2008"
 				/>
+
+				<SourceBlock
+					icon={<span className="text-primary-accent">[10]</span>}
+					name={
+						"KOHUTKA, Jiří a Josef KOŠŤÁL. Josef Sousedík: (ne)zapomenutý vynálezce, továrník, politik a vlastenec : říkali mu Edison z Moravy. Praha: J. Kohutka, 2013. ISBN 978-80-260-3642-5."
+					}
+					id="kohoutka-sousedik"
+				/>
 			</SourceWrapper>
 			<SpaceY mt={"mt-10"} />
 			<PostFooterNavigation
