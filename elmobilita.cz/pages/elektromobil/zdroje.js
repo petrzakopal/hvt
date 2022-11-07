@@ -123,7 +123,7 @@ function Index() {
 			</SourceWrapper>
 			<SpaceY mt={"mt-10"} />
 			<PostFooterNavigation
-				hrefPrevious="/elektromobil/technologie"
+				hrefPrevious="/elektromobil/josef-sousedik"
 				hrefNext="/"
 				next="Následující"
 				previous="Předchozí"
