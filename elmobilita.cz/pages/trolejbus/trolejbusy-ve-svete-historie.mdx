@@ -1,0 +1,107 @@
+import { DefaultLayout } from "../../components/layout";
+import { MDXProvider } from "@mdx-js/react";
+import {
+	Post,
+	Citation,
+	VideoImageLink,
+	PostFooterNavigation,
+	Fact,
+	TrolejbusyVideoGallery,
+} from "../../components/post";
+
+import { H2, H3, H4, H5, H6 } from "../../components/linkHeadings";
+import Image from "next/image";
+import Link from "next/link";
+
+export const metaData = {
+	meta_title: "Trolejbusy ve světě, zajímavosti z historie - elmobilita.cz", // meta_title
+	meta_description: "Historie a zajímavosti trolejbusové dopravy ve světě.", // meta_description
+	canonical_url: "https://elmobilita.cz/trolejbus/trolejbusy-ve-svete-historie", // canonical url
+	og_type: "website", //og:type
+	og_url: "https://elmobilita.cz/trolejbus/trolejbusy-ve-svete-historie", //og_url
+	og_image: "https://elmobilita.cz/assets/images/seo/og-image.png", // og_image
+	og_title: "Trolejbusy ve světě, zajímavosti z historie - elmobilita.cz", // og_title
+	og_description: "Historie a zajímavosti trolejbusové dopravy ve světě.", // og_description
+	twitterImage: "https://elmobilita.cz/assets/images/seo/og-image.png", // twitte:image
+	twitterDescription: "Historie a zajímavosti trolejbusové dopravy ve světě.", // twitter:description
+	twitterTitle: "Trolejbusy ve světě, zajímavosti z historie - elmobilita.cz", // twitter:title
+};
+
+# Trolejbusy ve světě – zajímavosti z historie
+
+Nejen Česko je trolejbusovou velmocí. Trolejbusy jsou velmi rozšířené např. ve východních zemích, avšak technický stav nebývá na dobré úrovni.
+
+![Nevhodný stav trolejbusů ve světě](/assets/images/trolejbus/nevhodny-stav-trolejbusu.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 5 Nevhodný stav trolejbusů ve světě&nbsp;<Citation href="trolejbus/zdroje/#trolejbusyvpraze-trolejbusy-ve-svete">[6]</Citation>.
+</figcaption>
+
+V západních zemích se objevovaly i zajímavé exempláře jako například trolejbus s vlečným vozem v Lausanne v 90. letech. Ve Švýcarsku bylo používání vlečných vozů docela rozšířené.
+
+![Trolejbus s vlečným vozem v Lausanne v 90. letech](/assets/images/trolejbus/laussanne.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 6 Trolejbus s vlečným vozem v Lausanne v 90. letech&nbsp;<Citation href="trolejbus/zdroje/#trolejbusyvpraze-trolejbusy-ve-svete">[6]</Citation>.
+</figcaption>
+
+Dalším švýcarským speciálem byl tříčlánkový trolejbus Volvo, provozovaný v 90. letech.
+
+![Tříčlánkový trolejbus Volvo, 90. léta 20. století](/assets/images/trolejbus/volvo.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 6 Tříčlánkový trolejbus Volvo, 90. léta 20. století&nbsp;<Citation href="trolejbus/zdroje/#trolejbusyvpraze-trolejbusy-ve-svete">[6]</Citation>.
+</figcaption>
+
+## Trolejbusová doprava v Zurichu
+
+Historie trolejbusové dopravy v Zurichu sahá až do roku 1939. Jak vypadá trolejbusová doprava ve Švýcarsku nyní je možné pozorovat na videu níže.
+
+<VideoImageLink
+	imageUrl="/assets/images/trolejbus/zurich-trolley.webp"
+	linkUrl="https://www.youtube.com/watch?v=76ItMsIDPFU"
+	rel={"external"}
+	target={"_blank"}
+/>
+{/* prettier-ignore */}
+<figcaption>
+	Trolejbusová doprava v Zurichu&nbsp;<Citation href="https://www.youtube.com/watch?v=76ItMsIDPFU">[YouTube]</Citation>.
+</figcaption>
+
+Když se podíváme do britských zemí, Londýn zrušil svůj trolejbusový provoz koncem 60. let, když deset let předtím zlikvidoval tramvaje - a dnes reálně uvažuje nejen o obnově tramvají, ale i trolejbusů, a to dokonce v hodně „futuristické“ podobě. Původní londýnské trolejbusy byly zavedeny v 50. letech jako náhrada za tramvaje. Byly typicky dvoupatrové a v tradičních červených barvách.&nbsp;<Citation href="trolejbus/zdroje/#trolejbusyvpraze-trolejbusy-ve-svete">[6]</Citation>
+
+![Historická fotografie autobusu ve Velké Británii](/assets/images/trolejbus/autobus-uk.webp)
+
+{/* prettier-ignore */}
+<figcaption>
+	Obr. 7 Historická fotografie autobusu ve Velké Británii&nbsp;<Citation href="trolejbus/zdroje/#trolejbusyvpraze-trolejbusy-ve-svete">[6]</Citation>.
+</figcaption>
+
+<PostFooterNavigation
+	hrefPrevious="/trolejbus/historicky-vyvoj-trolejbusove-dopravy"
+	hrefNext="/trolejbus/trolejbusy-ve-svete-soucasnost"
+	next="Následující"
+	previous="Předchozí"
+	previousEnabled="true"
+	nextEnabled="true"
+/>
+{/* --------------------- DANGER ZONE --------------------- */}
+export default ({children}) => (
+
+<DefaultLayout metaData={metaData}>
+	<MDXProvider
+		components={{
+			h2: H2,
+			h3: H3,
+			h4: H4,
+			h6: H5,
+			h5: H6,
+		}}
+	>
+		<Post>{children}</Post>
+	</MDXProvider>
+</DefaultLayout>
+);

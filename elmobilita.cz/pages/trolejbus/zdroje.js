@@ -89,10 +89,24 @@ function Index() {
 					}
 					id="strucna-historie-trolejbusu"
 				/>
+				<SourceBlock
+					icon={<span className="text-primary-accent">[6]</span>}
+					name={
+						"Trolejbusy ve světě [online]. [cit. 2022-07-11]. Dostupné z: http://www.trolejbusyvpraze.net/tb_jinde_svet.htm"
+					}
+					id="trolejbusyvpraze-trolejbusy-ve-svete"
+				/>
+				<SourceBlock
+					icon={<span className="text-primary-accent">[7]</span>}
+					name={
+						"TROLLEYBUS SYSTEMS [online]. [cit. 2022-11-07]. Dostupné z: https://landgeist.com/2021/07/04/trolleybus-systems"
+					}
+					id="trolleybus-systems"
+				/>
 			</SourceWrapper>
 			<SpaceY mt={"mt-10"} />
 			<PostFooterNavigation
-				hrefPrevious="/trolejbus/historicky-vyvoj-trolejbusove-dopravy"
+				hrefPrevious="/trolejbus/trolejbusy-ve-svete-soucasnost"
 				hrefNext="/"
 				next="Následující"
 				previous="Předchozí"
