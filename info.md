@@ -626,3 +626,53 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 - pořád pracoval, zasloužil se i za první návrh pražského metra s Bohumilem Beladou, které nebylo nejdříve přijato, poté ano
 - komunistický režim ho zrušil
 - musel odstoupit z funkcí
+
+# Elektrifikace
+
+- dějiny elektrifikace a dějiny energetiky se zaměřením an české země a československo
+- jakým způsobem stály české země a jejich úloha v počátku elektrifikace
+- z nadšenství z rozšíření dostupných poznatků o far. indukčního zákoně stalo něco řízeného a začaly se tyto poznatky přenášet do běžného života
+- impact rok 1919 - ve většině zemích, ale cz iniciátory = normalizace elektrotechniky a udělali se první zákonná nařízení, pravidla, dohody, nemá cenu vyrábět elektřinu pro sebe samotné ale sdílet elektřinu - zaplacené investice do elektráren = nabídnout el. co nejvíce konzumentům
+- Eduard Weir, Karel Engliš, Vladimír List - okamžitě pochopili co je třeba učinit aby se elektrifikace dostala mezi lidi, propracovali první elektrifikační zákon 22. července 1919 vstoupil v platnost
+- do celku se začali zapojovat malovýrobci - elektrifikace mlýnů, ale přebývala elektřina, která nebyla zhodnocena, teřba napojit na systém
+- amatérská elektrifikace (před rokem 1919) (75 Hz systémy, 110 V, 120 V, AC, DC kombinace, 1F systémy, 2F ale i 6F rozvody) VS systematická elektrifikace (precisní statistiky, precisní informace, kdo spotřevoval kolik atd.)
+- pražská energetika monitoruje bezpečnost v bezpečnostních knihách
+- posléze byl fenomén normalizace..., spousta věcí bude certifikovaných, projdou zkušebnou a budou bezpečné
+- většina patentů byla Listem prosazena jako volných, takže lidi mohli vytvářet např. zásuvky
+- 1. sv válka zlikvidovala amatérskou elektrifikaci
+- za říšské, poté znehodnocené peníze se vykoupily poničené infrastruktury v pohraničí, a pak se zhodnotily
+
+- Křižík byl spíše amatérská elektrifikace
+- Edison DC, poté AC ale omezeně, Edison hledal materiál, který by se tavil přes 10 h, žárovka nebrala 4 kW jako obloukovka...
+- patent a ocenění je Piete a Křižík - Piete byl papírník a financoval Křižíkovi výzkum
+- ve druhé polovině 19. století vzniklo mnoho spolků
+  - důležité pro elektritechniku jsou SPASEI (Spolek posluchačů a absolventů strojního a elektro-inženýrství) a SČE (Svazek českých elektrotechniků)
+- edukativní stránka elektrotechniky začala dříve na průmyslových školách a později na VŠ, proč? protože obsluha elektromotrů, elektrifikace zemědělství - aplikované vědy
+- na středních školách předměty spíše praktické, na VŠ se dlouho toho dělalo v názvoslový
+- 1884/1885 - Karel Václav Emanuel Zenger - nejdřív posluchárna na fyziku
+- 1891 Karel Domalíp - předělána na elektrotechniku, ředitel elektrických podniků královského města v Holešovicích
+- střední školy obsluhovali praktickou část elektrotechniky, VŠ obsluhovali teoretickou část
+
+- zákon o soustavné elektrifikace č. 438 z 22. července 1919
+- elektrotechnický svaz československý, (ESČ) neplacený svaz elektrotechniků, skončil zásahem komunismu, vydávali elektrotechnický obzor, bezpečnostní tabulky, jakoby stát ve státě, svaz skončil s velikým ziskem, když se něco stalo, tak u toho oni byli, každý elektrotechnik v nich byl
+- Ministerstvo veřejných prací - 1920 + Národní elektrárenská rada
+- československá společnost normalizační - ČSN 1922
+- Vzdělání elektrotechnických inženýrů pro elektrifikace - ČVUT v Praze, Karel Domalíp, Ludvík Šimek et Vladimír List, Šimek udělal vzduchový přenos radio mezi Eifellovkou a Petřínem
+- Závody pro elektrifikaci - František Křižík a Emil Kolben
+
+- Václav Macháček a ještě někdo - Elektrotechnický Obzor - týdenník, náročné na vydávání, hodně obsahu
+
+- na začátku 3 skupiny v ESČ
+
+  - elektrárenská - Karel Novák, Václav Běšínský, Emil Navrátil - elektrárenská skupina 1919
+  - elektrotechnická Vladimír List, Ludvík Šimek - obecná elektrotechnika 1919
+  - Josef Stránský - komunikační a slaboproudá technika 1935
+
+- nejdříve malé zdroje ale rozhazovali synchronizace atd. pak se muselo přejít teda na veliké zdroje
+- 1881 v počátku, jak byl elektrotechnický kongres, došlo k ujednotění názvoslový a jednotek, prvotní napěťové hladiny, prvotní frekvence
+
+**Konstrukce elektrických sítí**
+
+- ESČ nestačil na to aby sám řídil elektrifikaci nějaké vesničky někde pryč na dědině, zakládaly se menší svazy se stanovy a atd. a zodpovídali se ESČ - urychlení elektrifikace
+- např. Elektrárenský svaz středočeských okresů
+- každý ze svazů protnul do kioskových trafostanic svoji architekturu - Hořice - pískovec, udělají z písku, ostaní jinak třeba
