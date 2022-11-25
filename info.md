@@ -1,10 +1,10 @@
 1740 - **Pragmatická sankce** = žena může usednout na trůn = nedělitelnost habsburských držav a v případě vymření mužské linie Habsburků nástupnictví linie ženské, cílem pragmatické sankce bylo zajistit nástupnictví po Karlu VI. jeho vlastním dětem
 
-1774 - povinná školní docházka, u každé fary vznikla elementární škola 6-12 let
+1774 - povinná školní docházka, u každé fary vznikla elementární (triviální) škola 6-12 let v češtině; 2 měsíce prázdnin v červenci a srpnu kvůli zemědělství
 
-1789 - Francouzská revoluce, poté do roku 1848 se konali různé revoluce
+1789 - Francouzská revoluce, poté do roku 1848 se konali různé revoluce v různých zemí
 
-1830 - Francie povstala, poté mladá Itálie, 1870 se utváří Něměcko
+1830 - Francie povstala, poté mladá Itálie, 1870 se utváří Něměcko (sjednoceno)
 
 ## vládla **Marie Terezie**
 
@@ -12,6 +12,9 @@
 - byla často těhotná
 - za doby její vlády přechází řemeslo k manufaktuře
 - vznikali obchodní a živnostenské komory
+- osvícenská vláda
+- muž František I. Štěpán Lotrinský
+- syn Josef II
 
 1848 - František Josef I
 
@@ -20,7 +23,7 @@
 
 1826 - **České království** bylo součástí Habsburské monarchie až do roku 1918 => ČSR
 
-1867 - bitva u Sadové => bznik Rakouska Uherska
+1867 - bitva u Sadové => vznik Rakouska Uherska (české království součástí)
 
 slovensko však stále mělo žukní strukturu = nemělo autonomii
 
@@ -41,17 +44,17 @@ transport technických poznatků v této době se na naše území ze zahranič�
 
 ### Prokop Diviš
 
-- 1754 uzemněný bleskosvod
+- 1754 uzemněný bleskosvod - ochrana lidských majetků a lidí
 - byl v premonstránském řádu
 - řekl, že bude dělat věci jako ochrana majetků, lidí atd. aby mohl dělat hromosvody a obešel pravidla řádu
-- Magia Naturális = publikace
+- po jeho smrti vydána Magia Naturális = publikace
 - zkontruoval hudební nástroj Denis Dor
 
 ### Joseph Stapling
 
 - distribuoval poznatky do světa
 - 1775 vytvořil první bleskosvod v Měšicích u Prahy na zámku
-- Marie Terezie se na základě výzkumů bleskosvodů rozhodla, že bleskosvodem budou chráněny různé veřejné objekty, armádní objekty apod.
+- Marie Terezie se na základě výzkumů bleskosvodů rozhodla, že bleskosvodem budou chráněny různé veřejné objekty, armádní objekty apod. (protože vlivem úderu blesku začaly hořet kasárny)
 - jeho první bleskosvod měřil 41,5 m
 
 ### Jean-Antoine Nollet
@@ -70,6 +73,7 @@ transport technických poznatků v této době se na naše území ze zahranič�
 ### Jan Evangelista Purkyně
 
 - buňka
+-1837 zkoumání buňky a její struktury
 
 ### Jan Jánský
 
@@ -89,6 +93,7 @@ transport technických poznatků v této době se na naše území ze zahranič�
 
 - získal Nobelovu cenu za
 - polarograf . pro odhalování chyb ve výrocích
+- polarograf složí pro kvalitativní a kvantitativní analýzu chemických prvků a sloučenin, zejména iontů v roztoku
 
 ### Bratři Veverokovi
 
@@ -97,7 +102,7 @@ transport technických poznatků v této době se na naše území ze zahranič�
 
 ### Kryštov Rad
 
-- kostka cukru
+- kostka cukru (1841)
 
 ### Erst Mach
 
@@ -120,13 +125,18 @@ transport technických poznatků v této době se na naše území ze zahranič�
 
 - nano vlákna
 
+### František Křižík
+
+- 1878 úprava obloukové lampy (jen inovace)
+- 1883 uznali, že se jedná o jeho vynález (úpravu)
+
 ## Historie
 
 v historii asi v HM (Habsburské Monarchii)
 
 - jedno heslo = Viribus Unitis = Jednou Silou
 - František Josef 1 nikdy nebyl českým konurovaným králem
-- 1848 - 1893 = Bachův Absolutismus = ikdyž český jazyk moc ne, tak ve vědě a industrializaci ano
+- 1848 - 1859 = Bachův Absolutismus = ikdyž český jazyk moc ne, tak ve vědě a industrializaci ano
 - **Martinská deklarace** = připojení Slovenska k ČZ = Československo
 - Profesor Lis v technickém koši = jaké železnice připojit na mezi zemní strukturu
 - v těchto dobách 1850 - 1. jazyk Německý, 2: kazyk český
@@ -140,6 +150,7 @@ v historii asi v HM (Habsburské Monarchii)
 
 - presentace českých průmyslů
 - čeští němci odmítli účastnit
+- Průmyslový palác
 
 ### Velká Praha
 
@@ -148,16 +159,17 @@ v historii asi v HM (Habsburské Monarchii)
 
 ### růst feminismu
 
-- bylo málo mužů (ti byli ve válce, nrbo mrtví)
+- bylo málo mužů (ti byli ve válce, nebo mrtví)
 - ženy začaly zastávat funkce mužů
 - dostávají vzdělání
 - v 19. století začíná podnikání žen
 - ženy byly zapojovány do normálního koloběhu života
+- 1871 dívčí škola v Praze
 
 ## Odborný život v průběhu 19. století
 
 - 1348 Pražská univerzita
-- 1707 vznik stavovské inženýrské školy
+- 1707 vznik stavovské inženýrské (technické) školy
 - 1774 povinná školní docházka
 - 1848
   založení středních škol (průmyslové, jednalo se o přípravuna VŠ)
@@ -176,6 +188,8 @@ na univerzitě (hodně budoucím čvut) byly jednotlivé části (poté za doby 
 - teologie
 - artistická (fakulta) / filozofická = sedmero svobodných umění
 
+Dříve se jednalo o základní fakulty  ⬆️, na základě těchto fakult poté vznikaly nové univerzity
+
 postupně se začaly vytvářet soukromé vzdělávací instituce
 
 - vznik společnosti BORN = učená společnost
@@ -188,7 +202,7 @@ postupně se začaly vytvářet soukromé vzdělávací instituce
 
 ### Zajímavost
 
-klementinská věž 1775 - přestavěna z pozorovací na astronomickou/astrologickou s měřícími přístroji Josefem Steplingem (1716-1778)
+klementinská věž 1775 - přestavěna z pozorovací na astronomickou/astrologickou s měřícími přístroji Josefem Steplingem (1716-1778); probíhají zde pravidelná meteorologická měření.
 
 1784 - Francouzská revoluce, poté Napoleonské války
 
@@ -205,9 +219,12 @@ klementinská věž 1775 - přestavěna z pozorovací na astronomickou/astrologi
 - v CZ
 - Ottův slovník naučný
 
-v průběhu 19. století 5 institucí s vědeckým programem v CZ
+v průběhu 19. století 5 privilegovanýc institucí s vědeckým programem v CZ. Pražská univerzite, olomoucká uni., Královská česká společnost nauk, hvězdárna a observatoř v Praze, Stavovská inženýrská škola v Praze
 
 latina se používala ve vzdělání do přelomu 18.-19. století
+
+- 1818 vznik Národního muze
+- 1817 Zemské muzeum vBrně
 
 ---
 
