@@ -139,7 +139,7 @@ v historii asi v HM (Habsburské Monarchii)
 - 1848 - 1859 = Bachův Absolutismus = ikdyž český jazyk moc ne, tak ve vědě a industrializaci ano
 - **Martinská deklarace** = připojení Slovenska k ČZ = Československo
 - Profesor Lis v technickém koši = jaké železnice připojit na mezi zemní strukturu
-- v těchto dobách 1850 - 1. jazyk Německý, 2: kazyk český
+- v těchto dobách 1850 - 1. jazyk Německý, 2: jazyk český
 
 ### Tomáš Grarigue Masaryk
 
@@ -177,13 +177,13 @@ v historii asi v HM (Habsburské Monarchii)
 obecně byla vzdělávána šlechta, která poté vycestovávala do zahraničí
 
 - základní školy = trivium školy
-- po vystudování možnost vstoupit od církevních řádů (např. Jezuité) a studovat tam, díky nim (Jezuité vytvořili Klementinum)
-- poté časem vznikaly úpravy = 1773 vznikali generální smeináře, bohaté řády se rušili, majetek získal stát
+- po vystudování základního vzdělání možnost vstoupit od církevních řádů (např. Jezuité) a studovat tam, díky nim (Jezuité vytvořili Klementinum). Lze následně studovat v církvi nebo cechy. 
+- poté časem vznikaly úpravy = 1773 vznikali generální semináře, bohaté řády se rušili, majetek získal stát
 - dříve se vyučovalo převážně napodobováním = Cechy = učeň -> tovaryš -> Mistr = nápodoba a repetetivní pracování
 
 na univerzitě (hodně budoucím čvut) byly jednotlivé části (poté za doby komunistického režimu přejmenováno díky vysokoškolskému zákonu na fakulty)
 
-- medicína
+- medicína (lékařská fakulta)
 - právo
 - teologie
 - artistická (fakulta) / filozofická = sedmero svobodných umění
@@ -219,9 +219,9 @@ klementinská věž 1775 - přestavěna z pozorovací na astronomickou/astrologi
 - v CZ
 - Ottův slovník naučný
 
-v průběhu 19. století 5 privilegovanýc institucí s vědeckým programem v CZ. Pražská univerzite, olomoucká uni., Královská česká společnost nauk, hvězdárna a observatoř v Praze, Stavovská inženýrská škola v Praze
+v průběhu 19. století 5 privilegovanýc institucí s vědeckým programem (zázemím) v CZ. Pražská univerzite, olomoucká uni., Královská česká společnost nauk, hvězdárna a observatoř v Praze, Stavovská inženýrská škola v Praze.
 
-latina se používala ve vzdělání do přelomu 18.-19. století
+základním jazykem na univerzitě byla latina, která se používala ve vzdělání do přelomu 18.-19. století
 
 - 1818 vznik Národního muze
 - 1817 Zemské muzeum vBrně
@@ -235,7 +235,7 @@ latina se používala ve vzdělání do přelomu 18.-19. století
 - 1848 už existovali předsedové vlády
 - 1859 - bitva u Sulferina - padá neoabsolutismus
 - 1866 - v CZ bojiště = válka Prusko Rakouská
-- 1811 - zákoník v CZ v souvislosti s napoleonskými válkami
+- 1811 - zákoník v CZ v souvislosti s napoleonskými válkami, "kam šlápla noha Napoleonského vojáka tam přišly občanské zákoníky"
 
   - rozvíjení manufaktur
   - rozvíjení nových podnikatelských možností
@@ -248,7 +248,7 @@ latina se používala ve vzdělání do přelomu 18.-19. století
 - první železniční trasování
 - na základě trasování v 1845 první parní vlak v Praze
 - 1781 zrušeno nevolnictví
-- 1849 zrušeno poddantsví
+- 1849 zrušeno poddantsví -> mnoho lidí se začalo stěhovat do měst -> rušení hradeb
 
 ### Struktura společnosti v CZ
 
@@ -268,7 +268,7 @@ mezi 3. a 4. (nižší šlechta a poddaní) je vazba = purkrecht
 
 - za Marie Terezie . vznikl Josefínský katastr a na něj navazoval za vlády Františka 1. „Katastr“
 
-- 1767 v Praze vznik vědecké společnosti
+- 1767 v Praze vznik vědecké společnosti (Vlasteneckohospodářské nauky)
 - 1774 Born - výběrová společnost, geologie, vzdělávací instituce, měšťanské prostředí, měl vědecké kontakty do zahraničí
 - zemská šlechta má zájem o České země i když není česká
   - je německá
@@ -277,13 +277,14 @@ mezi 3. a 4. (nižší šlechta a poddaní) je vazba = purkrecht
 
 pořád byla snaha o Národné muzeum ale nepodařilo se
 
-- 1818 Šternberk - Praha - založena Společnost Vlastenecké muzeum v Čechách
+- 1818 Štenberk - Praha - založena Společnost Vlastenecké muzeum v Čechách
 
 - Palacký = zakládá politickou stranu Staročeši
-- 1707 - stavovská inženýrská škola - v čele stojí senior
-- do půlky 19. století pouze jedny noviny = Pražské městské noviny, to byly české noviny
+- 1707 - stavovská inženýrská škola - v čele stojí senior, v roce 1806 se mění na Pražskou polytechniku
+- do půlky 19. století pouze jediné české noviny = Pražské městské noviny, to byly české noviny
 - 1821 - je třeba vydávat i technické noviny
 - v muzeum založit archivní složku
+- 1833 - časopis: Jednota ku povzbuzení průmyslu v čechách (Presl)
 - 1837 - jeden z prvních pražských kongresů
 - 1837 časopis technologický
 
@@ -306,13 +307,19 @@ pořád byla snaha o Národné muzeum ale nepodařilo se
 ### Karel Slavoj Amerling
 
 - žádal aby škola měla nápaditý charakter = podobně jako Komenský
+- výuka medicíny
 
 ### Karel Bořivoj Presl a Jan Svatopluk Presl
 
-- založili první vědecké časopisy
+- založili první vědecké (odborné) časopisy
 - 1853 ŽIVA
 - 1872 VESMÍR
 - Jan Svatopluk Presl se zasoloužil o popis,pojmenování a strukturování názvů, odborných názvů (i chemie ný, natý atd.), spoluautorem „O Přirozenosti rostlin“ - později aneb rostlinář
+
+### Josef Jungmann
+- jazykovědec
+- česko-německý slovník
+- kodifikoval český vědecký jazyk
 
 ### Spolek Svatobor
 
@@ -347,16 +354,15 @@ pořád byla snaha o Národné muzeum ale nepodařilo se
 - technický obzor
 - 1970 elektroetchnický obzor
 
-- 1865 SIA - spolek inženýrů a architektů
+- 1865 SIA - spolek inženýrů a architektů, vydávají technický obzor, z kterého se poté odštěpí elektrotechnický obzor
 
 - Havlíček odmítá, že je vše české, ale hlásá, že je Čech rodu Slovanského
-- Vorel - dává do soubislostí národnost a průmysl
+- Vorel - dává do souvislosti národnost a průmysl
 - Kaspar Maria von Sternberg je organizátorem a propagátorem vědeckého života
-- Svatobor - spolek, heslo „Pomáhej! Osvěcuj! Pamatuj!“
-- Sokol - založili Miroslav Tyrš a Jindřich Fügner - Tužme se, chtěli docílit zdatnosti českého národa
+- Svatobor - spolek, heslo „Pomáhej! Osvěcuj! Pamatuj!“, okračšlovací spolek
+- Sokol - založili Miroslav Tyrš a Jindřich Fügner - "Tužme se!", chtěli docílit zdatnosti českého národa
 - Hlahol - seskupení významných skladatelů „zpěvem k srdci, srdcem k vlasti“
 - Americký klub českých dam - založen 1865, ale pozor, založeno mužem
-
   - učili se ekonomice
   - podvojnému účetnictví
   - psaní na psacích strojích
@@ -377,7 +383,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 
 - 1760 - 1. průmyslová revooluce v Anglii => parní stroj např.
 - 1789-1848 = mezikontinentální blokáda + napoleonské války
-- 1801 - první auutomatický stroj na textilní práci, Anglie revoluce díky textilu = proč? jsou tam ovce
+- 1801 - první automatický stroj na textilní práci, Anglie revoluce díky textilu = proč? jsou tam ovce
 
 - podniktaleské aktivity v 60. letech 19. století rostly
 - 1881 - první mezinárodní elektrotechnický kongres v Paříži
@@ -386,6 +392,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
     - Křižík
     - nevím něco Frsm...
 
+- 1850 - zrovnoprávnění češtiny a němčiny
 - 1869 - rozdělení pražské techniky na ČJ a NJ
 - 1888 rozdělení Karlo Ferdinandova Univerzita
 - SPASEI - Spolek posluchačů a absolventů strojního a elektro – inženýrství
@@ -397,7 +404,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 
 ## Postavení techniků v průběhu 19. století
 
-- 1831 - Česká matice podporuje časopisy
+- 1831 - Česká matice podporuje vydávání časopisů a děl v češtině
 - 1836 - vydána poema Máj
 - 1848 - buržoazní revoluce
 - 1851 - Jungmann - česko-německý, německo-český slovník
@@ -406,13 +413,13 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 
 - Presslovi - vyjádření přírodovědných a chemických názvosloví
 - na přelomu 18/19 století se začíná mluvit na VŠ národním jazykem
-- 1821 začátek tvorby časopisů
+- 1821 začátek tvorby odborných časopisů
 - 60. léta 19. století = každý obor má prakticky svůj časopis
 - 1845 - první parní vlak v Praze
 - 1851 ústava
 - 1851 otevírání velkých výstav po Evropě
 - 1851 není robota, problém, že se hodně lidí začíná stěhovat do měst (asi)
-- 1873 - krize z nadvýroby
+- 1873 - první krize z nadvýroby
 - 1874 - CZ začínají více obsazovat sněmy v Čechách a ve Vídni
 - 1876 USA první výstava ve Philladelphii - Chicago, 100 let od výročí nezávislosti
 - 1891 - víc čechů než českých němců
@@ -420,24 +427,28 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 
 ### Předávání informací
 
-- vizuální telegraf - viditelnost tak na 20 m = nevýhodné
-- elektromagnetický telegraf - lepší
+- vizuální telegraf - viditelnost tak na 20 m = nevýhodné, ovládáno 3 vojáky
+- elektromagnetický telegraf - lepší, Samuel Morse, sloužil ke komunikaci na drahách
 - telegrafem se oznamovalo narození, úmrtí
-- 1866 podmořský telegrafní kabel USA-UK
+- 1866 podmořský telegrafní kabel USA-UK, první funkční spojení
 - rostou katalogy a časopisy, nejsilnější předávání poznatků
 - rozvoj průmyslové špionáže
 - opět společenský život - národní, společenský, kulturní
 
-### Výstavy
+### Světové výstavy
 
-- měly podporovat národní hrdist
+- měly podporovat národní hrdist, symbol svobody podnikání
 - představování prototypů
 - cyklické, konaly se různě po světě, tvořily se pro ně pavilony atd.
 - první tři byly ziskové, další ne
 - poté měly i bohaté doprovodné programy
+- existovala komise, která udávala medaile
+- na základě technických katalogů poté vznikaly časopisy
 
 #### Londýn 1851
 
+- jedna z prvních výstav
+- zisková, účast 28 zemí
 - telegraf, plynový sporák, elektrické hodiny
 - symbolem byl Crystal Palace, ve kterém se konala
 
@@ -456,6 +467,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 - fontánky, bazénky = lákadla pro návštěvníky
 - výstava strojů
 - psaly se o tom časopisy = o prototypech
+- hydraulický výtah, beton s ocelovou výstuží
 
 #### Vídeň 1873
 
@@ -472,13 +484,15 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 
 #### Paříž 1878
 
-- oblouková lampa od Křižíka + zisk medaile za ní
+- František Křižík se na výstavě seznamuje s obloukovou lampou, kterou následně upravuje a za její úpravu dostává na výstavě v Paříži roku 1881 medaili
 
 #### Mezinárodní elektrický kongres - Paříž 1881
 
 - představení Siemensovi tramvaje
 - přenos energie na větší vdzálenosti
 - jsme zde vedeni pod Rakouskem
+- stanovení mezinárodních jednotek 
+- Křižík medaile
 
 #### Paříž 1889
 
@@ -521,7 +535,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 
 ## Studium
 
-- 1705 Christian Josef Willenberg (profesor) napsal do Vídně dopis pro dvorskou komisi, proč má být otevřena a vzniknout česká technická škola
+- 1705 Christian Josef Willenberg (profesor) napsal do Vídně dopis pro dvorskou komisi, proč má být otevřena a vzniknout česká technická škola (počátek stavoské inženýrské školy, později ČVUT), císař ale umírá -> zdržení
 - 1707 obdržel císařský reskript - potvrzení o dopisu z 1705, máte povolení založit školu
 - 1707-1717 trvá založit školu, získat finance atd.
 - pro tuto školu Willenberg se vymezil nejdříve pro 12 studentů, kteřé již měli předchozí vzdělání splněno - takže většinou šlechta nebo velmi pohatí měšťané (co měli za sebou sedmero svobodných umění = 1. rok na VŠ)
@@ -530,7 +544,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 
 **Herget** - řiditel, 3. v pořadí + jako první získal titul zemského stavitele - je zodpovědný za silnice/cesty v ČZ
 
-**Gerstner** byl objednán aby zreformoval stavovskou školu do novodobé podoby = vznikala Pražská polytechnická škola
+**Gerstner** byl objednán aby zreformoval stavovskou inženýrskou školu do novodobé podoby = vznikala Pražská polytechnická škola (institut) 1806, předměty z přírodopisu, chemie, matematiky, ruční práce
 
 - 1795 ve FR EP - Ecol Polytechnique nebo nějak tak
 - 1798 Gerstner se snažil navrhnout aby Pražská polytechnická škola byla školou pro celou monarchii, nevyšlo to, zopakoval v 1803 a vybral, že se bude vyučovat to nejdůležitější a napasoval to na ekonomické studia
@@ -549,10 +563,10 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
   - lučba (chemie)
   - strojní
 
-- do 1863 NJ, do 1969 pod obojím (ČJ/NJ) - 1869 rozdělení techniky na ČJ a NJ
+- do 1863 NJ, do 1869 pod obojím (ČJ/NJ) - 1869 rozdělení techniky na ČJ a NJ
 - kdo chodil do armády a nebo chtěl někam směřovat, chodil na ČJ i NJ
 - v období pod obojím - již byl rektor... nastupující rektor sloužil s tím končícím jeden rok dohromady
-- 1875 ČJ část ozančení C.K. NJ část K.K. až do 1920, kdy nastupuje republika - KK zrušeno (už je republika) ale NJ zůstává, CK přejmenováno na ČVUT
+- 1875 - česká vysoká škola technická, ČJ část ozančení C.K., NJ část K.K. až do 1920, kdy nastupuje republika - KK zrušeno (už je republika) ale NJ zůstává, CK přejmenováno na ČVUT
 - 17. listopadu 1939 - ČJ zrušeny, německá pokračuje
 - květen 1945 - německé zrušeny, majetek přešel na ČJ, struktura - univerzita pod tím inženýrské školy a pod tím obor elektrotechnika
 
@@ -563,9 +577,9 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
   - číst, psát, počítat
 
 - 1770 byly školy tzv. reálky - střední školy
-- následovali školy hlavní a normální v krajských městech
+- následovali školy hlavní a normální v krajských městech (příprava studentů na univerzity)
 - ale chybí střední školy
-- Gerstner vytvořil polytechnické lyceum, které připravovalo studenty na vysokou školu
+- Gerstner vytvořil polytechnické lyceum, které připravovalo studenty na vysokou školu, protože lidé měli nízké vzdělání na univerzitu
 - do výuky zabudoval i národohospodářskou výuku
 - 1849 - Exna Bronicova reforma (?) - elementární školy 6-14 let
 - následně střední školy
@@ -610,7 +624,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 - Francie - složitý a odlišný model, fungovali tak, že začali budovat aplikační školy, které vycházeli z požadavků společnosti, co zrovna bylo třeba nebo trend
   - co bylo nového, na to postavili školy
   - FR má odstupňované maturity, pro dostání se na VŠ je třeba ta nejvyší
-- UK/Británie - také odlišný model, dříve školy nepotřebovala, vyučovalo se repetetivním a nápodobným systémem v továrnách
+- UK/Británie - také odlišný model, dříve školy nepotřebovala, vyučovalo se repetetivním a nápodobným systémem v továrnách (vyučovalo se prakticky v továrnách)
 
   - model přebírají z FR
 
@@ -618,7 +632,8 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 
 - Teyssler Kotyska - technický slovník naučný
 - rychlost akceptace elektrifikace = velmi rychlá
-- Křižík - započal své podnikatelské aktivitiy v 1884
+- 1873 začíná Křižík pracovat u drah
+- Křižík - započal své podnikatelské aktivitiy v 1884, stěhuje se do Prahy, osamostatňuje se 
 - 1848 první díly na elektrické hodiny
 - Křižíkovo vzdělání proti Kolbenovo bylo chabé
 - Kolben totiž studoval již v moderní výuce
@@ -626,23 +641,29 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 ### Emil Kolben
 
 - 1862
+- žid z 9 dětí 
 - absolvoval německou techniku
 - jeho rodina zemědělská a obchodní činnost
   - Emil a jeho bratr Albert . jediní studovali techniku
+  - v americe u Tesly jako šéfinženýr
 - 1896 Kolben zakupuje na vysočanech terén na podnikání
-- 1927 - fůze s ČKD
+- 1921 fůze Československá - Kolben
+- 1927 - fůze s ČKD (Československá Kolben Daňek)
 - Jiří Hejda spolupracoval s Kolbenem (asi) na elektrifikaci Slovenska a Podkarpatské rusi pomocí ČKD
 - Kolben se podílí na tramvajové dopravě
+- 1897 -spor s Křižíke o AC a DC proudu - Holešovická elektrárna
 
 ### Vladimír List
 
 - zasloužil se o zákonn o soustavné elektrifikaci
+- elektrotechnický zákon 1919
 - v Belgii získal informace, jak učit a co jak dělat a jak do praxe dostat elektrifikaci
 - spolipracoval s ministerstvem veřejných prací, kde byl ve státní elektrárenské radě, kde loboval za elektrotechnický zákon
 - uměl mnoha jazyky
 - pořád pracoval, zasloužil se i za první návrh pražského metra s Bohumilem Beladou, které nebylo nejdříve přijato, poté ano
 - komunistický režim ho zrušil
 - musel odstoupit z funkcí
+- využil Gerstnerovo stipendium
 
 # Elektrifikace
 
