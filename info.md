@@ -703,11 +703,14 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 - na začátku 3 skupiny v ESČ
 
   - elektrárenská - Karel Novák, Václav Běšínský, Emil Navrátil - elektrárenská skupina 1919
-  - elektrotechnická Vladimír List, Ludvík Šimek - obecná elektrotechnika 1919
+  - elektrotechnická - Vladimír List, Ludvík Šimek - obecná elektrotechnika 1919
   - Josef Stránský - komunikační a slaboproudá technika 1935
 
 - nejdříve malé zdroje ale rozhazovali synchronizace atd. pak se muselo přejít teda na veliké zdroje
 - 1881 v počátku, jak byl elektrotechnický kongres, došlo k ujednotění názvoslový a jednotek, prvotní napěťové hladiny, prvotní frekvence
+
+- 1919 - Zákon o soustavné elektrifikaci, ESČ (elektrotechnický svaz) - stát ve státě, zrušen komunisty
+- 1922 - Československá společnost normalizační 
 
 **Konstrukce elektrických sítí**
 
