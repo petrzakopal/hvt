@@ -73,7 +73,7 @@ transport technických poznatků v této době se na naše území ze zahranič�
 ### Jan Evangelista Purkyně
 
 - buňka
--1837 zkoumání buňky a její struktury
+  -1837 zkoumání buňky a její struktury
 
 ### Jan Jánský
 
@@ -177,7 +177,7 @@ v historii asi v HM (Habsburské Monarchii)
 obecně byla vzdělávána šlechta, která poté vycestovávala do zahraničí
 
 - základní školy = trivium školy
-- po vystudování základního vzdělání možnost vstoupit od církevních řádů (např. Jezuité) a studovat tam, díky nim (Jezuité vytvořili Klementinum). Lze následně studovat v církvi nebo cechy. 
+- po vystudování základního vzdělání možnost vstoupit od církevních řádů (např. Jezuité) a studovat tam, díky nim (Jezuité vytvořili Klementinum). Lze následně studovat v církvi nebo cechy.
 - poté časem vznikaly úpravy = 1773 vznikali generální semináře, bohaté řády se rušili, majetek získal stát
 - dříve se vyučovalo převážně napodobováním = Cechy = učeň -> tovaryš -> Mistr = nápodoba a repetetivní pracování
 
@@ -188,7 +188,7 @@ na univerzitě (hodně budoucím čvut) byly jednotlivé části (poté za doby 
 - teologie
 - artistická (fakulta) / filozofická = sedmero svobodných umění
 
-Dříve se jednalo o základní fakulty  ⬆️, na základě těchto fakult poté vznikaly nové univerzity
+Dříve se jednalo o základní fakulty ⬆️, na základě těchto fakult poté vznikaly nové univerzity
 
 postupně se začaly vytvářet soukromé vzdělávací instituce
 
@@ -317,6 +317,7 @@ pořád byla snaha o Národné muzeum ale nepodařilo se
 - Jan Svatopluk Presl se zasoloužil o popis,pojmenování a strukturování názvů, odborných názvů (i chemie ný, natý atd.), spoluautorem „O Přirozenosti rostlin“ - později aneb rostlinář
 
 ### Josef Jungmann
+
 - jazykovědec
 - česko-německý slovník
 - kodifikoval český vědecký jazyk
@@ -363,6 +364,7 @@ pořád byla snaha o Národné muzeum ale nepodařilo se
 - Sokol - založili Miroslav Tyrš a Jindřich Fügner - "Tužme se!", chtěli docílit zdatnosti českého národa
 - Hlahol - seskupení významných skladatelů „zpěvem k srdci, srdcem k vlasti“
 - Americký klub českých dam - založen 1865, ale pozor, založeno mužem
+
   - učili se ekonomice
   - podvojnému účetnictví
   - psaní na psacích strojích
@@ -491,7 +493,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 - představení Siemensovi tramvaje
 - přenos energie na větší vdzálenosti
 - jsme zde vedeni pod Rakouskem
-- stanovení mezinárodních jednotek 
+- stanovení mezinárodních jednotek
 - Křižík medaile
 
 #### Paříž 1889
@@ -633,7 +635,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 - Teyssler Kotyska - technický slovník naučný
 - rychlost akceptace elektrifikace = velmi rychlá
 - 1873 začíná Křižík pracovat u drah
-- Křižík - započal své podnikatelské aktivitiy v 1884, stěhuje se do Prahy, osamostatňuje se 
+- Křižík - započal své podnikatelské aktivitiy v 1884, stěhuje se do Prahy, osamostatňuje se
 - 1848 první díly na elektrické hodiny
 - Křižíkovo vzdělání proti Kolbenovo bylo chabé
 - Kolben totiž studoval již v moderní výuce
@@ -641,7 +643,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 ### Emil Kolben
 
 - 1862
-- žid z 9 dětí 
+- žid z 9 dětí
 - absolvoval německou techniku
 - jeho rodina zemědělská a obchodní činnost
   - Emil a jeho bratr Albert . jediní studovali techniku
@@ -710,10 +712,48 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 - 1881 v počátku, jak byl elektrotechnický kongres, došlo k ujednotění názvoslový a jednotek, prvotní napěťové hladiny, prvotní frekvence
 
 - 1919 - Zákon o soustavné elektrifikaci, ESČ (elektrotechnický svaz) - stát ve státě, zrušen komunisty
-- 1922 - Československá společnost normalizační 
+- 1922 - Československá společnost normalizační
 
 **Konstrukce elektrických sítí**
 
 - ESČ nestačil na to aby sám řídil elektrifikaci nějaké vesničky někde pryč na dědině, zakládaly se menší svazy se stanovy a atd. a zodpovídali se ESČ - urychlení elektrifikace
 - např. Elektrárenský svaz středočeských okresů
 - každý ze svazů protnul do kioskových trafostanic svoji architekturu - Hořice - pískovec, udělají z písku, ostaní jinak třeba
+
+---
+
+## Emil Kolben a František Křižík
+
+- v době války ČKD jedez největších podniků vedlé škody a zbrojovky
+
+_Křižík VS Kolben_
+
+- oba dva pro elektrotechniku v českém prostředí sehráli významnou roli
+- Křižík prožil drahnou dobu a realizace elektritechnického průmyslu
+- Křižík Plánice 1847, zemřel 1941, přišel do Prahy a v 1843 ukončuje středoškolské vzdělání, 1866 na pražské technice až do 1869, přednášky se mu nelíbí, praxe je vhodnější než studium, 1873 nastupuje hospodářská krize a dostává se na místo pod penzí k tehdejší státní dráze do Plnzně a stará se o signalizaci na drahách, dříve to byl telegraf, teďka celková bezpečnostní struktura, 1873 se oženil, 1878 průmyslová výstava v paříži, 1881 kongres a úprava obloukovky, 1884 podnik v Libni, křižík taky ve spolku inženýrů a architektů, 1902-1903 postavena meziměstská dráha Tábor Bechyně, elektrifikovaná dráha, poté problém, firmy mu neplatí, nechce akcionovat firmu, ale nakonec se musí tak stát, prootže naskočí úvěrová banka
+- Kolben 1862 Stránčice, zemřel 1943 v Terezíně, rodina původně obchodníci, zemědělci, Emil Kolben se hlásí na německou techniku, vystuduje s výtečnými známkami, po studiu získává Gerstnerovo stipendium, Francie, Anglie, USA - spolupráce s Edisonem, setkává se s Teslou, Westinghousem, začíná příjmat náhled, že AC je nejlepší pro průmysl, jeho manželce se v USA nelíbilo, začínají podnikat v Praze, 1896 začátek Kolbenovo firmy, 1898 akcionová, 1907 připojuje Pragovku, výrobku kabelů, elektrotechnických zařízení, Emil Kolben vždy technickým ředitele, co se tam bude vyrábět, na konci 30. let přichází problém s DE, myslel si, že je nedotknutelný, ale zemřel v koncentračním táboře
+- 1847 - narodil se i Edison a Jabločkov
+- kongres v Příži je milníkem na rozvoj elektrotechniky ve světe/EU
+
+## Elektrifikace další část
+
+- všechno souvisí s elektrotechnickým kongresem v Paříži a začíná se přemýšlet o elektrifikaci
+- první myšlenka elektrifikace - Karel Engliš
+- návrh F. Křižíka a Karla Nováka (prof. české techniky točivých strojů a řiditel elektrických podniků královského města prahy, rozhodování o holešovické elektrárně) z roku 1914 Českému zemskému sněmu
+- návrh Vladimíra Lista, Karla Engliše a Františka Weyra - 1913-1914 Moravskému zemskému sněmu - neprošel, ale 22.07.1919 již prošel 3 hlavy a 33 paragrafů
+- 75 milionů na financování systematické elektrifikace na našem území
+- 1897 rozhodnuto o Holešovické elektrárně ale dokončena stavba v 1902
+- 1922 vzniká velká Praha - přidávání velkých čtvrtí okolo, co byly zatím samostatnými městy - průmylsové oblasti, Libeň, Smíchov, Vysošany, Nusle, Praha rozčleňována římskými čísly I-XX 1 až 20 až do 1960
+- List nabádal aby se česko přihlásilo do mezinárodní asociace, na to vzniká česká normalizační společnost ČNS aby vznikala normalizace
+- i na apendixu u Ukrajině na slovensku jsme udělali elektrifikace ale ztratili jsme ji
+- primární sítě stavěl stát na vlastní náklady
+- sekundární sítě do měst stavěly města - braly si půjčky na 20-30 let
+- města a obce mají vést pamětní knihy, které zapisovali ceny kolik co stojí, jak vypadá struktura obce, jestli má sokolovnu atd
+- vyvlastňování pozemků, pro účel elektrifikace
+- List zavedl homologaci výrobků, ESČ 1926 - laboratoř, která kodifikovala elektrotechnické zboží a výrobky
+- podniky, které měli ESČ dostávali státní zakázky
+
+- list vydává předpisy a normálie, Něměcko poté převzalo
+- Mercier poskytoval Listovi informace z Francie a západu ohledně elektro (asi)
+- List byl v CIGRE a UNIPEDE
+- 1939 začátek průzkumu vltavského dna, kvůli metru
