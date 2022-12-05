@@ -23,7 +23,7 @@
 
 1826 - **České království** bylo součástí Habsburské monarchie až do roku 1918 => ČSR
 
-1867 - bitva u Sadové => vznik Rakouska Uherska (české království součástí)
+1867/1866 - bitva u Sadové => vznik Rakouska Uherska (české království součástí)
 
 slovensko však stále mělo žukní strukturu = nemělo autonomii
 
@@ -425,7 +425,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 - 1874 - CZ začínají více obsazovat sněmy v Čechách a ve Vídni
 - 1876 USA první výstava ve Philladelphii - Chicago, 100 let od výročí nezávislosti
 - 1891 - víc čechů než českých němců
-- 1891 první technická výstava je v Londýně 1891
+- 1851 první technická výstava je v Londýně 1851
 
 ### Předávání informací
 
@@ -730,7 +730,7 @@ _Křižík VS Kolben_
 
 - oba dva pro elektrotechniku v českém prostředí sehráli významnou roli
 - Křižík prožil drahnou dobu a realizace elektritechnického průmyslu
-- Křižík Plánice 1847, zemřel 1941, přišel do Prahy a v 1843 ukončuje středoškolské vzdělání, 1866 na pražské technice až do 1869, přednášky se mu nelíbí, praxe je vhodnější než studium, 1873 nastupuje hospodářská krize a dostává se na místo pod penzí k tehdejší státní dráze do Plnzně a stará se o signalizaci na drahách, dříve to byl telegraf, teďka celková bezpečnostní struktura, 1873 se oženil, 1878 průmyslová výstava v paříži, 1881 kongres a úprava obloukovky, 1884 podnik v Libni, křižík taky ve spolku inženýrů a architektů, 1902-1903 postavena meziměstská dráha Tábor Bechyně, elektrifikovaná dráha, poté problém, firmy mu neplatí, nechce akcionovat firmu, ale nakonec se musí tak stát, prootže naskočí úvěrová banka
+- Křižík Plánice 1847, zemřel 1941, přišel do Prahy a v 1863 ukončuje středoškolské vzdělání, 1866 na pražské technice až do 1869, přednášky se mu nelíbí, praxe je vhodnější než studium, 1873 nastupuje hospodářská krize a dostává se na místo pod penzí k tehdejší státní dráze do Plnzně a stará se o signalizaci na drahách, dříve to byl telegraf, teďka celková bezpečnostní struktura, 1873 se oženil, 1878 průmyslová výstava v paříži, 1881 kongres a úprava obloukovky, 1884 podnik v Libni, křižík taky ve spolku inženýrů a architektů, 1902-1903 postavena meziměstská dráha Tábor Bechyně, elektrifikovaná dráha, poté problém, firmy mu neplatí, nechce akcionovat firmu, ale nakonec se musí tak stát, prootže naskočí úvěrová banka
 
 - Kolben 1862 Stránčice, zemřel 1943 v Terezíně, rodina původně obchodníci, zemědělci, Emil Kolben se hlásí na německou techniku, vystuduje s výtečnými známkami, po studiu získává Gerstnerovo stipendium, Francie, Anglie, USA - spolupráce s Edisonem, setkává se s Teslou, Westinghousem, začíná příjmat náhled, že AC je nejlepší pro průmysl, jeho manželce se v USA nelíbilo, začínají podnikat v Praze, 1896 začátek Kolbenovo firmy, 1898 akcionová, 1907 připojuje Pragovku, výrobku kabelů, elektrotechnických zařízení, Emil Kolben vždy technickým ředitele, co se tam bude vyrábět, na konci 30. let přichází problém s DE, myslel si, že je nedotknutelný, ale zemřel v koncentračním táboře
 - 1847 - narodil se i Edison a Jabločkov
