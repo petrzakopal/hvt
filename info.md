@@ -744,7 +744,7 @@ _Křižík VS Kolben_
 - návrh Vladimíra Lista, Karla Engliše a Františka Weyra - 1913-1914 Moravskému zemskému sněmu - neprošel, ale 22.07.1919 již prošel 3 hlavy a 33 paragrafů
 - 75 milionů na financování systematické elektrifikace na našem území
 - 1897 rozhodnuto o Holešovické elektrárně ale dokončena stavba v 1902
-- 1922 vzniká velká Praha - přidávání velkých čtvrtí okolo, co byly zatím samostatnými městy - průmylsové oblasti, Libeň, Smíchov, Vysošany, Nusle, Praha rozčleňována římskými čísly I-XX 1 až 20 až do 1960
+- 1922 vzniká velká Praha - přidávání velkých čtvrtí okolo, co byly zatím samostatnými městy - průmylsové oblasti, Libeň, Smíchov, Vysošany, Nusle, Praha rozčleňována římskými čísly I-XX 1 až 20 (7.12. říkala až 22) až do 1960, kdy poté vznikala Praha 1-10
 - List nabádal aby se česko přihlásilo do mezinárodní asociace, na to vzniká česká normalizační společnost ČNS aby vznikala normalizace
 - i na apendixu u Ukrajině na slovensku jsme udělali elektrifikace ale ztratili jsme ji
 - primární sítě stavěl stát na vlastní náklady
@@ -796,7 +796,7 @@ _Křižík VS Kolben_
 # Obecné
 
 - od 1926 výrobky homologovány - ESČ
-- vila Lanna - pro rodinu Šebek-Lanna, Lanna - stavěli nábřeží, Šebkové - finančníci
+- vila Lanna - pro rodinu Šebek-Lanna, Lanna - stavěli nábřeží, lodní business, Šebkové - finančníci
 
 ---
 
@@ -819,3 +819,49 @@ _Křižík VS Kolben_
 - Praha neměla nikdy parní tramvaj, rovnou z koní na elektriku
 - nádraží Těšnov
 - významní podnikatelé proslavující CZ - Škoda - 1869 zakoupeno od Valdštejnů, Škoda umírá 1909, ve 30. letech fůze s Laurinem Klementem, rozkvět Škody zařídil technický ředitel Karel (Venveldštajn), vedl z ekonomického a technického hlediska, třetina města Plzně byla škodovka
+- 1893 zákon o asanaci - problémy oblastí hygienických atd. především židovská část Prahy, mnoho domů zde stálo bez stavebního povolení a koordinace, bylo třeba je zlikvidovat
+- rozšiřovala se Praha
+- 1920 vzniká velká Praha, do té doby královské město
+- 1968, 1974 zvětšování Prahy - hlavní město Praha
+- asanace vhodná - Praha měla problém s kašnami, voda nebyla dovedena do domů, konec 20. a 30. let 20. století = vznik prakticky domovních rozvodů, vodovodní a kanalizační síť
+- 1891 veliká povodeň v Praze - nebyl regulován tok Vltavy
+- poté se zvedly nábřeží - vznik nových komunikací, ochrana proti povodním
+- 19. a 20. století = společnost zbohatla = plynofikace, elektrifikace, vodní rozvody
+- čistička v Bubenči, kalová lože, třikrát pálené cihly
+- kašny měli hnilobní mor, proto řešili rozvody vody
+- kanalizace 1906
+- voda proudí do Prahy 1914 z Káraného, těsně před začátkem 1. sv. války
+- Praha měla 5 velkých vodáren
+- přečerpávací stanice jsou uvnitř Prahy, na Vinohradech, u Apolináře, v Ulici 5. května, asi 10 po celé Praze
+- vodárna v Podolí - architekt Enkl, 1926/29, vodárna vědecky obsluhována aby bylo možné vodu připravovat, tam kde probíhá úprava vody, aby nebyly sloupy, aby se nezachycovaly nečistoty
+- plynofikace 1847 - v Karlíně byla postavena výrobna svítiplynu - distribuován po Praze
+- Libeň postavila také plynárnu
+- plynojem v Michli a Dolních Měcholupech, ale už nefungují, začala přestavba na zemní plyn
+- elektrifikace a elektrická energie byla ze začátku drahá, proto byla snaha udržet plyn co nejdéle
+
+# Antonín Svoboda
+
+- působil i na akademii věd, s Josefem Trnkou zakládali obor informatiky na ČVUT
+- narodil se v rodině učitele, vystudoval strojní a elektrotechnické inženýrství na ČVUT
+- zajímal se o balistické střely a ochrany proti leteckým útokům
+- spojil se s inženýrem Vandem a podíleli se na specializovaných výpočtech k protiletadlové ochraně
+- aby dokončili tajný projekt ochrany proti střelám, byly poslány do FR, na fingovanou stáž, utíkají do USA
+- Wiener sepisoval dílo Kybernetika
+- 1945/1946 se vrací do Prahy, začíná vytvářet výzkumnou skupinu, + Zdeněk Svoboda - zrod katedry kybernetiky
+- zakládá ústav matematických strojů na ČSAV
+- vzniká SAPO - samočinný počítač
+- 1958 vyňat ze základního výzkumu na ústav matematických strojů na ČSAV, převeden na resort pod ministerstvo všeobecného strojírenství
+- 1964 emigruje znovu do USA
+- EPOS1 a EPOS2 - elektronické počítací stroje, Svoboda navrhnul
+- chtěl aby si jednotlivé země Varšavské smlouvy rozdělily práce na výpočetní technice
+
+# Obecné
+
+- intelektuální skupiny - postihla je emigrace
+- 1948 ozbrojené lidové milice podporovali převzetí československa
+- poslední spartakiáda 1985
+- kdo vstoupil do ČSAV - vedena o něm složka
+- za Svobodou odešlo 66 odborníků a jejich rodin
+- ekonomická imigrace v 19. století
+- 1968-1971 veliká emigrace
+- 1983 studentský sjezd a opět emigrace
