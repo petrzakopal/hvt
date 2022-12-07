@@ -643,7 +643,7 @@ docházelo ke stavbě kanalizace, železnice, a technických veřejných věcí 
 ### Emil Kolben
 
 - 1862
-- žid z 9 dětí
+- žid z 8 dětí
 - absolvoval německou techniku
 - jeho rodina zemědělská a obchodní činnost
   - Emil a jeho bratr Albert . jediní studovali techniku
@@ -758,3 +758,64 @@ _Křižík VS Kolben_
 - Mercier poskytoval Listovi informace z Francie a západu ohledně elektro (asi)
 - List byl v CIGRE a UNIPEDE
 - 1939 začátek průzkumu vltavského dna, kvůli metru
+
+---
+
+- po tom co Kolben akcionuje společnost - EAS - elektrotechnická továrna Kolben Vysočany akciová společnost
+
+## Josef Sousedík
+
+- 1894 narozen
+- regionální podnikatel pro Vsetín
+- jeho práce směřovala ke speciálním strojům, které navrhoval a prodával jako specializované jednotky
+- podílel se na bratislavské střele
+- 1944 umírá na gestapu - snažil se utéct, skočit z okna, ale zastřelili ho - zapojen do odbojové činnosti
+- elektromobilita - hybridní automobil - po městě elektricky, mimo město na benzín
+- 3 děti
+- snažil se vytvořit ve Vsetíně politickou stranu, zvítězila, poté byl starostou Vsetína, postavil Školu, cesty, lékařské budovy
+- investoval ihned peníze zpět do svého podnikání, nestřádal peníze
+- široké podnikatelské aktivity
+- vlastenec a odborář
+- vyrůstal v rodině napojené na Tonet - nábytek, sousedík zde také vyučen, ale výuční list získává jinde u Bratří Bubelů
+- počátek podnikání v době 1. sv. války
+- 1919 začíná opravovat elektrospotřebiče, zařizuje osvětlení
+- orientoval se na firmu Vartanus Donát - závod na výrobu elektrotechnických strojů pro Vsetín
+- v rámci své továrny vytvořil střední školu a učiliště
+- vynálezy + objevy
+- často přihlašoval patenty, realizované/využívané i v USA a DE
+- půdu na podnikání koupil od svého tchána
+- dostal se do platové neschopnosti neplacení daně za své dělníky, protože cuknul ohledně businessu s Baťou
+- spojil se s Ringchhoferem - tendry, tramvaje, lokomotivy = strojírensko elektrotechnický podnik
+- Ringchhoferovi ho vytáhli z problémů s penězmi
+- znárodnili mu vše, spárovali ho s Danušem Ring., který měl kontakty na Gestapo
+- odmítal zahraniční aktivity, orientoval se na vsetínsko
+- SelfMade Man - uměl všechny postupy, které vyžadoval od jeho dělníků
+
+---
+
+# Obecné
+
+- od 1926 výrobky homologovány - ESČ
+- vila Lanna - pro rodinu Šebek-Lanna, Lanna - stavěli nábřeží, Šebkové - finančníci
+
+---
+
+- v buržoazní době vznikaly veliké vily podnikatelů, např. Dejvice a Bubeneč
+- Kolben ve vile, dobře známé, Radešínská ulice
+- Křižík neměl vilu
+- v době počátku republiky bylo 227 elektrických podniků a organizací a 193 elektráren
+
+---
+
+- první trasování vlaků Vídeň Brno Praha, spolu s drahou telegrafní síť, na původní Masarykovo nádraží přijela parní lokomotiva 1845
+- vlečky k pivovarům, cukrovarům, různým podnikům
+- počátky železnic spojeny s Gerstnerem - jeho syn stavěl železnice a spolupracoval s žákem Gerstnera, Gerstner také doporučoval spíše železnice než vodními cestami
+- rozdělení tříd jízdenek 1, 2, 3, 4
+- lokomotivy dostávali jména podle donátorů, kteří na ně přispěli nebo míst
+- první most byl Karlův most Pražský
+- druhý most 1841 - most Legií, řetězový, přestaven na přelomu 19/20 st., protože zničen Ringhchofferovy
+- Negraliho viadukt směřoval do Bubenče, spojnice k Libni, kde budou doky, kde budou zajíždět lodě, kde bude vykládka, odvoz do Bubenče, vlaky a odvoz do celého území
+- Křižík - 1903 první elektrifikovaná dráha v monarchii - Tábor -> Bechyně
+- Praha neměla nikdy parní tramvaj, rovnou z koní na elektriku
+- nádraží Těšnov
+- významní podnikatelé proslavující CZ - Škoda - 1869 zakoupeno od Valdštejnů, Škoda umírá 1909, ve 30. letech fůze s Laurinem Klementem, rozkvět Škody zařídil technický ředitel Karel (Venveldštajn), vedl z ekonomického a technického hlediska, třetina města Plzně byla škodovka
