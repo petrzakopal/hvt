@@ -865,3 +865,14 @@ _Křižík VS Kolben_
 - ekonomická imigrace v 19. století
 - 1968-1971 veliká emigrace
 - 1983 studentský sjezd a opět emigrace
+- prvotní motiv pro emigraci bylo, že nemohou praktikovat svůj obor, konference atd., děti nemohli studovat, ekonomická pozice rodiny
+- 26-42 let bylo emigrantům
+- kariéry v zahraničí
+  - kariéra usedlá - vědec šel na místo, kde mohl fungovat
+  - nebo stěhování za výzkumnými týmy a zastával třeba dvě, tři výzkumné pozice
+  - paralelní - působil ve svém původním oboru a pak se rekvalifikoval
+  - smíšené - část práce ve vědě a část peněz úplně odněkud jinud
+  - kariéry přerušené - většinou u žen, které se vzdávali keriéry ve prospěch můžů, kteří měli více peněz
+- Bohuslavem Chňoupkem byl anulován Mnichov v roce 1973
+- 1975 jsme byli nuceni podepsat Gustavem Husákem Helsinský proces?
+- od 1975 začíná další vlna emigrace
