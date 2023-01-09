@@ -360,7 +360,6 @@ _navbar__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (a
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
         children: [
             process.env.ANALYTICS == "true" ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_umami__WEBPACK_IMPORTED_MODULE_3__/* .UmamiTracking */ .Y, {}) : "",
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_tweemojihandler__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Z, {}),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_navbar__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {})
         ]
     });
@@ -1268,11 +1267,8 @@ function PageMetaData({ data  }) {
 /***/ }),
 
 /***/ 1451:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_script__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4298);
@@ -1287,7 +1283,7 @@ function PageMetaData({ data  }) {
  * Comment: Used for parsing Twemoji emoji images instead of the system emojis.
  * -------------------------------------------------------------------------------
  */ function TweemojiParser() {
-    (0,react__WEBPACK_IMPORTED_MODULE_2__.useEffect)(()=>{
+    useEffect(()=>{
         if (document.readyState == "1") {
             twemoji.parse(document.body, {
                 folder: "svg",
@@ -1325,15 +1321,15 @@ function PageMetaData({ data  }) {
  * -------------------------------------------------------------------------------
  */ function TweemojiHandler() {
     TweemojiParser();
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_script__WEBPACK_IMPORTED_MODULE_1___default()), {
+    return /*#__PURE__*/ _jsx(_Fragment, {
+        children: /*#__PURE__*/ _jsx(Script, {
             id: "tweemoji",
             src: "https://twemoji.maxcdn.com/v/latest/twemoji.min.js",
             strategy: "beforeInteractive"
         })
     });
 }
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TweemojiHandler);
+/* unused harmony default export */ var __WEBPACK_DEFAULT_EXPORT__ = ((/* unused pure expression or super */ null && (TweemojiHandler)));
 
 
 /***/ }),
