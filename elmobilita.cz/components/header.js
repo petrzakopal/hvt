@@ -13,7 +13,7 @@ function Header() {
 	return (
 		<>
 			{process.env.ANALYTICS == "true" ? <UmamiTracking /> : ""}
-			<TweemojiHandler />
+			{/* <TweemojiHandler /> */}
 			{/* <Script id="list.js" strategy="beforeInteractive" src="/js/list.min.js" /> */}
 			<Navbar />
 		</>
