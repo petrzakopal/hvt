@@ -12,7 +12,7 @@ export const UmamiTracking = () => {
 			<Script
 				id="umami"
 				strategy="beforeInteractive"
-				src="https://zakopal-analytics.vercel.app/umami.js"
+				src="https://analytics.ptzk.cz/script.js"
 				data-website-id="0a8ccab4-4f92-4b5f-81dc-54fa915d3b08"
 			/>
 		</>
